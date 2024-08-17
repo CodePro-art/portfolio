@@ -96,7 +96,8 @@ const CursorCanvas = () => {
                 params.pointsNumber = 30;
                 params.widthFactor = 0.5;
                 params.strokeColor = theme.themeId === 'dark' ? 'black' : 'white';
-                ctx.shadowColor = '#00befd';
+                let shadowColor = theme.themeId === 'dark' ? 'white' : '#00befd';
+                ctx.shadowColor = shadowColor;
                 ctx.shadowBlur = 1;
             });
         
