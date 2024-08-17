@@ -9,6 +9,12 @@
     --cursor-transition: all .1s ease;
     --light-ripple-color: #638889;
     --dark-ripple-color: #FAF0E6;
+    --theme: #00befd;
+    cursor: none;
+}
+
+body, button, a, input, label, .button {
+    cursor: none;
 }
 
 .cursor-canvas {

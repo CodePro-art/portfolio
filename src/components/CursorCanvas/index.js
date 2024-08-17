@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
+import { useTheme } from 'components/ThemeProvider';
 import './index.css';
 
 const CursorCanvas = () => {
     const canvasRef = useRef(null);
+    const theme = useTheme();
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -15,7 +17,7 @@ const CursorCanvas = () => {
             mouseThreshold: .6,
             spring: .4,
             friction: .5,
-            strokeColor: 'black'
+            strokeColor: theme.themeId === 'dark' ? 'white' : 'black',
         };
 
         const pointer = {
@@ -34,7 +36,6 @@ const CursorCanvas = () => {
         }
 
         let mouseMoved = false;
-        // let cursorStrokeColor = 'black';
 
         const updateMousePosition = (eX, eY) => {
             pointer.x = eX - window.scrollX;
@@ -68,6 +69,7 @@ const CursorCanvas = () => {
                 const yc = .5 * (trail[i].y + trail[i + 1].y);
                 ctx.quadraticCurveTo(trail[i].x, trail[i].y, xc, yc);
                 ctx.lineWidth = params.widthFactor * (params.pointsNumber - i);
+                ctx.strokeStyle = params.strokeColor;
                 ctx.stroke();
             }
             ctx.lineTo(trail[trail.length - 1].x, trail[trail.length - 1].y);
@@ -82,6 +84,32 @@ const CursorCanvas = () => {
             canvas.height = window.innerHeight;
         };
 
+        const handleThemeChange = () => {
+            params.strokeColor = theme.themeId === 'dark' ? 'white' : 'black';
+        };
+
+        const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon');
+
+        buttonsOrLinks.forEach(e => {
+            e.addEventListener('mouseover', () => {
+                // Update pointsNumber and adjust stroke properties
+                params.pointsNumber = 30;
+                params.widthFactor = 0.5;
+                params.strokeColor = theme.themeId === 'dark' ? 'black' : 'white';
+                ctx.shadowColor = '#00befd';
+                ctx.shadowBlur = 1;
+            });
+        
+            e.addEventListener('mouseout', () => {
+                // Reset to the original parameters when not hovering
+                params.pointsNumber = 40;
+                params.widthFactor = 0.3;
+                params.strokeColor = theme.themeId === 'dark' ? 'white' : 'black';
+                ctx.shadowBlur = 0;
+            });
+        });
+
+        // Add event listener for theme change
         window.addEventListener("mousemove", e => {
             mouseMoved = true;
             updateMousePosition(e.pageX, e.pageY);
@@ -92,6 +120,9 @@ const CursorCanvas = () => {
         });
         window.addEventListener("resize", setupCanvas);
 
+        // Listen for changes in the theme
+        handleThemeChange();
+        
         setupCanvas();
         update(0);
 
@@ -100,7 +131,7 @@ const CursorCanvas = () => {
             window.removeEventListener("touchmove", updateMousePosition);
             window.removeEventListener("resize", setupCanvas);
         };
-    }, []);
+    }, [theme.themeId]);
 
     return <canvas ref={canvasRef} className="cursor-canvas" />;
 };
