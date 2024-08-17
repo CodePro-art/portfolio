@@ -1,0 +1,34 @@
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER
+
+Netanel Mazuz
+Multidisciplinary Electrical & Computer Engineer & Developer
+
+Design tools:
+InVision
+
+github.com/CodePro-art
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+React
+NodeJS
+Storybook
+Three
+Popmotion
+Puppeteer
+
+_______________________________________________________________________________
+
+FONTS
+
+Gotham
+SFMono
+Hiragino Kaku Gothic
+Respira Black
