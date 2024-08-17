@@ -10,6 +10,24 @@ const CursorCanvas = () => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
 
+        // Mouse click effect handler
+        const handleClick = (e) => {
+            const x = e.pageX;
+            const y = e.pageY;
+    
+            const span = document.createElement('span');
+            span.classList.add('clickEffect');
+            span.style.top = `${y}px`;
+            span.style.left = `${x}px`;
+            document.body.appendChild(span);
+    
+            setTimeout(() => {
+            span.remove();
+            }, 600);
+        };
+         // Attach the event listener to document
+        document.addEventListener('click', handleClick);
+
         // Define cursor effect parameters
         const params = {
             pointsNumber: 40,
@@ -128,6 +146,8 @@ const CursorCanvas = () => {
         update(0);
 
         return () => {
+            // Cleanup event listener on component unmount
+            document.removeEventListener('click', handleClick);
             window.removeEventListener("mousemove", updateMousePosition);
             window.removeEventListener("touchmove", updateMousePosition);
             window.removeEventListener("resize", setupCanvas);

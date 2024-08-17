@@ -36,7 +36,7 @@ const ThemeProvider = ({
   const parentTheme = useTheme();
   const isRootProvider = !parentTheme.themeId;
 
-  // Save root theme id to localstorage and apply class to body
+  // Save root theme id to local storage and apply class to body
   useEffect(() => {
     if (isRootProvider) {
       window.localStorage.setItem('theme', JSON.stringify(themeId));

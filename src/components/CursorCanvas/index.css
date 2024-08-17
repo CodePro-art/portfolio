@@ -7,10 +7,11 @@
     --cursor-size: 10px;
     --cursor-border-radius: 50%;
     --cursor-transition: all .1s ease;
-    --light-ripple-color: #638889;
+    --light-ripple-color: #1a7cb1;
     --dark-ripple-color: #FAF0E6;
     --theme: #00befd;
     cursor: none;
+    user-select: none;
 }
 
 body, button, a, input, label, .button {
@@ -23,7 +24,7 @@ body, button, a, input, label, .button {
     pointer-events: none;
     top: 0;
     left: 0;
-    z-index: 200;
+    z-index: 99999;
 }
 
 .clickEffect {
@@ -39,11 +40,15 @@ body, button, a, input, label, .button {
     animation-name: clickAnimation;
     animation-duration: .6s;
     animation-timing-function: linear;
-    z-index: 101;
+    z-index: 99999;
 }
 
 .dark .clickEffect {
     border: 5px solid var(--dark-ripple-color);
+}
+
+.light .clickEffect {
+    border: 5px solid var(--light-ripple-color);
 }
 
 @keyframes clickAnimation {
