@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from 'components/Navbar';
 import ThemeProvider from 'components/ThemeProvider';
 import VisuallyHidden from 'components/VisuallyHidden';
+import CursorCanvas from 'components/CursorCanvas';
 import { tokens } from 'components/ThemeProvider/theme';
 import { msToNum } from 'utils/style';
 import { useLocalStorage } from 'hooks';
@@ -47,6 +48,7 @@ const App = () => {
   return (
     <AppContext.Provider value={{ ...state, dispatch }}>
       <ThemeProvider themeId={state.theme}>
+        <CursorCanvas />
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>

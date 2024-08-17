@@ -1,0 +1,52 @@
+
+:root {
+    --cursor-color: #000;
+    --cursor-border-color: #000;
+    --cursor-background-color: #fff;
+    --cursor-border-width: 1px;
+    --cursor-size: 10px;
+    --cursor-border-radius: 50%;
+    --cursor-transition: all .1s ease;
+    --light-ripple-color: #638889;
+    --dark-ripple-color: #FAF0E6;
+}
+
+.cursor-canvas {
+    transition: pointsNumber 2s ease, widthFactor 2s ease;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.clickEffect {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 5px solid var(light-ripple-color);
+    pointer-events: none;
+    margin-top: -45px;
+    margin-left: -45px;
+    opacity: 0;
+    border-radius: 50%;
+    animation-name: clickAnimation;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    z-index: 101;
+}
+
+.dark .clickEffect {
+    border: 5px solid var(--dark-ripple-color);
+}
+
+@keyframes clickAnimation {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
