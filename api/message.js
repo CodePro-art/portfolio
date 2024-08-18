@@ -46,8 +46,8 @@ module.exports = async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: 'Portfolio <mailbot@codyb.co>',
-      to: 'hi@codyb.co',
+      from: 'Portfolio <mailbot@netanelm.co>',
+      to: 'netanel.mazuz@outlook.com',
       subject: `New message from ${email}`,
       text: `From: ${email}\n\n${message}`,
     };
