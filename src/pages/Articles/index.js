@@ -56,16 +56,15 @@ const ArticlesPost = ({
           />
           <div className="articles__post-image-tag">K256</div>
         </div>
+
         <div className="articles__post-text">
           <span className="articles__post-date">
-            {new Date(date).toLocaleDateString('default', {
-              year: 'numeric',
-              month: 'long',
-            })}
+            {new Date(date).toLocaleDateString('default', {year: 'numeric', month: 'long', })}
           </span>
           <h2 className="articles__post-title">{title}</h2>
           <p className="articles__post-description">{description}</p>
         </div>
+        
       </RouterLink>
     </article>
   );
