@@ -36,6 +36,17 @@ const ThemeProvider = ({
   const parentTheme = useTheme();
   const isRootProvider = !parentTheme.themeId;
 
+  const toggle = document.getElementsByClassName('theme-toggle')[0];
+  if (toggle) {
+    const position = toggle.getBoundingClientRect();
+    console.log(position); 
+    const x = position.x + (position.width / 2); 
+    const y = position.y + (position.height / 2); 
+    document.styleSheets[0].insertRule(`@keyframes grow 
+    { 0% { clip-path: circle(0% at ${x}px ${y}px); }
+    100% { clip-path: circle(100%); }}`, document.styleSheets[0].cssRules.length);
+  }
+
   // Save root theme id to local storage and apply class to body
   useEffect(() => {
     if (isRootProvider) {

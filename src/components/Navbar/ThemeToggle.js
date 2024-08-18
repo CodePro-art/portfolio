@@ -8,7 +8,7 @@ const ThemeToggle = ({ isMobile, ...rest }) => {
   const isDark = themeId === 'dark';
   const id = useId();
   const maskId = `theme-toggle-mask-${id}`;
-
+  
   const handleClick = () => {
     dispatch({ type: 'toggleTheme' });
   };

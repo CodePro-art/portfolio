@@ -40,7 +40,7 @@ body, button, a, input, label, .button {
     animation-name: clickAnimation;
     animation-duration: .6s;
     animation-timing-function: linear;
-    z-index: 99999;
+    z-index: 4000;
 }
 
 .dark .clickEffect {
