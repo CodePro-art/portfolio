@@ -36,8 +36,8 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      In my spare time, I like to <Link href="https://youtube.codyb.co">draw</Link>,{' '}
-      <Link href="https://youtube.codyb.co">cook</Link> and{' '}
+      In my spare time, I like to <Link href="https://www.youtube.com/@netanelmazuz">draw</Link>,{' '}
+      <Link href="https://www.youtube.com/@netanelmazuz">cook</Link> and{' '}
       <Link href="/articles">teach and share my knowledge</Link>. I am always interested in new
       projects, so feel free to drop me a line.
     </Text>
