@@ -5,6 +5,10 @@ export const navLinks = [
     hash: '#project-1',
   },
   {
+    label: 'Journey',
+    pathname: '/journey',
+  },
+  {
     label: 'Articles',
     pathname: '/articles',
   },
