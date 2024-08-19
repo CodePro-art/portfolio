@@ -25,10 +25,8 @@ const CursorCanvas = () => {
             span.remove();
             }, 600);
         };
-         // Attach the event listener to document
         document.addEventListener('click', handleClick);
 
-        // Define cursor effect parameters
         const params = {
             pointsNumber: 40,
             widthFactor: .3,
@@ -113,10 +111,10 @@ const CursorCanvas = () => {
                 // Update pointsNumber and adjust stroke properties
                 params.pointsNumber = 30;
                 params.widthFactor = 0.5;
-                params.strokeColor = theme.themeId === 'dark' ? 'black' : 'white';
+                params.strokeColor = theme.themeId === 'dark' ? '#4ed2fe' : 'white';
                 let shadowColor = theme.themeId === 'dark' ? 'white' : '#00befd';
-                ctx.shadowColor = shadowColor;
-                ctx.shadowBlur = 1;
+                ctx.shadowColor = '#00befd';
+                ctx.shadowBlur = 2;
             });
         
             e.addEventListener('mouseout', () => {

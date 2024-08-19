@@ -27,22 +27,25 @@ const Journey = () => {
         <title>MyJourney | Netanel Mazuz</title>
         <meta name="description" content="Find out more about my personal professional journey and lean more about me." />
       </Helmet>
-      <Heading
-        className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
-        level={3}
-        as="h1"
-        style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
-      >
-        <DecoderText
-          text="My Journey"
-          start={status !== 'exited' && !prerender}
-          delay={300}
-        />
-      </Heading>
       
-      <div className="timeline-container">
-        <Timeline theme={"education"}/>
-        <Timeline theme={"work-experience"}/>
+      <div className="journey-wrapper">
+          <Heading
+            className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
+            level={3}
+            as="h1"
+            style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
+          >
+            <DecoderText
+              text="My Journey"
+              start={status !== 'exited' && !prerender}
+              delay={300}
+            />
+          </Heading>
+        <div className="timeline-container">
+          <Timeline theme={"education"}/>
+          <Timeline theme={"work-experience"}/>
+        </div>`
+
       </div>
       </Section>
   );

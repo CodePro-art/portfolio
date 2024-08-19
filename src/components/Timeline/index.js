@@ -146,6 +146,7 @@ const Timeline = ({ theme }) => {
 
     return (
         <div className="time-container">
+            <div id="timeline" className="timeline" ref={timelineRef}>
             <Heading
                 className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
                 level={3}
@@ -158,7 +159,6 @@ const Timeline = ({ theme }) => {
                     delay={1000}
                 />
             </Heading>
-            <div id="timeline" className="timeline" ref={timelineRef}>
                 <div className="btn-group">
                     <Button onClick={() => {}} action="Expand All" />
                     <Button onClick={() => {}} action="Collapse All" />

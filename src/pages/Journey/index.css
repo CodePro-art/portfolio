@@ -61,10 +61,11 @@ h1 {
 }
 .timeline {
 	margin: auto;
-	padding: 0 1.5em;
+	padding: 1.5em;
 	width: 100%;
 	max-width: 36em;
 }
+
 .timeline__arrow {
 	background-color: transparent;
 	border-radius: 0.25em;
@@ -171,8 +172,17 @@ h1 {
 }
 
 .timeline-container {
+	padding-left: 100px;
 	display: flex;
 	flex-direction:row;
+}
+
+.journey-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 /* Dark theme */
