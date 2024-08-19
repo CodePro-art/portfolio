@@ -1,5 +1,22 @@
 import React, { useEffect, useRef } from 'react';
+import classNames from 'classnames';
+import Heading from 'components/Heading';
+import prerender from 'utils/prerender';
+import DecoderText from 'components/DecoderText';
+import { useScrollRestore, useRouteTransition } from 'hooks';
+import { tokens } from 'components/ThemeProvider/theme';
+import { msToNum, numToMs } from 'utils/style';
 import './index.css';
+
+const initDelay = tokens.base.durationS;
+
+const ArrowIcon = () => (
+    <svg display="none">
+        <symbol id="arrow">
+        <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+        </symbol>
+    </svg>
+);
 
 const TimelineItem = ({ id, date, title, content }) => (
     <div className="timeline__item">
@@ -108,68 +125,55 @@ class CollapsibleTimeline {
     }
 }
 
-const Timeline = () => {
+function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
+    const numDelay = msToNum(delayMs) * multiplier;
+    return { '--delay': numToMs((msToNum(initDelayMs) + numDelay).toFixed(0)) };
+}
+
+const Timeline = ({ theme }) => {
+    const { status } = useRouteTransition();
+    useScrollRestore();
+
     const timelineRef = useRef(null);
+    var timelineData = require('./timeline.json');
+
+    let title = theme === "education" ? "Education" :"Work Experience";
 
     useEffect(() => {
         const ctl = new CollapsibleTimeline(timelineRef.current);
         return () => { ctl.el?.removeEventListener("click", ctl.itemAction);};
     }, []);
-    
-    const timelineData = [
-        {
-            id: 'item1',
-            date: 'January 1, 1970',
-            title: 'Unix Epoch',
-            content: 'This is the day the Unix clock began (or December 31, 1969 if you live behind UTC 😉).',
-        },
-        {
-            id: 'item2',
-            date: 'October 17, 1973',
-            title: 'Digits Within ISO 8601 Format',
-            content: 'At 6:36:57 PM UTC, the date in ISO 8601 format (1973-10-17) within the time digits (119731017) appeared for the first time.',
-        },
-        {
-            id: 'item3',
-            date: 'September 9, 2001',
-            title: '1 Billion Seconds',
-            content: 'Unix time reached 1,000,000,000 seconds at 1:46:40 AM UTC. The Danish UNIX User Group celebrated this in Copenhagen, Denmark.',
-        },
-        {
-            id: 'item4',
-            date: 'February 13, 2009',
-            title: '1,234,567,890 Seconds',
-            content: 'At 11:31:30 PM UTC, the digits of the time were 1234567890. This was celebrated worldwide, and even Google had a doodle for it.',
-        },
-        {
-            id: 'item5',
-            date: 'May 18, 2033',
-            title: '2 Billion Seconds',
-            content: 'Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.',
-        },
-        {
-            id: 'item6',
-            date: 'January 19, 2038',
-            title: 'Unix Epochalypse',
-            content: 'Also known as the year 2038 problem, clocks running on a 32-bit signed integer will flip from 3:14:08 AM UTC on this day to 8:45:52 PM UTC on December 13, 1901.',
-        },
-    ];
 
     return (
-    <div id="timeline" className="timeline" ref={timelineRef}>
-        <div className="btn-group">
-            <Button onClick={() => {}} action="Expand All" />
-            <Button onClick={() => {}} action="Collapse All" />
-        </div>
-        {timelineData.map((item) => (
-            <TimelineItem
-                key={item.id}
-                id={item.id}
-                date={item.date}
-                title={item.title}
-                content={item.content}
-            />
-        ))}
+        <div className="time-container">
+            <Heading
+                className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
+                level={3}
+                as="h1"
+                style={getDelay(tokens.base.durationXS, initDelay, 0.7)}
+            >
+                <DecoderText
+                    text={title}
+                    start={status !== 'exited' && !prerender}
+                    delay={1000}
+                />
+            </Heading>
+            <div id="timeline" className="timeline" ref={timelineRef}>
+                <div className="btn-group">
+                    <Button onClick={() => {}} action="Expand All" />
+                    <Button onClick={() => {}} action="Collapse All" />
+                </div>
+                <ArrowIcon />
+                {timelineData[theme].map((item) => (
+                    <TimelineItem
+                        key={item.id}
+                        id={item.id}
+                        date={item.date}
+                        title={item.title}
+                        content={item.content}
+                    />
+                ))}
+            </div>
         </div>
     );
 };

@@ -17,16 +17,6 @@ function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
   return { '--delay': numToMs((msToNum(initDelayMs) + numDelay).toFixed(0)) };
 }
 
-// ArrowIcon Component
-const ArrowIcon = () => (
-  <svg display="none">
-    <symbol id="arrow">
-      <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-    </symbol>
-  </svg>
-);
-
-
 const Journey = () => {
   const { status } = useRouteTransition();
   useScrollRestore();
@@ -49,9 +39,11 @@ const Journey = () => {
           delay={300}
         />
       </Heading>
-      <ArrowIcon />
       
-      <Timeline />
+      <div className="timeline-container">
+        <Timeline theme={"education"}/>
+        <Timeline theme={"work-experience"}/>
+      </div>
       </Section>
   );
 };

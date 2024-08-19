@@ -1,0 +1,66 @@
+{
+    "work-experience": [
+        {
+            "id": "item1",
+            "date": "2023 - now",
+            "title": "Project Advisor | RoboPhysics",
+            "content": "Mentoring students in robotics and physics projects, ensuring eligibility for honors graduation, academic candidacy, and elite IDF unit selection. I promote independent work and interdisciplinary critical thinking."
+        },
+        {
+            "id": "item2",
+            "date": "2022 - 2023",
+            "title": "CAD Engineer | NVIDIA",
+            "content": "Coded CAD Python software for DFT teams, covering all stages of algorithm development from research and implementation to testing, debugging, and deployment, using CI/CD & Agile methodologies. Conducted design reviews, produced status reports & documentation, and provided technical support. Used Unix command-line tools such as RegEx, awk, SED, and SQL, coupled with Pandas library to process, manipulate, and analyze data."
+        },
+        {
+            "id": "item3",
+            "date": "2020 - 2022",
+            "title": "Automation Engineer | INUITIVE",
+            "content": "Programmed object-oriented C++ and Python automated tests for a computer vision chip. Integrated software for learning algorithms embedded in the chip, including CNN, SLAM, object detection, and face recognition. Employed diverse testing frameworks (unit, E2E, performance, and regression testing) with Visual Studio IDE. Managed projects using Jira, automated processes with Jenkins and Docker, and chip data retrieval via UART technology. Applied OOP, design patterns principles, and OpenCV library for image processing and testing."
+        },
+        {
+            "id": "item4",
+            "date": "2017 - 2020",
+            "title": "Private Tutor | Dean of Students at BGU",
+            "content": "Provided tutoring for students in various subjects, including Linear Algebra, C Programming, Physics, and Introduction to Signal Processing. Assisted students in understanding complex concepts, preparing for exams, and improving their academic performance. Developed personalized study plans and resources to meet individual learning needs."
+        }
+    ],
+    "education": [
+        {
+            "id": "item1",
+            "date": "2024",
+            "title": "AI Development Training | Technion",
+            "content": "Focused on computer vision and NLP, covering math & stats foundations, optimization techniques, learning architectures, and implementation of building blocks. Built AI projects prioritizing use-case-oriented thinking. Topics: Un/Supervised Learning, Big Data, EDA, Transformer Models, Deep Learning concepts, etc. Tools: Jupyter, NumPy, SciPy, Seaborn, Pandas, Scikit-learn, TensorFlow, Pytorch, Keras, CUDA, etc."
+        },
+        {
+            "id": "item2",
+            "date": "2020",
+            "title": "Full-Stack Development Bootcamp | Appleseeds Academy",
+            "content": "Created dynamic, responsive websites, user interfaces, and robust, scalable applications by applying full-stack tools, frameworks, and industry best practices. Frontend Tools: HTML, CSS, JavaScript, Python, React, jQuery, npm, and Sass. Backend Tools: NodeJS, ExpressJS, SQL, NoSQL, MongoDB, Postman, and RESTful API. Projects: Minecraft Game, To Do List, Dice Game."
+        },
+        {
+            "id": "item3",
+            "date": "2015 - 2020",
+            "title": "B.Sc. in Electrical & Computer Engineering | Ben-Gurion University",
+            "content": "GPA: 78. Majored in VLSI, computers, and signal processing. Final Project: Arduino-Based IoT Water Nitrate Pollution Monitoring System for Agriculture. Notable Project: Blind source separation MATLAB project, de-noising time-series audio signals."
+        },
+        {
+            "id": "item4",
+            "date": "2016 - 2017",
+            "title": "Formula Student | BGU Racing Team",
+            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+        },
+        {
+            "id": "item5",
+            "date": "2010 - 2013",
+            "title": "Formula Student | BGU Racing Team",
+            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+        },
+        {
+            "id": "item6",
+            "date": "2007 - 2010",
+            "title": "valedictorian Student | BGU Racing Team",
+            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+        }
+    ]
+}
