@@ -32,14 +32,11 @@ const TimelineItem = ({ id, date, title, content }) => (
     </div>
 );
 
-// Button Component
 const Button = ({ onClick, action }) => (
     <button className="btn" type="button" data-action={action.toLowerCase()} onClick={onClick}>
         {action}
     </button>
 );
-
-// CollapsibleTimeline Class (JavaScript functionality)
 class CollapsibleTimeline {
     constructor(el) {
         this.el = el;
@@ -120,42 +117,6 @@ const Timeline = () => {
     }, []);
     
     const timelineData = [
-        {
-            id: 'item1',
-            date: 'January 1, 1970',
-            title: 'Unix Epoch',
-            content: 'This is the day the Unix clock began (or December 31, 1969 if you live behind UTC 😉).',
-        },
-        {
-            id: 'item2',
-            date: 'October 17, 1973',
-            title: 'Digits Within ISO 8601 Format',
-            content: 'At 6:36:57 PM UTC, the date in ISO 8601 format (1973-10-17) within the time digits (119731017) appeared for the first time.',
-        },
-        {
-            id: 'item3',
-            date: 'September 9, 2001',
-            title: '1 Billion Seconds',
-            content: 'Unix time reached 1,000,000,000 seconds at 1:46:40 AM UTC. The Danish UNIX User Group celebrated this in Copenhagen, Denmark.',
-        },
-        {
-            id: 'item4',
-            date: 'February 13, 2009',
-            title: '1,234,567,890 Seconds',
-            content: 'At 11:31:30 PM UTC, the digits of the time were 1234567890. This was celebrated worldwide, and even Google had a doodle for it.',
-        },
-        {
-            id: 'item5',
-            date: 'May 18, 2033',
-            title: '2 Billion Seconds',
-            content: 'Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.',
-        },
-        {
-            id: 'item6',
-            date: 'January 19, 2038',
-            title: 'Unix Epochalypse',
-            content: 'Also known as the year 2038 problem, clocks running on a 32-bit signed integer will flip from 3:14:08 AM UTC on this day to 8:45:52 PM UTC on December 13, 1901.',
-        },
         {
             id: 'item1',
             date: 'January 1, 1970',
