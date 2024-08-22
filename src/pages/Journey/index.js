@@ -22,15 +22,15 @@ const Journey = () => {
   useScrollRestore();
 
   return (
-    <Section className={classNames('contact', `contact--${status}`)}>
+    <Section className={classNames('journey', `journey--${status}`)}>
       <Helmet>
-        <title>MyJourney | Netanel Mazuz</title>
+        <title>Journey | Netanel Mazuz</title>
         <meta name="description" content="Find out more about my personal professional journey and lean more about me." />
       </Helmet>
       
       <div className="journey-wrapper">
           <Heading
-            className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
+            className={classNames('journey__title', `journey__title--${status}`, {'journey__title--hidden': prerender, })}
             level={3}
             as="h1"
             style={getDelay(tokens.base.durationXS, initDelay, 0.3)}

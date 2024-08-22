@@ -104,7 +104,7 @@ const CursorCanvas = () => {
             params.strokeColor = theme.themeId === 'dark' ? 'white' : 'black';
         };
 
-        const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon');
+        const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon, .button');
 
         buttonsOrLinks.forEach(e => {
             e.addEventListener('mouseover', () => {
@@ -112,9 +112,9 @@ const CursorCanvas = () => {
                 params.pointsNumber = 30;
                 params.widthFactor = 0.5;
                 params.strokeColor = theme.themeId === 'dark' ? '#4ed2fe' : 'white';
-                let shadowColor = theme.themeId === 'dark' ? 'white' : '#00befd';
                 ctx.shadowColor = '#00befd';
                 ctx.shadowBlur = 2;
+                console.log('hovered');
             });
         
             e.addEventListener('mouseout', () => {

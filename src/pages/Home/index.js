@@ -133,7 +133,7 @@ const Home = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Netanel Mazuz | Designer + Developer</title>
+        <title>Netanel Mazuz</title>
         <meta name="description" content="Portfolio of Netanel Mazuz – a multidisciplinary electrical engineer & developer with a focus on logic and circuit design." />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />

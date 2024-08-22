@@ -3,8 +3,10 @@ import classNames from 'classnames';
 import Heading from 'components/Heading';
 import prerender from 'utils/prerender';
 import DecoderText from 'components/DecoderText';
+import Text from 'components/Text';
 import { useScrollRestore, useRouteTransition } from 'hooks';
 import { tokens } from 'components/ThemeProvider/theme';
+import Icon from 'components/Icon';
 import { msToNum, numToMs } from 'utils/style';
 import './index.css';
 
@@ -43,14 +45,16 @@ const TimelineItem = ({ id, date, title, content }) => (
         </div>
         <div className="timeline__item-body" id={`${id}-ctrld`} role="region" aria-labelledby={id} aria-hidden="true">
             <div className="timeline__item-body-content">
-                <p className="timeline__item-p">{content}</p>
+                <Text secondary as="span">
+                    {content}
+                </Text>
             </div>
         </div>
     </div>
 );
 
 const Button = ({ onClick, action }) => (
-    <button className="btn" type="button" data-action={action.toLowerCase()} onClick={onClick}>
+    <button className="button" type="button" data-action={action.toLowerCase()} onClick={onClick}>
         {action}
     </button>
 );
@@ -148,7 +152,7 @@ const Timeline = ({ theme }) => {
         <div className="time-container">
             <div id="timeline" className="timeline" ref={timelineRef}>
             <Heading
-                className={classNames('contact__title', `contact__title--${status}`, {'contact__title--hidden': prerender, })}
+                className={classNames('timeline__title', `timeline__title--${status}`, {'timeline__title--hidden': prerender, })}
                 level={3}
                 as="h1"
                 style={getDelay(tokens.base.durationXS, initDelay, 0.7)}
@@ -159,11 +163,13 @@ const Timeline = ({ theme }) => {
                     delay={1000}
                 />
             </Heading>
-                <div className="btn-group">
+                <div className="button-group">
                     <Button onClick={() => {}} action="Expand All" />
                     <Button onClick={() => {}} action="Collapse All" />
                 </div>
                 <ArrowIcon />
+                <Icon icon={'chevronRight'} />
+                  
                 {timelineData[theme].map((item) => (
                     <TimelineItem
                         key={item.id}
