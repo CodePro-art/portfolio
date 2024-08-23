@@ -151,25 +151,24 @@ const Timeline = ({ theme }) => {
     return (
         <div className="time-container">
             <div id="timeline" className="timeline" ref={timelineRef}>
-            <Heading
-                className={classNames('timeline__title', `timeline__title--${status}`, {'timeline__title--hidden': prerender, })}
-                level={3}
-                as="h1"
-                style={getDelay(tokens.base.durationXS, initDelay, 0.7)}
-            >
-                <DecoderText
-                    text={title}
-                    start={status !== 'exited' && !prerender}
-                    delay={1000}
-                />
-            </Heading>
+                <Heading
+                    className={classNames('timeline__title', `timeline__title--${status}`, {'timeline__title--hidden': prerender, })}
+                    level={3}
+                    as="h1"
+                    style={getDelay(tokens.base.durationXS, initDelay, 0.7)}
+                >
+                    <DecoderText
+                        text={title}
+                        start={status !== 'exited' && !prerender}
+                        delay={1000}
+                    />
+                </Heading>
                 <div className="button-group">
                     <Button onClick={() => {}} action="Expand All" />
                     <Button onClick={() => {}} action="Collapse All" />
                 </div>
                 <ArrowIcon />
                 <Icon icon={'chevronRight'} />
-                  
                 {timelineData[theme].map((item) => (
                     <TimelineItem
                         key={item.id}

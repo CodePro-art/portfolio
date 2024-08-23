@@ -5,7 +5,9 @@ import './index.css';
 const CursorCanvas = () => {
     const canvasRef = useRef(null);
     const theme = useTheme();
-
+    document.addEventListener('DOMContentLoaded', () => {
+    
+    });
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
@@ -103,7 +105,7 @@ const CursorCanvas = () => {
         const handleThemeChange = () => {
             params.strokeColor = theme.themeId === 'dark' ? 'white' : 'black';
         };
-
+        
         const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon, .button');
 
         buttonsOrLinks.forEach(e => {
@@ -111,10 +113,9 @@ const CursorCanvas = () => {
                 // Update pointsNumber and adjust stroke properties
                 params.pointsNumber = 30;
                 params.widthFactor = 0.5;
-                params.strokeColor = theme.themeId === 'dark' ? '#4ed2fe' : 'white';
+                params.strokeColor = theme.themeId === 'dark' ? '#4ed2fe' : '#91e4ff';
                 ctx.shadowColor = '#00befd';
                 ctx.shadowBlur = 2;
-                console.log('hovered');
             });
         
             e.addEventListener('mouseout', () => {
@@ -139,7 +140,6 @@ const CursorCanvas = () => {
 
         // Listen for changes in the theme
         handleThemeChange();
-        
         setupCanvas();
         update(0);
 
