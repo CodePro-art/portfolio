@@ -3,64 +3,94 @@
         {
             "id": "item1",
             "date": "2023 - now",
-            "title": "Project Advisor | RoboPhysics",
-            "content": "Mentoring students in robotics and physics projects, ensuring eligibility for honors graduation, academic candidacy, and elite IDF unit selection. I promote independent work and interdisciplinary critical thinking."
+            "role": "Project Advisor",
+            "company": "RoboPhysics - Technion University",
+            "content": "I Mentor students in robotics and physics projects, ensuring eligibility for honors graduation, academic candidacy, and elite IDF unit selection. I promote independent work and interdisciplinary critical thinking. I started this role as a volunteer work and was offered a job as a teacher and advisor due to my leadership and mentoring skills.",
+            "soft_skills": ["Leadership", "Mentoring", "Interdisciplinary Critical Thinking"],
+            "hard_skills": ["Robotics", "Physics", "Project Management", "Academic Eligibility"]
         },
         {
             "id": "item2",
             "date": "2022 - 2023",
-            "title": "CAD Engineer | NVIDIA",
-            "content": "Coded CAD Python software for DFT teams, covering all stages of algorithm development from research and implementation to testing, debugging, and deployment, using CI/CD & Agile methodologies. Conducted design reviews, produced status reports & documentation, and provided technical support. Used Unix command-line tools such as RegEx, awk, SED, and SQL, coupled with Pandas library to process, manipulate, and analyze data."
+            "role": "CAD Engineer",
+            "company": "Nvidia",
+            "content": "I Coded CAD Python software for DFT teams, covering all stages of algorithm development from research and implementation to testing, debugging, and deployment, using CI/CD & Agile methodologies. Conducted design reviews, produced status reports & documentation, and provided technical support. Used Unix command-line tools such as RegEx, awk, SED, and SQL, coupled with Pandas library to process, manipulate, and analyze data.",
+            "soft_skills": ["Problem-Solving", "Organized", "Fast Learner"],
+            "hard_skills": ["CAD", "Python", "DFT", "CI/CD", "Unix", "SQL", "Pandas", "Agile Methodologies"]
         },
         {
             "id": "item3",
             "date": "2020 - 2022",
-            "title": "Automation Engineer | INUITIVE",
-            "content": "Programmed object-oriented C++ and Python automated tests for a computer vision chip. Integrated software for learning algorithms embedded in the chip, including CNN, SLAM, object detection, and face recognition. Employed diverse testing frameworks (unit, E2E, performance, and regression testing) with Visual Studio IDE. Managed projects using Jira, automated processes with Jenkins and Docker, and chip data retrieval via UART technology. Applied OOP, design patterns principles, and OpenCV library for image processing and testing."
+            "role": "Automation Engineer",
+            "company": "Inuitive",
+            "content": "I Programmed object-oriented C++ and Python automated tests for a computer vision chip. Integrated software for learning algorithms embedded in the chip, including CNN, SLAM, object detection, and face recognition. Employed diverse testing frameworks (unit, E2E, performance, and regression testing) with Visual Studio IDE. Managed projects using Jira, automated processes with Jenkins and Docker, and chip data retrieval via UART technology. Applied OOP, design patterns principles, and OpenCV library for image processing and testing.",
+            "soft_skills": ["Team Player", "Adaptability", "Taking Initiative"],
+            "hard_skills": ["Automation", "Computer Vision", "CNN", "SLAM", "Object Detection", "Face Recognition", "C++", "Python", "Jira", "Jenkins", "Docker", "OpenCV", "Object-Oriented Programming"]
         },
         {
             "id": "item4",
             "date": "2017 - 2020",
-            "title": "Private Tutor | Dean of Students at BGU",
-            "content": "Provided tutoring for students in various subjects, including Linear Algebra, C Programming, Physics, and Introduction to Signal Processing. Assisted students in understanding complex concepts, preparing for exams, and improving their academic performance. Developed personalized study plans and resources to meet individual learning needs."
+            "role": "Private Tutor",
+            "company": "Dean of Students at Ben-Gurion University",
+            "content": "I Provided tutoring for students in various subjects, including Linear Algebra, C Programming, Physics, and Introduction to Signal Processing. Assisted students in understanding complex concepts, preparing for exams, and improving their academic performance. Developed personalized study plans and resources to meet individual learning needs.",
+            "soft_skills": ["Tutoring", "Study Plans", "Resource Development"],
+            "hard_skills": ["Linear Algebra", "C Programming", "Physics", "Signal Processing"]
         }
     ],
     "education": [
         {
             "id": "item1",
             "date": "2024",
-            "title": "AI Development Training | Technion",
-            "content": "Focused on computer vision and NLP, covering math & stats foundations, optimization techniques, learning architectures, and implementation of building blocks. Built AI projects prioritizing use-case-oriented thinking. Topics: Un/Supervised Learning, Big Data, EDA, Transformer Models, Deep Learning concepts, etc. Tools: Jupyter, NumPy, SciPy, Seaborn, Pandas, Scikit-learn, TensorFlow, Pytorch, Keras, CUDA, etc."
+            "role": "AI Development Training",
+            "company": "Technion University",
+            "content": "A 6-month intensive AI training, focused on computer vision and NLP, covering mathematics & statistics foundations, optimization techniques, learning architectures, and implementation of building blocks. I built AI projects prioritizing use-case-oriented thinking while collaborating with peers. Topics: Un/Supervised Learning, Big Data, EDA, Transformer Models, Deep Learning concepts, etc. Tools: Jupyter, NumPy, SciPy, Seaborn, Pandas, Scikit-learn, TensorFlow, Pytorch, Keras, CUDA, etc.",
+            "soft_skills": ["Work Prioritization", "Use-Case Thinking", "Creativity",  "Problem-Solving"],
+            "hard_skills": ["Computer Vision", "NLP", "Deep Learning", "EDA", "Jupyter", "NumPy", "SciPy", "Seaborn", "Pandas", "Scikit-learn", "TensorFlow", "Pytorch", "Keras", "CUDA"]
         },
         {
             "id": "item2",
             "date": "2020",
-            "title": "Full-Stack Development Bootcamp | Appleseeds Academy",
-            "content": "Created dynamic, responsive websites, user interfaces, and robust, scalable applications by applying full-stack tools, frameworks, and industry best practices. Frontend Tools: HTML, CSS, JavaScript, Python, React, jQuery, npm, and Sass. Backend Tools: NodeJS, ExpressJS, SQL, NoSQL, MongoDB, Postman, and RESTful API. Projects: Minecraft Game, To Do List, Dice Game."
+            "role": "Full-Stack Development Bootcamp",
+            "company": "Appleseeds Academy",
+            "content": "Created dynamic, responsive websites, user interfaces, and robust, scalable applications by applying full-stack tools, frameworks, and industry best practices. Frontend Tools: HTML, CSS, JavaScript, Python, React, jQuery, npm, and Sass. Backend Tools: NodeJS, ExpressJS, SQL, NoSQL, MongoDB, Postman, and RESTful API. Projects: Minecraft Game, To Do List, Dice Game.",
+            "soft_skills": ["Full-Stack Development", "Responsive Websites", "User Interfaces", "Scalable Applications"],
+            "hard_skills": ["HTML", "CSS", "JavaScript", "Python", "React", "jQuery", "npm", "Sass", "NodeJS", "ExpressJS", "SQL", "NoSQL", "MongoDB", "Postman", "RESTful API"]
         },
         {
             "id": "item3",
             "date": "2015 - 2020",
-            "title": "B.Sc. in Electrical & Computer Engineering | Ben-Gurion University",
-            "content": "GPA: 78. Majored in VLSI, computers, and signal processing. Final Project: Arduino-Based IoT Water Nitrate Pollution Monitoring System for Agriculture. Notable Project: Blind source separation MATLAB project, de-noising time-series audio signals."
+            "role": "B.Sc. in Electrical & Computer Engineering ",
+            "company":"Ben-Gurion University",
+            "content": "GPA: 78. Majored in VLSI, computers, and signal processing. Final Project: Arduino-Based IoT Water Nitrate Pollution Monitoring System for Agriculture. Notable Project: Blind source separation MATLAB project, de-noising time-series audio signals.",
+            "soft_skills": ["Adaptability", "Problem-Solving", "Critical Thinking", "Time Management"],
+            "hard_skills": ["VLSI", "Arduino", "IoT", "Blind Source Separation", "MATLAB", "Reading & Understanding Specifications", "Cadence", "Xilinx", "VHDL", "Verilog", "Circuit Design", "Signal Processing", "Digital Systems", "Analog Systems"]
         },
         {
             "id": "item4",
             "date": "2016 - 2017",
-            "title": "Formula Student | BGU Racing Team",
-            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+            "role": "Formula Student",
+            "company": "BGU Racing Team",
+            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints.",
+            "soft_skills": ["Communication", "Teamwork", "Physical Experiments", "Integration"],
+            "hard_skills": ["Board Design", "Power Consumption", "Heat Dissipation", "Cost Constraints"]
         },
         {
             "id": "item5",
             "date": "2010 - 2013",
-            "title": "Formula Student | BGU Racing Team",
-            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+            "role": "Squad Commander",
+            "company": "Israeli Defense Forces",
+            "content": "Full Service as a squad commander, where I led and trained over 300 new recruits, successfully enforcing a rigorous schedule and maintaining high standards of discipline and performance.",
+            "soft_skills": ["Leadership", "Training", "Discipline", "Performance"],
+            "hard_skills": ["Squad Commander", "Training", "Discipline", "Performance"]
         },
         {
             "id": "item6",
             "date": "2007 - 2010",
-            "title": "valedictorian Student | BGU Racing Team",
-            "content": "Participated in developing an electric racing car, designing & integrating BMS according to specifications under challenging power consumption, heat dissipation, space, cost, and performance constraints."
+            "role": "valedictorian Student",
+            "company": "New High-School Herzliya",
+            "content": "Graduated summa cum laude, majoring in Biology & Health Systems, with recognition for excellence in social leadership.",
+            "soft_skills": ["Determination", "Hard Work", "Social Leadership"],
+            "hard_skills": ["Biology", "Health Systems", "Mathematical Excellence"]
         }
     ]
 }

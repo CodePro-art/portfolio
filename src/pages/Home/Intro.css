@@ -12,7 +12,8 @@
   width: 100%;
   position: relative;
   top: calc(var(--spaceL) * -1);
-
+  user-select: none;
+  
   @media (--mediaDesktop) {
     & {
       max-width: 920px;

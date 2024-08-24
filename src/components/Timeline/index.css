@@ -26,6 +26,10 @@ a {
 	-webkit-tap-highlight-color: transparent;
 }
 
+.timeline__title-text {
+	font-size: 1.5em;
+	font-weight: bold;
+}
 .button-group {
 	display: flex;
 	gap: 0.4em;
@@ -35,6 +39,14 @@ a {
 .time-container {
 	padding: 20px 50px;
     width: 40vw;
+}
+
+.time-container.work-experience {
+    animation: fadeInRight 1s ease-out;
+}
+
+.time-container.education {
+    animation: fadeInLeft 1s ease-out;
 }
 
 .timeline {
@@ -67,7 +79,7 @@ a {
 .timeline__arrow-icon {
 	display: block;
 	pointer-events: none;
-	transform: rotate(-90deg);
+	/* transform: rotate(0deg); */
 	transition: transform var(--trans-dur) var(--trans-timing);
 	width: 100%;
 	height: auto;
@@ -75,6 +87,7 @@ a {
 .timeline__date {
 	font-size: 0.833em;
 	line-height: 2.4;
+	color: #909090;
 }
 .timeline__dot {
 	background-color: currentColor;
@@ -132,6 +145,22 @@ a {
 		opacity var(--trans-dur) var(--trans-timing),
 		visibility var(--trans-dur) steps(1,end);
 }
+.timeline__item-body-skills {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	transition:
+		opacity var(--trans-dur) var(--trans-timing),
+		visibility var(--trans-dur) steps(1,end);
+}
+.timeline__item-body-skills > * {
+	background-color: hsl(var(--hue),10%,50%,0.2);
+	border-radius: 0.25em;
+	margin-inline-end: 0.5em;
+	padding: 0.25em 0.5em;
+	min-width: 49.2%;
+	min-height: fit-content;
+}
 .timeline__meta {
 	width: 100%;
 }
@@ -149,5 +178,36 @@ a {
 	transition-delay: var(--trans-dur), 0s;
 }
 .timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
-	transform: rotate(0);
+	transform: rotate(90deg);
 }
+
+.skill-link {
+	color: inherit;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*.timeline__item {
+    opacity: 0; 
+    animation-fill-mode: forwards; 
+} */
