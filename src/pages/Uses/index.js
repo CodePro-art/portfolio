@@ -149,50 +149,56 @@ const Uses = () => {
             <ProjectTextRow stretch width="m">
               <ProjectSectionHeading>Hardware</ProjectSectionHeading>
               <ProjectSectionText style={{ marginBottom: 24 }}>
-                I frequently work in the 3D and recording space, so my setup has had to
-                keep up with it. This is the setup I use for my work, from design,
-                development, modeling, to{' '}
-                <Link href="https://youtube.codyb.co">
+                I frequently work in 3D and recording environments and enjoy playing video games,
+                so my setup has evolved to meet these demands. This is the setup I rely on for 
+                everything from design, development, and modeling to{' '}
+                <Link href="https://www.youtube.com/@netanelmazuz">
                   playing, recording, and mixing music
                 </Link>
-                .
+                . I’m proud of the time and effort I’ve invested in building and optimizing it.
               </ProjectSectionText>
               <Table>
                 <TableRow>
                   <TableCell>
                     <strong>CPU</strong>
                   </TableCell>
-                  <TableCell>AMD Ryzen 7 3800x</TableCell>
+                  <TableCell>AMD Ryzen 9 5900X 12-Core Processor </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
                     <strong>GPU</strong>
                   </TableCell>
-                  <TableCell>NVIDIA RTX 2070</TableCell>
+                  <TableCell>AMD Radeon RX 7900 XTX</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <strong>Monitor</strong>
+                  </TableCell>
+                  <TableCell>49" Odyssey G9 Gaming Monitor</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
                     <strong>Keyboard</strong>
                   </TableCell>
-                  <TableCell>Keychron K8</TableCell>
+                  <TableCell>Logitech MX Keys Combo</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
                     <strong>Mouse</strong>
                   </TableCell>
-                  <TableCell>Razer DeathAdder Elite</TableCell>
+                  <TableCell>Logitech MX Master 3S</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
                     <strong>Headphones</strong>
                   </TableCell>
-                  <TableCell>Beyderdynamic 770 Pro</TableCell>
+                  <TableCell>Sony MDR-1000X</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
                     <strong>Microphone</strong>
                   </TableCell>
-                  <TableCell>Lewitt LCT 440 Pure</TableCell>
+                  <TableCell>RØDE NT-USB+</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>
