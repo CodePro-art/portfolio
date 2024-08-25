@@ -149,6 +149,8 @@ a {
 }
 .timeline__item-body-content {
 	background-color: hsl(var(--hue),10%,50%,0.2);
+	border-radius: 5px;
+	border: 1px solid hsl(var(--hue),10%,50%,1);
     text-overflow: clip;
 	opacity: 0;
 	padding: 1em;

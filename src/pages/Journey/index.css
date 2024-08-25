@@ -7,6 +7,7 @@ button {
 	padding-top: 3rem;
 	margin: 0 0 3rem;
 	text-align: center;
+	z-index: 128;
 }
 
 .journey__title-text {
@@ -18,6 +19,7 @@ button {
 	padding-left: 100px;
 	display: flex;
 	flex-direction:row;
+	z-index: 128;
 }
 
 .journey-wrapper {
