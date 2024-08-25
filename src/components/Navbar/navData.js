@@ -25,6 +25,11 @@ export const navLinks = [
 
 export const socialLinks = [
   {
+    label: 'Youtube',
+    url: 'https://www.youtube.com/@netanelmazuz',
+    icon: 'youtube',
+  },
+  {
     label: 'Twitter',
     url: 'https://twitter.com/netazuz',
     icon: 'twitter',

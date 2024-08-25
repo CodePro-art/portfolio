@@ -15,6 +15,8 @@ import { ReactComponent as Play } from 'assets/icons/play.svg';
 import { ReactComponent as Send } from 'assets/icons/send.svg';
 import { ReactComponent as Twitter } from 'assets/icons/twitter.svg';
 import { ReactComponent as Facebook } from 'assets/icons/facebook.svg';
+import { ReactComponent as Youtube } from 'assets/icons/youtube.svg';
+
 import './index.css';
 
 export const icons = {
@@ -34,6 +36,7 @@ export const icons = {
   send: Send,
   twitter: Twitter,
   facebook: Facebook,
+  youtube: Youtube,
 };
 
 const Icon = ({ icon, style, className, ...rest }) => {
