@@ -30,11 +30,29 @@
         {
             "id": "item4",
             "date": "2017 - 2020",
-            "role": "Private Tutor",
-            "company": "Dean of Students at Ben-Gurion University",
+            "role": "Academic Tutor",
+            "company": "Ben-Gurion University",
             "content": "I Provided tutoring for students in various subjects, including Linear Algebra, C Programming, Physics, and Introduction to Signal Processing. Assisted students in understanding complex concepts, preparing for exams, and improving their academic performance. Developed personalized study plans and resources to meet individual learning needs.",
             "soft_skills": ["Tutoring", "Study Plans", "Resource Development"],
             "hard_skills": ["Linear Algebra", "C Programming", "Physics", "Signal Processing"]
+        },
+        {
+            "id": "item5",
+            "date": "2013 - 2017",
+            "role": "Banquet Server",
+            "company": "Ocean Banquet Hall - Tel Aviv",
+            "content": "Delivered high-quality service at a premier event venue, catering to a wide range of private and corporate events. Managed multiple tables simultaneously during large-scale events, ensuring timely and accurate service. Coordinated closely with the kitchen and event staff to meet the specific needs of each event, contributing to the seamless execution of weddings, conferences, and other high-profile gatherings. Consistently received positive feedback from clients for professionalism, attention to detail, and ability to handle high-pressure situations with poise.",
+            "soft_skills": ["Customer Service", "Event Coordination", "Communication", "Time Management"],
+            "hard_skills": ["POS Systems", "Event Service Protocols", "Food and Beverage Handling", "Large-Scale Event Management"]
+        },
+        {
+            "id": "item6",
+            "date": "2005 - 2010",
+            "role": "Newspaper Delivery",
+            "company": "Kol Ha'ir - Herzliya",
+            "content": "Managed the timely and efficient delivery of daily newspapers to a broad customer base, ensuring consistent customer satisfaction and high delivery accuracy. Developed and optimized delivery routes to minimize time and increase coverage, leading to a 15% improvement in delivery efficiency. Built strong relationships with customers, addressing any delivery concerns promptly and professionally. Played a key role in maintaining the reputation of the newspaper through reliable and consistent service.",
+            "soft_skills": ["Resilience", "Customer Relations", "Problem-Solving", "Route Optimization"],
+            "hard_skills": ["Logistics Management", "Route Planning", "Customer Service", "Time Efficiency"]
         }
     ],
     "education": [

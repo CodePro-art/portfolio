@@ -29,14 +29,24 @@ a {
 .timeline__title-text {
 	font-size: 1.5em;
 	font-weight: bold;
+	transition: .3s;
+	user-select: none;
+
+	&:hover {
+		color: white;
+		text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60073, 0 0 5px #0051e6, 0 0 5px #0051e6, 0 0 10px #0051e6, 0 0 10px #0051e6;
+	}
 }
+
 .button-group {
+	padding-top: 3rem;
 	display: flex;
 	gap: 0.4em;
 	margin-bottom: 1.5em;
 }
 
 .time-container {
+	padding-top: 3rem;
 	padding: 20px 50px;
     width: 40vw;
 }
@@ -88,6 +98,10 @@ a {
 	font-size: 0.833em;
 	line-height: 2.4;
 	color: #909090;
+	transition: .33s;
+	&:hover {
+		color: rgb(197, 197, 197);
+	}
 }
 .timeline__dot {
 	background-color: currentColor;
@@ -167,6 +181,16 @@ a {
 .timeline__title {
 	font-size: 1.5em;
 	line-height: 1.333;
+	transition: .35s;
+	&:hover {
+		color: rgb(156, 156, 156);
+	}
+}
+.timeline__company {
+	transition: .35s;
+	&:hover {
+		color: rgb(156, 156, 156);
+	}
 }
 /* Expanded state */
 .timeline__item-body--expanded {

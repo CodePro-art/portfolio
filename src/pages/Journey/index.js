@@ -39,12 +39,13 @@ const Journey = () => {
               text="My Journey"
               start={status !== 'exited' && !prerender}
               delay={300}
+              className={'journey__title-text'}
             />
           </Heading>
         <div className="timeline-container">
           <Timeline theme={"education"}/>
           <Timeline theme={"work-experience"}/>
-        </div>`
+        </div>
 
       </div>
       </Section>
