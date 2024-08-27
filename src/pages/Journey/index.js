@@ -12,6 +12,7 @@ import Footer from 'components/Footer';
 import { Button } from 'components/Button';
 import Link from 'components/Link';
 import Bg from './bg';
+import useInViewport from 'hooks/useInViewport'; // Import your custom hook
 import './index.css';
 
 const initDelay = tokens.base.durationS;
@@ -37,12 +38,17 @@ const Journey = () => {
   };
 
   const intro = useRef();
+  const timelineRef = useRef();
+  const resumeRef = useRef();
+
+  const isTimelineVisible = useInViewport(timelineRef, false, { threshold: 0.1 });
+  const isResumeVisible = useInViewport(resumeRef, false, { threshold: 0.1 });
 
   return (
     <div className="journey">
       <Helmet>
         <title>Journey | Netanel Mazuz</title>
-        <meta name="description" content="Find out more about my personal professional journey and lean more about me." />
+        <meta name="description" content="Find out more about my personal professional journey and learn more about me." />
       </Helmet>
       <Bg id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
       <div className="journey-wrapper">
@@ -60,24 +66,30 @@ const Journey = () => {
               />
           </Heading>
 
-        <div className="timeline-container">
+        <div
+          className={classNames('timeline-container', { 'timeline-container--visible': isTimelineVisible })}
+          ref={timelineRef}
+        >
           <Timeline theme={"education"}/>
           <Timeline theme={"work-experience"}/>
         </div>
 
-        <div className="resume-container">
-        <Heading
-            className={classNames('journey__title', 'cv_pdf__title',`journey__title--${status}`, {'journey__title--hidden': prerender, })}
-            level={2}
-            as="h1"
-            style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
-            >
-            <DecoderText
-              text="Resume"
-              start={status !== 'exited' && !prerender}
-              delay={300}
-              className={'journey__title-text'}
-              />
+        <div
+          className={classNames('resume-container', { 'resume-container--visible': isResumeVisible })}
+          ref={resumeRef}
+        >
+          <Heading
+              className={classNames('journey__title', 'cv_pdf__title', `journey__title--${status}`, {'journey__title--hidden': prerender, })}
+              level={2}
+              as="h1"
+              style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
+              >
+              <DecoderText
+                text="Resume"
+                start={status !== 'exited' && !prerender}
+                delay={300}
+                className={'journey__title-text'}
+                />
           </Heading>
           <Link secondary className="to_online_cv" href="https://interactivecv.netlify.app/" target="_blank">
             Interactive CV    

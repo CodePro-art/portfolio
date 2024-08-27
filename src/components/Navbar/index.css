@@ -73,7 +73,7 @@
 
 .navbar__nav-link {
   padding: var(--spaceM);
-  color: rgb(var(--rgbText) / 0.8);
+  color: rgb(var(--rgbText) / 0.5);
   font-weight: var(--fontWeightMedium);
   font-size: var(--navbarNavFontSize);
   text-decoration: none;
@@ -91,10 +91,11 @@
   &::after {
     content: '';
     position: absolute;
-    top: 50%;
+    width: 77%;
+    top: 75%;
     right: var(--spaceS);
     left: var(--spaceS);
-    height: 4px;
+    height: 2px;
     background: rgb(var(--rgbAccent));
     transform: scaleX(0) translateY(-2px);
     transform-origin: right;
@@ -217,11 +218,13 @@
 }
 
 .navbar__mobile-nav-link {
+  
   width: 100%;
   font-size: var(--navbarNavFontSize);
   text-align: center;
   text-decoration: none;
-  color: var(--colorTextBody);
+  /* color: var(--colorTextBody); */
+  color: rgb(var(--rgbText) / 0.5);
   padding: var(--spaceL);
   opacity: 0;
   transition-property: opacity;
@@ -252,10 +255,10 @@
   &::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 75%;
     right: var(--space3XL);
     left: var(--space3XL);
-    height: 4px;
+    height: 3px;
     background: rgb(var(--rgbAccent));
     transform: scaleX(0) translateY(-1px);
     transform-origin: right;
