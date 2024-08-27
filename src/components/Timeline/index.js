@@ -8,6 +8,7 @@ import { useScrollRestore, useRouteTransition } from 'hooks';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Button } from 'components/Button';
 import Icon from 'components/Icon';
+import Link from 'components/Link';
 import { msToNum, numToMs } from 'utils/style';
 import './index.css';
 
@@ -38,15 +39,19 @@ const TimelineItem = ({ id, date, role, company, content, soft_skills, hard_skil
                         <strong>Soft Skills:</strong><br />
                         <ul style={{ margin: 0, paddingLeft: '20px' }}>
                             {soft_skills.map((skill, index) => (
-                                <li key={index}><a className="skill-link" href="#">{skill}</a></li>
+                                <li key={index}>{skill}</li>
                             ))}
                         </ul>
                     </Text>
                     <Text secondary as="span">
                         <strong>Hard Skills:</strong><br />
                         <ul style={{ margin: 0, paddingLeft: '20px' }}>
-                            {hard_skills.map((skill, index) => (
-                                <li key={index}><a className="skill-link" href="#">{skill}</a></li>
+                            {Object.keys(hard_skills).map((skill, index) => (
+                                <li key={index}>
+                                    <Link secondary className="skill__link" href="https://interactivecv.netlify.app/" target="_blank">
+                                        {skill}
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
                     </Text>

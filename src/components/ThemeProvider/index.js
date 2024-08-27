@@ -39,7 +39,6 @@ const ThemeProvider = ({
   const toggle = document.getElementsByClassName('theme-toggle')[0];
   if (toggle) {
     const position = toggle.getBoundingClientRect();
-    console.log(position); 
     const x = position.x + (position.width / 2); 
     const y = position.y + (position.height / 2); 
     document.styleSheets[0].insertRule(`@keyframes grow 

@@ -10,6 +10,7 @@ import { msToNum, numToMs } from 'utils/style';
 import Timeline from 'components/Timeline';
 import Footer from 'components/Footer';
 import { Button } from 'components/Button';
+import Link from 'components/Link';
 import Bg from './bg';
 import './index.css';
 
@@ -25,6 +26,16 @@ const Journey = () => {
   const FILE_ID = '1vcZ208YZRwB1GZZJfVP4bR58NuOZq5Jn';
   useScrollRestore();
 
+  const handleDownload = () => {
+    const fileUrl = '/pdfs/cv.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', 'Netanel Mazuz.pdf'); // Optional: specify the filename
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   const intro = useRef();
 
   return (
@@ -33,12 +44,7 @@ const Journey = () => {
         <title>Journey | Netanel Mazuz</title>
         <meta name="description" content="Find out more about my personal professional journey and lean more about me." />
       </Helmet>
-      <Bg
-        id="intro"
-        sectionRef={intro}
-        disciplines={null}
-        scrollIndicatorHidden={null}
-      />
+      <Bg id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
       <div className="journey-wrapper">
           <Heading
             className={classNames('journey__title', `journey__title--${status}`, {'journey__title--hidden': prerender, })}
@@ -61,7 +67,7 @@ const Journey = () => {
 
         <div className="resume-container">
         <Heading
-            className={classNames('journey__title', `journey__title--${status}`, {'journey__title--hidden': prerender, })}
+            className={classNames('journey__title', 'cv_pdf__title',`journey__title--${status}`, {'journey__title--hidden': prerender, })}
             level={2}
             as="h1"
             style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
@@ -73,6 +79,9 @@ const Journey = () => {
               className={'journey__title-text'}
               />
           </Heading>
+          <Link secondary className="to_online_cv" href="/interactive-cv" target="_blank">
+            Interactive CV    
+          </Link>
           <iframe 
               className="resume-pdf"
               src={`https://drive.google.com/file/d/${FILE_ID}/preview`}
@@ -81,59 +90,11 @@ const Journey = () => {
               allow="autoplay"
               title="Netanel Mazuz CV PDF"
           />
-          <Button className="download-button" onClick={() => {}}>Download</Button>
+          <Button className="download-button" onClick={handleDownload}>Download</Button>
         </div>
       </div>
       <Footer />
     </div>
-      // <Transition
-      //   // key={theme.themeId}
-      //   appear={!prerender}
-      //   in={!prerender}
-      //   timeout={3000}
-      //   onEnter={reflow}
-      // >
-      //   {status => (
-      //     <Fragment>
-      //       {!prerender && (
-      //         <Suspense fallback={null}>
-      //           <DisplacementSphere />
-      //         </Suspense>
-      //       )}
-      //       <Helmet>
-      //         <title>Journey | Netanel Mazuz</title>
-      //         <meta name="description" content="Find out more about my personal professional journey and lean more about me." />
-      //       </Helmet>
-            
-            
-            // <div className="journey-wrapper">
-            //     <Heading
-            //       className={classNames('journey__title', `journey__title--${status}`, {'journey__title--hidden': prerender, })}
-            //       level={2}
-            //       as="h1"
-            //       style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
-            //       >
-            //       <DecoderText
-            //         text="My Journey"
-            //         start={status !== 'exited' && !prerender}
-            //         delay={300}
-            //         className={'journey__title-text'}
-            //         />
-            //     </Heading>
-            //   <div className="timeline-container">
-            //     <Timeline theme={"education"}/>
-            //     <Timeline theme={"work-experience"}/>
-                
-            //   </div>
-              
-            // </div>
-            
-      //       <Footer />
-            
-      //     </Fragment>
-      //   )}
-      
-      // </Transition>
   );
 };
 

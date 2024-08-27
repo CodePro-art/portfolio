@@ -207,9 +207,11 @@ a {
 	transform: rotate(90deg);
 }
 
-.skill-link {
+.skill__link {
 	color: inherit;
+	display: inline-flex;
 }
+
 
 @keyframes fadeInLeft {
     from {

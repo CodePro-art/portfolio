@@ -7,6 +7,10 @@
 	z-index: 128;
 }
 
+.cv_pdf__title {
+	margin: 0 0 1rem;
+}
+
 .journey__title-text {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -40,4 +44,9 @@
 	margin-top: 15px;
 	max-width: 270px;
 	align-self: center;
+}
+
+.to_online_cv {
+	align-self: center;
+	margin-bottom: 25px;
 }
