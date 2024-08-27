@@ -48,7 +48,7 @@ const TimelineItem = ({ id, date, role, company, content, soft_skills, hard_skil
                         <ul style={{ margin: 0, paddingLeft: '20px' }}>
                             {Object.keys(hard_skills).map((skill, index) => (
                                 <li key={index}>
-                                    <Link secondary className="skill__link" href="https://interactivecv.netlify.app/" target="_blank">
+                                    <Link secondary className="skill__link" href={hard_skills[skill]} target="_blank">
                                         {skill}
                                     </Link>
                                 </li>

@@ -79,7 +79,7 @@ const Journey = () => {
               className={'journey__title-text'}
               />
           </Heading>
-          <Link secondary className="to_online_cv" href="/interactive-cv" target="_blank">
+          <Link secondary className="to_online_cv" href="https://interactivecv.netlify.app/" target="_blank">
             Interactive CV    
           </Link>
           <iframe 
