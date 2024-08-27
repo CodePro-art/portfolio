@@ -43,15 +43,14 @@ import deviceModelsLogo from 'assets/device-models-logo.png';
 import deviceModelsLogoLarge from 'assets/device-models-logo-large.png';
 import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.png';
 
-const title = 'Hackathon – Accessibility project';
+const title = 'Device Models';
 const description =
   'Design and development of both server and client sides of a children’s stories translation website.';
 const roles = [
-  'Leading a team of 5 developers',
-  'Organized, and enforced tight schedule',
   'Creative Direction',
   'UX and UI Design',
   'Front End & App Development',
+  'Motion Design',
 ];
 
 const ProjectDM = () => {
@@ -99,26 +98,22 @@ const ProjectDM = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The Problem</ProjectSectionHeading>
             <ProjectSectionText>
-              Many sites these days are not equipped well enough to reach their maximum
-              potential in means of reachability, especially in Israel. The diversity of
-              people, languages, ethnicities, socioeconomic and health backgrounds greatly
-              affects the audiences and entries each site gets per day. For Instance, a
-              site for cooking recipes written in hebrew is missing a large audience of
-              native arabic, russian and amharic speakers. Therefore, I joined a team of
-              developers and participated the accessibility hackathon endorsed by
-              Appleseeds Academy.
+              After moving to Figma as my weapon of choice for UI design in 2019, I found my 
+              3D workflow for design assets cumbersome and repetitive. Not every project would
+              ultimately leverage real-time 3D in the final product — only still images.
             </ProjectSectionText>
             <ProjectSectionText>
-              After complimenting <Link href="/uses">my arsenal</Link> with React, NodeJS,
+              Later in 2019, designers grew increasingly interested in 3D and immersive art direction.
+              This tension became commonplace yet only done through a niche collection of creators.
+              {/* After complimenting <Link href="/uses">my arsenal</Link> with React, NodeJS,
               CSS and JavaScript as my weapons of choice for UI design in the Hackathon
               project, we decided to use puppeteer for scraping data, AWS for server side
-              and translation.
+              and translation. */}
             </ProjectSectionText>
             <ProjectSectionText>
-              Throughout the project, I led and instructed my team to use Git properly,
-              each member had to learn how to open new branch, commit his/her changes and
-              send merge request so that I can approve the changes and handle any
-              conflicts if necessary.
+            Tools like <Link href="https://r3f.docs.pmnd.rs/getting-started/introduction">@react-three/fiber</Link> emerged to better the experience on the development
+            side, but there was no equivalent for designers. With Figma already dominating the
+            design space, I found this to be as simple as a plugin
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
