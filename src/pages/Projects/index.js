@@ -52,8 +52,9 @@ const Projects = () => {
               className={'projects__title-text'}
               />
           </Heading>
+          <TabsMenu /> 
+          
           <div className={classNames('menu-container', { 'menu-container--visible': isMenuVisible })} ref={menuRef}>
-            <TabsMenu tabs={['List', 'Tags']} activeTab="List" setActiveTab={null} /> 
           </div>
       </div>
       <Footer />

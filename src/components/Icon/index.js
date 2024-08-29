@@ -16,12 +16,34 @@ import { ReactComponent as Send } from 'assets/icons/send.svg';
 import { ReactComponent as Twitter } from 'assets/icons/twitter.svg';
 import { ReactComponent as Facebook } from 'assets/icons/facebook.svg';
 import { ReactComponent as Youtube } from 'assets/icons/youtube.svg';
+import { ReactComponent as Code } from 'assets/icons/code.svg';
+import { ReactComponent as Database } from 'assets/icons/database.svg';
+import { ReactComponent as Settings } from 'assets/icons/settings.svg';
+import { ReactComponent as Hardware } from 'assets/icons/microchip.svg';
+import { ReactComponent as Network } from 'assets/icons/network-wired.svg';
+import { ReactComponent as Server } from 'assets/icons/server.svg';
+import { ReactComponent as Methodologies } from 'assets/icons/methodologies.svg';
+import { ReactComponent as VersionControl } from 'assets/icons/version-control.svg';
+import { ReactComponent as Ai } from 'assets/icons/ai.svg';
+import { ReactComponent as Backend } from 'assets/icons/backend.svg';
+
+
 
 import './index.css';
 
 export const icons = {
   arrowRight: ArrowRight,
   chevronRight: ChevronRight,
+  code: Code,
+  database: Database,
+  hardware: Hardware,
+  network: Network,
+  server: Server,
+  settings: Settings,
+  ai: Ai,
+  backend: Backend,
+  methodologies: Methodologies,
+  versionControl: VersionControl,
   close: Close,
   dribbble: Dribbble,
   email: Email,
