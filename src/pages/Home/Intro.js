@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useState, Fragment } from 'react';
-import { ReactComponent as ArrowDown } from 'assets/arrow-down.svg';
+import { ReactComponent as ArrowDown } from 'assets/icons/arrow-down.svg';
 import { useInterval, usePrevious, useWindowSize } from 'hooks';
 import { TransitionGroup, Transition } from 'react-transition-group';
 import classNames from 'classnames';

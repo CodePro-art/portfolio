@@ -19,7 +19,7 @@ import { usePrefersReducedMotion, useInViewport } from 'hooks';
 import { cleanScene, cleanRenderer, removeLights } from 'utils/three';
 import { rgbToThreeColor } from 'utils/style';
 import { useTheme } from 'components/ThemeProvider';
-import portraitModelPath from 'assets/portrait.glb';
+import portraitModelPath from 'assets/glbs/portrait.glb';
 import './index.css';
 
 RectAreaLightUniformsLib.init();

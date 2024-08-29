@@ -15,7 +15,7 @@ import Link from 'components/Link';
 import Footer from 'components/Footer';
 import { useScrollRestore } from 'hooks';
 import prerender from 'utils/prerender';
-import usesBackground from 'assets/uses-background.mp4';
+import usesBackground from 'assets/mp4/uses-background.mp4';
 import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
 import './index.css';
 

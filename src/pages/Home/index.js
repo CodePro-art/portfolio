@@ -12,9 +12,9 @@ import deviceModelsTexturePlaceholder from 'assets/imgs/device-models-phone-plac
 import dttTexture from 'assets/imgs/dtt.jpg';
 import dttTextureLarge from 'assets/imgs/dtt-large.jpg';
 import dttTexturePlaceholder from 'assets/imgs/dtt-placeholder.jpg';
-import iphone11 from 'assets/iphone-11.glb';
-import macbookPro from 'assets/macbook-pro.glb';
-import portrait from 'assets/portrait.glb';
+import iphone11 from 'assets/glbs/iphone-11.glb';
+import macbookPro from 'assets/glbs/macbook-pro.glb';
+import portrait from 'assets/glbs/portrait.glb';
 import './index.css';
 
 const disciplines = ['AI Developer', 'Creator', 'Designer', 'Teacher', 'Artist'];

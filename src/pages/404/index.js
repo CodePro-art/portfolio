@@ -7,8 +7,8 @@ import DecoderText from 'components/DecoderText';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import { reflow } from 'utils/transition';
-import notFound from 'assets/notfound.mp4';
-import notFoundPoster from 'assets/notfound.jpg';
+import notFound from 'assets/mp4/notfound.mp4';
+import notFoundPoster from 'assets/imgs/notfound.jpg';
 import './index.css';
 
 const NotFound = () => (
