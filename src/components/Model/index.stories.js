@@ -1,12 +1,12 @@
 import Model from 'components/Model';
 import { StoryContainer } from '../../../.storybook/StoryContainer';
 import deviceModels from './deviceModels';
-import phoneTexture from 'assets/device-models.jpg';
-import phoneTextureLarge from 'assets/device-models-large.jpg';
-import phoneTexturePlaceholder from 'assets/device-models-placeholder.jpg';
-import laptopTexture from 'assets/dtt.jpg';
-import laptopTextureLarge from 'assets/dtt-large.jpg';
-import laptopTexturePlaceholder from 'assets/dtt-placeholder.jpg';
+import phoneTexture from 'assets/imgs/device-models.jpg';
+import phoneTextureLarge from 'assets/imgs/device-models-large.jpg';
+import phoneTexturePlaceholder from 'assets/imgs/device-models-placeholder.jpg';
+import laptopTexture from 'assets/imgs/dtt.jpg';
+import laptopTextureLarge from 'assets/imgs/dtt-large.jpg';
+import laptopTexturePlaceholder from 'assets/imgs/dtt-placeholder.jpg';
 
 export default {
   title: 'Model',

@@ -163,7 +163,7 @@ const Timeline = ({ theme }) => {
 
     const timelineRef = useRef(null);
     const ctlRef = useRef(null);
-    var timelineData = require('./timeline.json');
+    var timelineData = require('assets/jsons/timeline.json');
 
     let title = theme === "education" ? "Education" : "Work Experience";
 
