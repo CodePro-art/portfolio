@@ -1,58 +1,90 @@
-[
-    {
-        "imgSrc": "/src/img/minecraft1.jpg",
-        "title": "2D Minecraft",
-        "subtitle": "2 Dimensional Minecraft",
-        "description": "Dive into an epic single-player adventure of 2D Minecraft! Explore infinite worlds, build anything you can imagine, and conquer unique challenges. Unleash your creativity, craft legendary items, and survive in a world of endless possibilities. Get ready to embark on your ultimate journey today!",
-        "gitLink": "#",
-        "siteLink": "https://nm-minecraft.netlify.app/"
-    },
-    {
-        "imgSrc": "/src/img/chess.jpg",
-        "title": "Chess Game",
-        "subtitle": "Online chess game",
-        "description": "Play against AI at various difficulty levels, or log in to challenge other players online. Compete and climb the leaderboard to the top! Hit 'PLAY' now and join the fun!",
-        "gitLink": "#",
-        "siteLink": "#"
-    },
-    {
-        "imgSrc": "/src/img/cube.jpg",
-        "title": "Rubik's Cube",
-        "subtitle": "Online interactive puzzle game",
-        "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
-        "gitLink": "https://github.com/CodePro-art/rubiks",
-        "siteLink": "https://rubicks.netlify.app/"
-    },
-    {
-        "imgSrc": "/src/img/todo.png",
-        "title": "To Do App",
-        "subtitle": "A simple todo list",
-        "description": "Stay organized and boost your productivity with my intuitive To-Do List app! Easily create, manage, and prioritize tasks to keep your day on track. Set reminders, check off completed items, and achieve your goals effortlessly. Simplify your life with the ultimate task manager today!",
-        "gitLink": "#",
-        "siteLink": "https://nm-todolist.netlify.app/"
-    },
-    {
-        "imgSrc": "/src/img/wave.png",
-        "title": "Wave Packet",
-        "subtitle": "A wave packet simulation",
-        "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
-        "gitLink": "https://github.com/CodePro-art/wave-visualization",
-        "siteLink": "https://wave-packet.netlify.app/"
-    },
-    {
-        "imgSrc": "/src/img/interference.png",
-        "title": "Wave Interference",
-        "subtitle": "A spherical wave simulation",
-        "description": "A simulation of Physical experiment: Interference of Spherical Waves.",
-        "gitLink": "https://github.com/CodePro-art/spherical-waves",
-        "siteLink": "https://spherical-wave.netlify.app"
-    },
-    {
-        "imgSrc": "/src/img/dice.jpg",
-        "title": "Predefined Dice Roll",
-        "subtitle": "A spherical wave simulation",
-        "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
-        "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined/blob/main/README.md",
-        "siteLink": "https://predefined-dice.netlify.app/"
-    }
-]
+{
+    "frontend": [
+        {
+            "imgSrc": "assets/imgs/projects/frontend/minecraft1.jpg",
+            "title": "2D Minecraft",
+            "subtitle": "2 Dimensional Minecraft",
+            "description": "Dive into an epic single-player adventure of 2D Minecraft! Explore infinite worlds, build anything you can imagine, and conquer unique challenges. Unleash your creativity, craft legendary items, and survive in a world of endless possibilities. Get ready to embark on your ultimate journey today!",
+            "gitLink": "#",
+            "siteLink": "https://nm-minecraft.netlify.app/"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/chess.jpg",
+            "title": "Chess Game",
+            "subtitle": "Online chess game",
+            "description": "Play against AI at various difficulty levels, or log in to challenge other players online. Compete and climb the leaderboard to the top! Hit 'PLAY' now and join the fun!",
+            "gitLink": "#",
+            "siteLink": "#"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/cube.jpg",
+            "title": "Rubik's Cube",
+            "subtitle": "Online interactive puzzle game",
+            "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
+            "gitLink": "https://github.com/CodePro-art/rubiks",
+            "siteLink": "https://rubicks.netlify.app/"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/todo.png",
+            "title": "To Do App",
+            "subtitle": "A simple todo list",
+            "description": "Stay organized and boost your productivity with my intuitive To-Do List app! Easily create, manage, and prioritize tasks to keep your day on track. Set reminders, check off completed items, and achieve your goals effortlessly. Simplify your life with the ultimate task manager today!",
+            "gitLink": "#",
+            "siteLink": "https://nm-todolist.netlify.app/"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/wave.png",
+            "title": "Wave Packet",
+            "subtitle": "A wave packet simulation",
+            "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
+            "gitLink": "https://github.com/CodePro-art/wave-visualization",
+            "siteLink": "https://wave-packet.netlify.app/"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/interference.png",
+            "title": "Wave Interference",
+            "subtitle": "A spherical wave simulation",
+            "description": "A simulation of Physical experiment: Interference of Spherical Waves.",
+            "gitLink": "https://github.com/CodePro-art/spherical-waves",
+            "siteLink": "https://spherical-wave.netlify.app"
+        },
+        {
+            "imgSrc": "assets/imgs/projects/frontend/dice.jpg",
+            "title": "Predefined Dice Roll",
+            "subtitle": "A spherical wave simulation",
+            "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
+            "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined/blob/main/README.md",
+            "siteLink": "https://predefined-dice.netlify.app/"
+        }
+    ],
+    "backend": [
+        {
+            "imgSrc": "assets/imgs/projects/frontend/api-project.jpg",
+            "title": "API Project",
+            "subtitle": "Backend API",
+            "description": "A robust API for handling complex backend operations.",
+            "gitLink": "https://github.com/CodePro-art/api-project",
+            "siteLink": "https://api-project.netlify.app/"
+        }
+    ],
+    "ai": [
+        {
+            "imgSrc": "assets/imgs/projects/frontend/ai-project.jpg",
+            "title": "AI Project",
+            "subtitle": "Machine Learning",
+            "description": "A machine learning project that predicts outcomes based on data.",
+            "gitLink": "https://github.com/CodePro-art/ai-project",
+            "siteLink": "https://ai-project.netlify.app/"
+        }
+    ],
+    "hardware": [
+        {
+            "imgSrc": "assets/imgs/projects/frontend/hardware-project.jpg",
+            "title": "Hardware Project",
+            "subtitle": "Hardware Simulation",
+            "description": "A project simulating hardware interactions.",
+            "gitLink": "https://github.com/CodePro-art/hardware-project",
+            "siteLink": "https://hardware-project.netlify.app/"
+        }
+    ]
+}
