@@ -52,9 +52,9 @@ const Projects = () => {
               className={'projects__title-text'}
               />
           </Heading>
-          <TabsMenu /> 
           
           <div className={classNames('menu-container', { 'menu-container--visible': isMenuVisible })} ref={menuRef}>
+            <TabsMenu />  
           </div>
       </div>
       <Footer />

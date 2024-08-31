@@ -106,7 +106,7 @@ const CursorCanvas = () => {
             params.strokeColor = theme.themeId === 'dark' ? 'white' : 'black';
         };
         
-        const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon, .button, .icon, i');
+        const buttonsOrLinks = document.querySelectorAll('button, a, input, label, select, textarea, icon, .button, .icon, i, a');
 
         buttonsOrLinks.forEach(e => {
             e.addEventListener('mouseover', () => {

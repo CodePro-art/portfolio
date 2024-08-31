@@ -7,6 +7,10 @@
 	z-index: 128;
 }
 
+.tab_title {
+	font-size: 1.4em;
+}
+
 .projects__title-text {
 	font-size: 1.5em;
 	font-weight: bold;

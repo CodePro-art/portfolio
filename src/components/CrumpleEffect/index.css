@@ -1,0 +1,7 @@
+img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 2px 1px darkgrey);
+	display: inline-block;
+    filter: url(#crumple-effect-3);
+    border: #ffffff solid 1px;
+}
