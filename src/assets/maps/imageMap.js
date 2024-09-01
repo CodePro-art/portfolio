@@ -5,6 +5,8 @@ import interferenceImage from 'assets/imgs/projects/frontend/interference.png';
 import mineCraftImage from 'assets/imgs/projects/frontend/minecraft.jpg';
 import toDoImage from 'assets/imgs/projects/frontend/todo.png';
 import waveImage from 'assets/imgs/projects/frontend/wave.png';
+import deepfakeImage from 'assets/imgs/projects/ai/deepfake.jpg';
+import serImage from 'assets/imgs/projects/ai/ser.jpg';
 
 const imageMap = {
     'assets/imgs/projects/frontend/chess.jpg': chessImage,
@@ -14,6 +16,8 @@ const imageMap = {
     'assets/imgs/projects/frontend/minecraft.jpg': mineCraftImage,
     'assets/imgs/projects/frontend/todo.png': toDoImage,
     'assets/imgs/projects/frontend/wave.png': waveImage,
+    'assets/imgs/projects/ai/deepfake.jpg': deepfakeImage,
+    'assets/imgs/projects/ai/ser.jpg': serImage,
     // Add other mappings as needed
 };
 

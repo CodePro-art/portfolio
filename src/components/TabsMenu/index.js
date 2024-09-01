@@ -13,11 +13,12 @@ import Text from 'components/Text';
 import Link from 'components/Link';
 import './index.css';
 import CrumpleEffect from 'components/CrumpleEffect';
-import { ReactComponent as ReactSvg } from 'assets/react.svg';
-// import { ReactComponent as ChevronRight } from 'assets/icons/chevron-right.svg';
+import { ReactComponent as ReactSvg } from 'assets/svgs/react.svg';
+import { ReactComponent as HtmlJsCssSvg } from 'assets/svgs/js-html-css.svg';
 import Icon from 'components/Icon';
 
 const initDelay = tokens.base.durationS;
+
 function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
     const numDelay = msToNum(delayMs) * multiplier;
     return { '--delay': numToMs((msToNum(initDelayMs) + numDelay).toFixed(0)) };
@@ -34,7 +35,7 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay }) =
                     <div className="major-framework">
                         <h3 className="project-title">{title}</h3>
                         <p className="project-author">By Netanel</p>
-                        <ReactSvg className='platform-icon' />
+                        <HtmlJsCssSvg className='platform-icon' />
                     </div>
                     <Link secondary href={gitLink} className="project-link git"> to Git </Link>
                 </div>
