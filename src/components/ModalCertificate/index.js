@@ -10,7 +10,7 @@ function ModalCertificate({ showModal, setShowModal, alt, imgSrc }) {
             {showModal ? (
                 <div className="modal-certificate__container">
                     {/* Close button that triggers the modal to close */}
-                    <a href="#" className="close-thick" onClick={(e) => {
+                    <a href="https://www.youtube.com/" className="close-thick" onClick={(e) => {
                         e.preventDefault();
                         setShowModal(false);}
                         }>
