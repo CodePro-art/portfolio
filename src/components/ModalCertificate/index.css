@@ -7,11 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
+    cursor: pointer;
+    animation: popIn 0.3s ease;
 }
 
 .modal-certificate.visible {
@@ -25,4 +27,28 @@
     border: 2px solid #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+}
+
+[class*='close-'] {
+    color: #4f4f4f;
+    font: 50px/100% arial, sans-serif;
+    position: relative;
+    left: 91.3%;
+    top: -897px;
+    text-decoration: none;
+    z-index: 1024;
+    content: '✖';
+}
+
+.close-thick:hover {
+    color: rgb(192, 0, 0);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
