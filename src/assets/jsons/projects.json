@@ -1,7 +1,7 @@
 {
     "frontend": [
         {
-            "imgSrc": "assets/imgs/projects/frontend/minecraft.jpg",
+            "imgSrc": "minecraft",
             "title": "2D Minecraft",
             "id": "1",
             "description": "Mine, Craft, Build! Lets play a 2D version of Minecraft!",
@@ -11,7 +11,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/chess.jpg",
+            "imgSrc": "chess",
             "title": "Chess Game",
             "id": "2",
             "description": "Play Chess against AI at various difficulty levels, or log in to challenge other players online.",
@@ -21,7 +21,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/cube.jpg",
+            "imgSrc": "cube",
             "title": "Rubik's Cube",
             "id": "3",
             "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
@@ -31,7 +31,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/todo.png",
+            "imgSrc": "todo",
             "title": "To Do App",
             "id": "4",
             "description": "A simple, yet effective To-do App.",
@@ -41,7 +41,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/wave.png",
+            "imgSrc": "wave",
             "title": "Wave Packet",
             "id": "5",
             "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
@@ -51,7 +51,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/interference.png",
+            "imgSrc": "interference",
             "title": "Wave Interference",
             "id": "6",
             "description": "A simulation of Physical experiment: Young's experiment on wave interference.",
@@ -61,7 +61,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/dice.jpg",
+            "imgSrc": "dice",
             "title": "Fateful Dice",
             "id": "7",
             "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
@@ -73,7 +73,7 @@
     ],
     "backend": [
         {
-            "imgSrc": "assets/imgs/projects/frontend/api-project.jpg",
+            "imgSrc": "api-project",
             "title": "API Project",
             "id": "101",
             "description": "A robust API for handling complex backend operations.",
@@ -83,7 +83,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/news-platform.jpg",
+            "imgSrc": "news-platform",
             "title": "News Aggregation Platform",
             "id": "102",
             "description": "A scalable platform that aggregates news from multiple sources.",
@@ -93,7 +93,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/ecommerce-backend.jpg",
+            "imgSrc": "ecommerce-backend",
             "title": "E-commerce Backend",
             "id": "103",
             "description": "A complete backend solution for an e-commerce website.",
@@ -103,7 +103,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/social-network.jpg",
+            "imgSrc": "social-network",
             "title": "Social Network Backend",
             "id": "104",
             "description": "The backend of a social network application with real-time chat features.",
@@ -113,7 +113,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/blog-platform.jpg",
+            "imgSrc": "blog-platform",
             "title": "Blog Platform",
             "id": "105",
             "description": "A backend for managing a blogging platform.",
@@ -123,7 +123,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/inventory-system.jpg",
+            "imgSrc": "inventory-system",
             "title": "Inventory Management System",
             "id": "106",
             "description": "A backend system for managing inventory in a warehouse.",
@@ -133,7 +133,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/hrms.jpg",
+            "imgSrc": "hrms",
             "title": "HR Management System",
             "id": "107",
             "description": "A comprehensive HR management system for handling employee records.",
@@ -143,7 +143,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/payroll-system.jpg",
+            "imgSrc": "payroll-system",
             "title": "Payroll System",
             "id": "108",
             "description": "A backend system for managing payroll and employee salaries.",
@@ -153,7 +153,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/crm.jpg",
+            "imgSrc": "crm",
             "title": "Customer Relationship Management",
             "id": "109",
             "description": "A CRM system for managing customer interactions and data.",
@@ -163,7 +163,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/library-system.jpg",
+            "imgSrc": "library-system",
             "title": "Library Management System",
             "id": "110",
             "description": "A system for managing library resources and user checkouts.",
@@ -173,7 +173,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/task-manager.jpg",
+            "imgSrc": "task-manager",
             "title": "Task Management System",
             "id": "111",
             "description": "A system for managing and assigning tasks within a team.",
@@ -183,7 +183,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/travel-booking.jpg",
+            "imgSrc": "travel-booking",
             "title": "Travel Booking System",
             "id": "112",
             "description": "A backend system for managing travel bookings and reservations.",
@@ -193,7 +193,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/event-management.jpg",
+            "imgSrc": "event-management",
             "title": "Event Management System",
             "id": "113",
             "description": "A system for managing event registrations and details.",
@@ -203,7 +203,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/learning-management.jpg",
+            "imgSrc": "learning-management",
             "title": "Learning Management System",
             "id": "114",
             "description": "A backend for managing online courses and student progress.",
@@ -213,7 +213,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/frontend/forum.jpg",
+            "imgSrc": "forum",
             "title": "Online Forum",
             "id": "115",
             "description": "A backend for managing an online discussion forum.",
@@ -225,7 +225,7 @@
     ],
     "ai": [
         {
-            "imgSrc": "assets/imgs/projects/ai/ser.jpg",
+            "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
             "id": "201",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
@@ -235,7 +235,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/deepfake.jpg",
+            "imgSrc": "deepfake",
             "title": "Deep Fake Detection",
             "id": "202",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
@@ -245,9 +245,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/ser.jpg",
+            "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
-            "id": "201",
+            "id": "203",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -255,9 +255,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/deepfake.jpg",
+            "imgSrc": "deepfake",
             "title": "Deep Fake Detection",
-            "id": "202",
+            "id": "204",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -265,9 +265,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/ser.jpg",
+            "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
-            "id": "201",
+            "id": "205",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -275,9 +275,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/deepfake.jpg",
+            "imgSrc": "deepfake",
             "title": "Deep Fake Detection",
-            "id": "202",
+            "id": "206",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -285,9 +285,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/ser.jpg",
+            "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
-            "id": "201",
+            "id": "207",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -295,9 +295,9 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "assets/imgs/projects/ai/deepfake.jpg",
+            "imgSrc": "deepfake",
             "title": "Deep Fake Detection",
-            "id": "202",
+            "id": "208",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
@@ -307,7 +307,7 @@
     ],
     "hardware": [
         {
-            "imgSrc": "assets/imgs/projects/frontend/hardware-project.jpg",
+            "imgSrc": "hardware-project",
             "title": "Hardware Project",
             "id": "301",
             "description": "A project simulating hardware interactions.",

@@ -17,26 +17,26 @@ import unixCertificate from 'assets/imgs/certificates/unix.avif';
 
 const imageMap = {
     // Frontend Projects Previews
-    'assets/imgs/projects/frontend/chess.jpg': chessImage,
-    'assets/imgs/projects/frontend/dice.jpg': diceImage,
-    'assets/imgs/projects/frontend/cube.jpg': cubeImage,
-    'assets/imgs/projects/frontend/interference.png': interferenceImage,
-    'assets/imgs/projects/frontend/minecraft.jpg': mineCraftImage,
-    'assets/imgs/projects/frontend/todo.png': toDoImage,
-    'assets/imgs/projects/frontend/wave.png': waveImage,
+    'chess': chessImage,
+    'dice': diceImage,
+    'cube': cubeImage,
+    'interference': interferenceImage,
+    'minecraft': mineCraftImage,
+    'todo': toDoImage,
+    'wave': waveImage,
     // AI Projects Previews
-    'assets/imgs/projects/ai/deepfake.jpg': deepfakeImage,
-    'assets/imgs/projects/ai/ser.jpg': serImage,
+    'deepfake': deepfakeImage,
+    'ser': serImage,
     // Hardware Projects Previews
 
     // Certificates
-    'assets/imgs/certificates/advanced-pandas.avif': advancedPandasCertificate,
-    'assets/imgs/certificates/pandas.avif': pandasCertificate,
-    'assets/imgs/certificates/awk.avif': awkCertificate,
-    'assets/imgs/certificates/regex.avif': regexCertificate,
-    'assets/imgs/certificates/sed.avif': sedCertificate,
-    'assets/imgs/certificates/svc.avif': svcCertificate,
-    'assets/imgs/certificates/unix.avif': unixCertificate,
+    'advanced-pandas': advancedPandasCertificate,
+    'pandas': pandasCertificate,
+    'awk': awkCertificate,
+    'regex': regexCertificate,
+    'sed': sedCertificate,
+    'svc': svcCertificate,
+    'unix': unixCertificate,
 };
 
 export default imageMap;
