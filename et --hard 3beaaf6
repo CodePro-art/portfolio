@@ -1,0 +1,47 @@
+[33m76c7b8c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m add yarn.lock to gitignore
+[33mb149bd4[m Add yarn.lock to gitignore
+[33m2a4eb4e[m Merge branch 'main' of github.com:CodePro-art/new-portfolio
+[33mabef9a8[m add modal
+[33mb03225c[m add certificates
+[33mf47713c[m change precentage to try and fix netlify issues
+[33mbcfb616[m simplify image map
+[33me1b5885[m fix href temporarily
+[33m01bbc0c[m fix craco.config.js
+[33m3beaaf6[m add certificates
+[33m73e456a[m add preview images to ai projects
+[33m72147cc[m edit projects section
+[33m5a0518a[m add projects assets
+[33m5ff6915[m change directory structure
+[33m2fadaec[m change images path
+[33mc3df898[m add new svgs
+[33m83f3984[m add projects page
+[33m0ca1725[m fix navbar hover effect
+[33m07bb356[m fix link
+[33mf3c9141[m add online interactive resume
+[33m97234c1[m add resume to my journey
+[33m8c5858c[m change twitter icon + add youtube icon
+[33mfd8b428[m add sphere to timeline page
+[33m558b58d[m add effects to timeline
+[33mc17136f[m add expand all and collapse all to timeline
+[33mce2e784[m replace names
+[33m14de3f6[m change name
+[33mb2a2a80[m change hover color in dark mode
+[33m25d56bb[m add timeline json
+[33mff41419[m add .vscode to gitignore
+[33m3377f98[m add timeline component
+[33m96d59f3[m add my journey page
+[33mda25b79[m .change image filenmae
+[33m6994bb9[m add new projects page
+[33m181c166[m change post image name
+[33mc8bffaa[m change email address
+[33m38c889c[m add new article
+[33mcbdf610[m fix facebook icon
+[33m745b205[m remove irrelevant public images
+[33m6c92e68[m fix logo effects
+[33ma5307a2[m add new logo in Monogram
+[33mbf5e479[m disable selection of text
+[33m5c2510d[m .
+[33m0f2846b[m .
+[33m4445706[m add cursor effect
+[33m5fa58bb[m first commit
+[33mc7dc083[m Initial commit
