@@ -1,152 +1,152 @@
 [
     {
-        "href": "assets/imgs/certificates/responsive-web-design.avif",
+        "href": "responsive-web-design",
         "title": "FreeCodeCamp Responsive Web Design",
-        "imgSrc": "assets/imgs/certificates/responsive-web-design.avif",
+        "imgSrc": "responsive-web-design",
         "alt": "FreeCodeCamp Responsive Web Design Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/js.avif",
+        "href": "js",
         "title": "FreeCodeCamp JavaScript Algorithms and Data Structures",
-        "imgSrc": "assets/imgs/certificates/js.avif",
+        "imgSrc": "js",
         "alt": "FreeCodeCamp JavaScript Algorithms and Data Structures Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/git.avif",
+        "href": "git",
         "title": "Git",
-        "imgSrc": "assets/imgs/certificates/git.avif",
+        "imgSrc": "git",
         "alt": "Git Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/HTML-CSS.avif",
+        "href": "HTML-CSS",
         "title": "HTML and CSS",
-        "imgSrc": "assets/imgs/certificates/HTML-CSS.avif",
+        "imgSrc": "HTML-CSS",
         "alt": "HTML and CSS Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/jquery.avif",
+        "href": "jquery",
         "title": "jQuery",
-        "imgSrc": "assets/imgs/certificates/jquery.avif",
+        "imgSrc": "jquery",
         "alt": "jQuery Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/react.avif",
+        "href": "react",
         "title": "ReactJS",
-        "imgSrc": "assets/imgs/certificates/react.avif",
+        "imgSrc": "react",
         "alt": "React Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/MySQL.avif",
+        "href": "MySQL",
         "title": "MySQL",
-        "imgSrc": "assets/imgs/certificates/MySQL.avif",
+        "imgSrc": "MySQL",
         "alt": "MySQL Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/php.avif",
+        "href": "php",
         "title": "PHP",
-        "imgSrc": "assets/imgs/certificates/php.avif",
+        "imgSrc": "php",
         "alt": "PHP Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/WebDesign.avif",
+        "href": "WebDesign",
         "title": "Web Design",
-        "imgSrc": "assets/imgs/certificates/WebDesign.avif",
+        "imgSrc": "WebDesign",
         "alt": "Web Design Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/html-full.avif",
+        "href": "html-full",
         "title": "HTML Full Course",
-        "imgSrc": "assets/imgs/certificates/html-full.avif",
+        "imgSrc": "html-full",
         "alt": "HTML Full Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/css-full.avif",
+        "href": "css-full",
         "title": "CSS Full Course",
-        "imgSrc": "assets/imgs/certificates/css-full.avif",
+        "imgSrc": "css-full",
         "alt": "CSS Full Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/design.avif",
+        "href": "design",
         "title": "Graphic Design",
-        "imgSrc": "assets/imgs/certificates/design.avif",
+        "imgSrc": "design",
         "alt": "Graphic Design Intensive Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/awk.avif",
+        "href": "awk",
         "title": "AWK Essential Training",
-        "imgSrc": "assets/imgs/certificates/awk.avif",
+        "imgSrc": "awk",
         "alt": "AWK Essential Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/pandas.avif",
+        "href": "pandas",
         "title": "Pandas Essential Training",
-        "imgSrc": "assets/imgs/certificates/pandas.avif",
+        "imgSrc": "pandas",
         "alt": "Pandas Essential Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/advanced-pandas.avif",
+        "href": "advanced-pandas",
         "title": "Advanced Pandas Training",
-        "imgSrc": "assets/imgs/certificates/advanced-pandas.avif",
+        "imgSrc": "advanced-pandas",
         "alt": "Advanced Pandas Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/regex.avif",
+        "href": "regex",
         "title": "Regular Expressions Training",
-        "imgSrc": "assets/imgs/certificates/regex.avif",
+        "imgSrc": "regex",
         "alt": "Regular Expressions Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/sed.avif",
+        "href": "sed",
         "title": "SED Essential Training",
-        "imgSrc": "assets/imgs/certificates/sed.avif",
+        "imgSrc": "sed",
         "alt": "SED Essential Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/unix.avif",
+        "href": "unix",
         "title": "Unix Essential Training",
-        "imgSrc": "assets/imgs/certificates/unix.avif",
+        "imgSrc": "unix",
         "alt": "Unix Essential Training Course Certificate",
         "width": 200,
         "height": 150
     },
     {
-        "href": "assets/imgs/certificates/svc.avif",
+        "href": "svc",
         "title": "Software Version Control",
-        "imgSrc": "assets/imgs/certificates/svc.avif",
+        "imgSrc": "svc",
         "alt": "Software Version Control Course Certificate",
         "width": 200,
         "height": 150
