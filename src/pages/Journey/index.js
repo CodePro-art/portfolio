@@ -11,8 +11,9 @@ import Timeline from 'components/Timeline';
 import Footer from 'components/Footer';
 import { Button } from 'components/Button';
 import Link from 'components/Link';
-import Bg from './bg';
+import BackgroundSphere from 'components/BackgroundSphere';
 import useInViewport from 'hooks/useInViewport'; // Import your custom hook
+import resumePDF from 'assets/pdfs/NetanelMazuzResume.pdf';
 import './index.css';
 
 const initDelay = tokens.base.durationS;
@@ -24,7 +25,6 @@ function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
 
 const Journey = () => {
   const { status } = useRouteTransition();
-  const FILE_ID = '1vcZ208YZRwB1GZZJfVP4bR58NuOZq5Jn';
   useScrollRestore();
 
   const handleDownload = () => {
@@ -52,7 +52,7 @@ const Journey = () => {
         <meta name="description" content="Find out more about my personal professional journey and learn more about me." />
       </Helmet>
 
-      <Bg id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
+      <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
 
       <div className="journey-wrapper">
         <Heading
@@ -99,9 +99,9 @@ const Journey = () => {
           </Link>
           <iframe 
               className="resume-pdf"
-              src={`https://drive.google.com/file/d/${FILE_ID}/preview`}
+              src={resumePDF}
               width="820"
-              height="1120" 
+              height="1200" 
               allow="autoplay"
               title="Netanel Mazuz CV PDF"
           />

@@ -1,12 +1,4 @@
-import {
-  Fragment,
-  useEffect,
-  useState,
-  createContext,
-  useContext,
-  lazy,
-  Suspense,
-} from 'react';
+import { Fragment, useEffect, useState, createContext, useContext, lazy, Suspense} from 'react';
 import { Route, Switch, Link as RouterLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Post from 'pages/Post';
@@ -37,7 +29,7 @@ const ArticlesPost = ({
   const handleMouseLeave = () => {
     setHovered(false);
   };
-
+  
   return (
     <article className="articles__post">
       <RouterLink
@@ -110,7 +102,7 @@ const ArticlesRouter = () => {
       const posts = postData
         .filter(({ draft }) => !draft)
         .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-
+      console.log(posts);
       setPosts(posts);
     };
 

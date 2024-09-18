@@ -4,7 +4,7 @@ import Section from 'components/Section';
 import { useTheme } from 'components/ThemeProvider';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
-import './bg.css';
+import './index.css';
 
 const DisplacementSphere = lazy(() => import('components/DisplacementSphere'));
 
