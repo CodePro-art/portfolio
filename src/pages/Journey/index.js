@@ -28,7 +28,7 @@ const Journey = () => {
   useScrollRestore();
 
   const handleDownload = () => {
-    const fileUrl = '/pdfs/cv.pdf';
+    const fileUrl = 'assets/pdfs/cv.pdf';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.setAttribute('download', 'Netanel Mazuz.pdf'); // Optional: specify the filename

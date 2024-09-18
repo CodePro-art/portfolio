@@ -9,6 +9,7 @@
   position: relative;
   font-size: var(--fontSizeBodyS);
   color: var(--colorTextLight);
+  user-select: none;
 }
 
 .footer__link {

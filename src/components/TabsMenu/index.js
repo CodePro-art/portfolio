@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Tab from 'components/Tab';
 import projectsData from 'assets/jsons/projects.json';
 import { useRouteTransition } from 'hooks';
@@ -15,6 +15,7 @@ import './index.css';
 import CrumpleEffect from 'components/CrumpleEffect';
 import { ReactComponent as ReactSvg } from 'assets/svgs/react.svg';
 import { ReactComponent as HtmlJsCssSvg } from 'assets/svgs/js-html-css.svg';
+import { ReactComponent as ThreeJsSvg } from 'assets/svgs/three-js.svg';
 import Icon from 'components/Icon';
 
 const initDelay = tokens.base.durationS;
@@ -24,7 +25,7 @@ function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
     return { '--delay': numToMs((msToNum(initDelayMs) + numDelay).toFixed(0)) };
 }
 
-const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay }) => {
+const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay , majorTool }) => {
     const image = imageMap[imgSrc] || '';
     const animationDelay = `${delay}s`;
 
@@ -34,8 +35,8 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay }) =
                 <div className={classNames('animate-text', "project-links")}>
                     <div className="major-framework">
                         <h3 className="project-title">{title}</h3>
-                        <p className="project-author">By Netanel</p>
-                        <HtmlJsCssSvg className='platform-icon' />
+                        <p className="project-tool">{majorTool}</p>
+                        {toolUsed(majorTool)}
                     </div>
                     <Link secondary href={gitLink} className="project-link git"> to Git </Link>
                 </div>
@@ -50,11 +51,51 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay }) =
     );
 };
 
+const toolUsed = (tool) => {
+    switch (tool) {
+        case 'ThreeJs':
+            return <ThreeJsSvg className='platform-icon' />;
+        case 'React':
+            return <ReactSvg className='platform-icon' />;
+        case 'Js HTML Css':
+            return <HtmlJsCssSvg className='platform-icon' />;
+        case 'Python':
+            return <Icon name='python' />;
+        case 'C++':
+            return <Icon name='cplusplus' />;
+        case 'C':
+            return <Icon name='c' />;
+        case 'Java':
+            return <Icon name='java' />;
+        case 'Javascript':
+            return <Icon name='javascript' />;
+        case 'Typescript':
+            return <Icon name='typescript' />;
+        case 'PHP':
+            return <Icon name='php' />;
+        case 'Ruby':
+            return <Icon name='ruby' />;
+        case 'Go':
+            return <Icon name='go' />;
+        case 'Kotlin':
+            return <Icon name='kotlin' />;
+        case 'Swift':
+            return <Icon name='swift' />;
+        case 'Dart':
+            return <Icon name='dart' />;
+        case 'Rust':
+            return <Icon name='rust' />;
+        
+        default:
+            return <Icon name='code' />;
+    }
+};
+
 const TabsMenu = () => {
     const { status } = useRouteTransition();
     const [activeTab, setActiveTab] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
-    const [animationKey, setAnimationKey] = useState(0); // Key to force re-render
+    const [animationKey, setAnimationKey] = useState(0);
 
     const projectsPerPage = 6;
     const categories = ['frontend', 'backend', 'ai', 'hardware'];
@@ -80,7 +121,6 @@ const TabsMenu = () => {
     const displayedProjects = activeProjects.slice(startIndex, startIndex + projectsPerPage);
 
     useEffect(() => {
-        // Trigger animation by changing key
         setAnimationKey(prevKey => prevKey + 1);
     }, [activeTab, currentPage]);
 
@@ -128,18 +168,18 @@ const TabsMenu = () => {
                 </Heading>
 
                 <div className="projects-container">
-                    <Icon icon="chevronRight" className="arrow-left" onClick={handlePrevious}/>
+                    <Icon icon="chevronRight" className="arrow-left" onClick={handlePrevious} />
                     <div className="projects">
                         {displayedProjects.map((project, index) => (
-                            <div className="project-wrapper">
-                                <React.Fragment key={index}>
-                                    {index % 3 === 0 && index > 0 && <div className="project-row" />}
-                                    <Project {...project} delay={index * 0.2} key={`${project.id}-${animationKey}`} />
-                                </React.Fragment>
-                            </div>
+                            <Fragment key={`${project.id}-${animationKey}`}>
+                                {index % 3 === 0 && index > 0 && <div key={`${project.id}-row-${index}`} className="project-row" />}
+                                <div key={`${project.id}-${index}`} className="project-wrapper">
+                                    <Project {...project} delay={index * 0.2} />
+                                </div>
+                            </Fragment>
                         ))}
                     </div>
-                    <Icon icon="chevronRight" className="arrow-right" onClick={handleNext}/>
+                    <Icon icon="chevronRight" className="arrow-right" onClick={handleNext} />
                 </div>
             </div>
         </div>
@@ -147,4 +187,3 @@ const TabsMenu = () => {
 };
 
 export default TabsMenu;
-

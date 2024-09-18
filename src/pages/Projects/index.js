@@ -9,8 +9,10 @@ import { tokens } from 'components/ThemeProvider/theme';
 import { msToNum, numToMs } from 'utils/style';
 import TabsMenu from 'components/TabsMenu';
 import Footer from 'components/Footer';
+import useInViewport from 'hooks/useInViewport';
+import Certificates from 'components/Certifications';
+import ModalCertificate from 'components/ModalCertificate';
 import Bg from './bg';
-import useInViewport from 'hooks/useInViewport'; // Import your custom hook
 import './index.css';
 
 const initDelay = tokens.base.durationS;
@@ -56,6 +58,9 @@ const Projects = () => {
           <div className={classNames('menu-container', { 'menu-container--visible': isMenuVisible })} ref={menuRef}>
             <TabsMenu />  
           </div>
+          <ModalCertificate />
+          <Certificates />          
+          
       </div>
       <Footer />
     </div>

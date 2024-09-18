@@ -1,0 +1,154 @@
+[
+    {
+        "href": "assets/imgs/certificates/responsive-web-design.avif",
+        "title": "FreeCodeCamp Responsive Web Design",
+        "imgSrc": "assets/imgs/certificates/responsive-web-design.avif",
+        "alt": "FreeCodeCamp Responsive Web Design Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/js.avif",
+        "title": "FreeCodeCamp JavaScript Algorithms and Data Structures",
+        "imgSrc": "assets/imgs/certificates/js.avif",
+        "alt": "FreeCodeCamp JavaScript Algorithms and Data Structures Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/git.avif",
+        "title": "Git",
+        "imgSrc": "assets/imgs/certificates/git.avif",
+        "alt": "Git Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/HTML-CSS.avif",
+        "title": "HTML and CSS",
+        "imgSrc": "assets/imgs/certificates/HTML-CSS.avif",
+        "alt": "HTML and CSS Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/jquery.avif",
+        "title": "jQuery",
+        "imgSrc": "assets/imgs/certificates/jquery.avif",
+        "alt": "jQuery Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/react.avif",
+        "title": "ReactJS",
+        "imgSrc": "assets/imgs/certificates/react.avif",
+        "alt": "React Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/MySQL.avif",
+        "title": "MySQL",
+        "imgSrc": "assets/imgs/certificates/MySQL.avif",
+        "alt": "MySQL Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/php.avif",
+        "title": "PHP",
+        "imgSrc": "assets/imgs/certificates/php.avif",
+        "alt": "PHP Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/WebDesign.avif",
+        "title": "Web Design",
+        "imgSrc": "assets/imgs/certificates/WebDesign.avif",
+        "alt": "Web Design Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/html-full.avif",
+        "title": "HTML Full Course",
+        "imgSrc": "assets/imgs/certificates/html-full.avif",
+        "alt": "HTML Full Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/css-full.avif",
+        "title": "CSS Full Course",
+        "imgSrc": "assets/imgs/certificates/css-full.avif",
+        "alt": "CSS Full Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/design.avif",
+        "title": "Graphic Design",
+        "imgSrc": "assets/imgs/certificates/design.avif",
+        "alt": "Graphic Design Intensive Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/awk.avif",
+        "title": "AWK Essential Training",
+        "imgSrc": "assets/imgs/certificates/awk.avif",
+        "alt": "AWK Essential Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/pandas.avif",
+        "title": "Pandas Essential Training",
+        "imgSrc": "assets/imgs/certificates/pandas.avif",
+        "alt": "Pandas Essential Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/advanced-pandas.avif",
+        "title": "Advanced Pandas Training",
+        "imgSrc": "assets/imgs/certificates/advanced-pandas.avif",
+        "alt": "Advanced Pandas Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/regex.avif",
+        "title": "Regular Expressions Training",
+        "imgSrc": "assets/imgs/certificates/regex.avif",
+        "alt": "Regular Expressions Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/sed.avif",
+        "title": "SED Essential Training",
+        "imgSrc": "assets/imgs/certificates/sed.avif",
+        "alt": "SED Essential Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/unix.avif",
+        "title": "Unix Essential Training",
+        "imgSrc": "assets/imgs/certificates/unix.avif",
+        "alt": "Unix Essential Training Course Certificate",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "href": "assets/imgs/certificates/svc.avif",
+        "title": "Software Version Control",
+        "imgSrc": "assets/imgs/certificates/svc.avif",
+        "alt": "Software Version Control Course Certificate",
+        "width": 200,
+        "height": 150
+    }
+]
