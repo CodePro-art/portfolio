@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   style: {
     postcss: {
@@ -17,6 +19,23 @@ module.exports = {
           },
         }),
       ],
+    },
+  },
+  webpack: {
+    configure: (webpackConfig) => {
+      const miniCssExtractPluginIndex = webpackConfig.plugins.findIndex(
+        (plugin) => plugin instanceof MiniCssExtractPlugin
+      );
+
+      if (miniCssExtractPluginIndex !== -1) {
+        webpackConfig.plugins[miniCssExtractPluginIndex] = new MiniCssExtractPlugin({
+          filename: '[name].css',
+          chunkFilename: '[name].chunk.css',
+          ignoreOrder: true, // Ignore CSS order conflicts
+        });
+      }
+
+      return webpackConfig;
     },
   },
 };
