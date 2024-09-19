@@ -108,8 +108,8 @@ const PostWrapper = ({
             reveal
             delay={600}
             className="post__banner-image"
-            src={banner ? require(`posts/assets/${banner}`) : undefined}
-            placeholder={require(`posts/assets/${bannerPlaceholder}`)}
+            src={banner ? require(`posts/assets/${banner}`).default : undefined}
+            placeholder={require(`posts/assets/${bannerPlaceholder}`).default}
             alt={bannerAlt}
           />
         </div>
@@ -141,8 +141,7 @@ const PostList = ({ children, ...rest }) => (
 );
 
 const PostImage = ({ src, alt, ...rest }) => {
-  const imgSrc = src.startsWith('http') ? src : require(`posts/assets/${src}`);
-
+  const imgSrc = src.startsWith('http') ? src : require(`posts/assets/${src}`).default;
   return <Image className="post__image" src={imgSrc} alt={alt} {...rest} />;
 };
 

@@ -4,7 +4,7 @@ import './index.css';
 const Text = ({
   children,
   size = 'm',
-  as: Component = 'p',
+  as: Component = 'div',
   align = 'auto',
   weight = 'auto',
   secondary,
