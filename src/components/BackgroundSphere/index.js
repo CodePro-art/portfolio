@@ -8,7 +8,7 @@ import './index.css';
 
 const DisplacementSphere = lazy(() => import('components/DisplacementSphere'));
 
-function Bg({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) {
+function BackgroundSphere({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) {
     const theme = useTheme();
     const titleId = `${id}-title`;
 
@@ -29,4 +29,4 @@ function Bg({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) {
     );
 }
 
-export default Bg;
+export default BackgroundSphere;

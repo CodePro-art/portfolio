@@ -12,7 +12,7 @@ import Footer from 'components/Footer';
 import useInViewport from 'hooks/useInViewport';
 import Certificates from 'components/Certifications';
 import ModalCertificate from 'components/ModalCertificate';
-import Bg from './bg';
+import BackgroundSphere from 'components/BackgroundSphere';
 import './index.css';
 
 const initDelay = tokens.base.durationS;
@@ -38,7 +38,7 @@ const Projects = () => {
           <meta name="description" content="Explore my projects and learn more about my journey in the tech industry." />
       </Helmet>
 
-      <Bg id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
+      <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
 
       <div className="projects-wrapper">
           <Heading
