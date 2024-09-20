@@ -58,9 +58,10 @@ const Projects = () => {
           <div className={classNames('menu-container', { 'menu-container--visible': isMenuVisible })} ref={menuRef}>
             <TabsMenu />  
           </div>
-          <ModalCertificate />
+
+          {/* <ModalCertificate />
           <Certificates />          
-          
+           */}
       </div>
       <Footer />
     </div>

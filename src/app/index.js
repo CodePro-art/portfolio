@@ -84,7 +84,7 @@ const AppRoutes = () => {
                 <Suspense fallback={<Fragment />}>
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
-                    <Route path="/projects" component={Projects} />
+                    <Route path="/my_work" component={Projects} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/journey" component={Journey} />
                     <Route path="/projects/device-models" component={ProjectDM} />
