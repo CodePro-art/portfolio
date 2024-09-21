@@ -7,7 +7,7 @@ import DecoderText from 'components/DecoderText';
 import prerender from 'utils/prerender';
 import { tokens } from 'components/ThemeProvider/theme';
 import { msToNum, numToMs } from 'utils/style';
-import TabsMenu from 'components/TabsMenu';
+import TabsPanel from 'components/TabsPanel';
 import Footer from 'components/Footer';
 import useInViewport from 'hooks/useInViewport';
 import Certificates from 'components/Certifications';
@@ -56,7 +56,7 @@ const Projects = () => {
           </Heading>
           
           <div className={classNames('menu-container', { 'menu-container--visible': isMenuVisible })} ref={menuRef}>
-            <TabsMenu />  
+            <TabsPanel />  
           </div>
 
           {/* <ModalCertificate />

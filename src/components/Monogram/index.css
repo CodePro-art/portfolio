@@ -10,6 +10,7 @@
 
   &:hover {
     fill: #8e8e8e;
+    -webkit-text-stroke: 0.1px black;
   }
 
   & .monogram__text {

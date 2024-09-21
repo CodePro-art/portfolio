@@ -1,11 +1,11 @@
 {
-    "frontend": [
+    "All": [
         {
             "imgSrc": "minecraft",
             "title": "2D Minecraft",
             "id": "1",
             "description": "Mine, Craft, Build! Lets play a 2D version of Minecraft!",
-            "gitLink": "#",
+            "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
             "siteLink": "https://nm-minecraft.netlify.app/",
             "majorTool": "Js HTML Css",
             "completion date": "2021-06-01"
@@ -69,161 +69,124 @@
             "siteLink": "https://predefined-dice.netlify.app/",
             "majorTool": "ThreeJs",
             "completion date": "2021-06-01"
-        }
-    ],
-    "backend": [
+        },
         {
-            "imgSrc": "api-project",
-            "title": "API Project",
-            "id": "101",
-            "description": "A robust API for handling complex backend operations.",
-            "gitLink": "https://github.com/CodePro-art/api-project",
-            "siteLink": "https://api-project.netlify.app/",
+            "imgSrc": "ser",
+            "title": "Speech Emotion Recognition",
+            "id": "201",
+            "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
+            "gitLink": "https://github.com/CodePro-art/ai-project",
+            "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "news-platform",
-            "title": "News Aggregation Platform",
-            "id": "102",
-            "description": "A scalable platform that aggregates news from multiple sources.",
-            "gitLink": "https://github.com/CodePro-art/news-platform",
-            "siteLink": "https://news-platform.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "ecommerce-backend",
-            "title": "E-commerce Backend",
-            "id": "103",
-            "description": "A complete backend solution for an e-commerce website.",
-            "gitLink": "https://github.com/CodePro-art/ecommerce-backend",
-            "siteLink": "https://ecommerce-backend.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "social-network",
-            "title": "Social Network Backend",
-            "id": "104",
-            "description": "The backend of a social network application with real-time chat features.",
-            "gitLink": "https://github.com/CodePro-art/social-network-backend",
-            "siteLink": "https://social-network-backend.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "blog-platform",
-            "title": "Blog Platform",
-            "id": "105",
-            "description": "A backend for managing a blogging platform.",
-            "gitLink": "https://github.com/CodePro-art/blog-platform",
-            "siteLink": "https://blog-platform.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "inventory-system",
-            "title": "Inventory Management System",
-            "id": "106",
-            "description": "A backend system for managing inventory in a warehouse.",
-            "gitLink": "https://github.com/CodePro-art/inventory-system",
-            "siteLink": "https://inventory-system.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "hrms",
-            "title": "HR Management System",
-            "id": "107",
-            "description": "A comprehensive HR management system for handling employee records.",
-            "gitLink": "https://github.com/CodePro-art/hrms",
-            "siteLink": "https://hrms.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "payroll-system",
-            "title": "Payroll System",
-            "id": "108",
-            "description": "A backend system for managing payroll and employee salaries.",
-            "gitLink": "https://github.com/CodePro-art/payroll-system",
-            "siteLink": "https://payroll-system.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "crm",
-            "title": "Customer Relationship Management",
-            "id": "109",
-            "description": "A CRM system for managing customer interactions and data.",
-            "gitLink": "https://github.com/CodePro-art/crm",
-            "siteLink": "https://crm.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "library-system",
-            "title": "Library Management System",
-            "id": "110",
-            "description": "A system for managing library resources and user checkouts.",
-            "gitLink": "https://github.com/CodePro-art/library-system",
-            "siteLink": "https://library-system.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "task-manager",
-            "title": "Task Management System",
-            "id": "111",
-            "description": "A system for managing and assigning tasks within a team.",
-            "gitLink": "https://github.com/CodePro-art/task-manager",
-            "siteLink": "https://task-manager.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "travel-booking",
-            "title": "Travel Booking System",
-            "id": "112",
-            "description": "A backend system for managing travel bookings and reservations.",
-            "gitLink": "https://github.com/CodePro-art/travel-booking",
-            "siteLink": "https://travel-booking.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "event-management",
-            "title": "Event Management System",
-            "id": "113",
-            "description": "A system for managing event registrations and details.",
-            "gitLink": "https://github.com/CodePro-art/event-management",
-            "siteLink": "https://event-management.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "learning-management",
-            "title": "Learning Management System",
-            "id": "114",
-            "description": "A backend for managing online courses and student progress.",
-            "gitLink": "https://github.com/CodePro-art/learning-management",
-            "siteLink": "https://learning-management.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "forum",
-            "title": "Online Forum",
-            "id": "115",
-            "description": "A backend for managing an online discussion forum.",
-            "gitLink": "https://github.com/CodePro-art/forum",
-            "siteLink": "https://forum.netlify.app/",
+            "imgSrc": "deepfake",
+            "title": "Deep Fake Detection",
+            "id": "202",
+            "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
+            "gitLink": "https://github.com/CodePro-art/ai-project",
+            "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
             "completion date": "2021-06-01"
         }
     ],
-    "ai": [
+    "Software Dev": [
+        {
+            "imgSrc": "minecraft",
+            "title": "2D Minecraft",
+            "id": "1",
+            "description": "Mine, Craft, Build! Lets play a 2D version of Minecraft!",
+            "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
+            "siteLink": "https://nm-minecraft.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "chess",
+            "title": "Chess Game",
+            "id": "2",
+            "description": "Play Chess against AI at various difficulty levels, or log in to challenge other players online.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "React",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "cube",
+            "title": "Rubik's Cube",
+            "id": "3",
+            "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
+            "gitLink": "https://github.com/CodePro-art/rubiks",
+            "siteLink": "https://rubicks.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "todo",
+            "title": "To Do App",
+            "id": "4",
+            "description": "A simple, yet effective To-do App.",
+            "gitLink": "#",
+            "siteLink": "https://nm-todolist.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "wave",
+            "title": "Wave Packet",
+            "id": "5",
+            "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
+            "gitLink": "https://github.com/CodePro-art/wave-visualization",
+            "siteLink": "https://wave-packet.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "interference",
+            "title": "Wave Interference",
+            "id": "6",
+            "description": "A simulation of Physical experiment: Young's experiment on wave interference.",
+            "gitLink": "https://github.com/CodePro-art/spherical-waves",
+            "siteLink": "https://spherical-wave.netlify.app",
+            "majorTool": "Js HTML Css",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "dice",
+            "title": "Fateful Dice",
+            "id": "7",
+            "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
+            "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined",
+            "siteLink": "https://predefined-dice.netlify.app/",
+            "majorTool": "ThreeJs",
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "hardware-project",
+            "title": "Hardware Project",
+            "id": "301",
+            "description": "A project simulating hardware interactions.",
+            "gitLink": "https://github.com/CodePro-art/hardware-project",
+            "siteLink": "https://hardware-project.netlify.app/",
+            "majorTool": "React",
+            "completion date": "2021-06-01"
+        }
+    ],
+    
+    "Hardware Dev": [
+        {
+            "imgSrc": "hardware-project",
+            "title": "Hardware Project",
+            "id": "301",
+            "description": "A project simulating hardware interactions.",
+            "gitLink": "https://github.com/CodePro-art/hardware-project",
+            "siteLink": "https://hardware-project.netlify.app/",
+            "majorTool": "React",
+            "completion date": "2021-06-01"
+        }
+    ],
+    "AI & ML": [
         {
             "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
@@ -245,22 +208,22 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "ser",
-            "title": "Speech Emotion Recognition",
+            "imgSrc": "chatbot",
+            "title": "Chatbot",
             "id": "203",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "deepfake",
-            "title": "Deep Fake Detection",
+            "imgSrc": "handwriting-recognition",
+            "title": "Handwriting Recognition",
             "id": "204",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
@@ -269,8 +232,8 @@
             "title": "Speech Emotion Recognition",
             "id": "205",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
@@ -279,8 +242,8 @@
             "title": "Deep Fake Detection",
             "id": "206",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
@@ -289,8 +252,8 @@
             "title": "Speech Emotion Recognition",
             "id": "207",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         },
@@ -299,22 +262,13 @@
             "title": "Deep Fake Detection",
             "id": "208",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
+            "gitLink": "#",
+            "siteLink": "#",
             "majorTool": "React",
             "completion date": "2021-06-01"
         }
     ],
-    "hardware": [
-        {
-            "imgSrc": "hardware-project",
-            "title": "Hardware Project",
-            "id": "301",
-            "description": "A project simulating hardware interactions.",
-            "gitLink": "https://github.com/CodePro-art/hardware-project",
-            "siteLink": "https://hardware-project.netlify.app/",
-            "majorTool": "React",
-            "completion date": "2021-06-01"
-        }
-    ]
+    "Open Source": [],
+    "DevOps": [],
+    "Personal": []
 }
