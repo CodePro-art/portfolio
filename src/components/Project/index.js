@@ -7,6 +7,7 @@ import { ReactComponent as AlfrescoSvg } from 'assets/svgs/alfresco.svg';
 import { ReactComponent as AndroidSvg } from 'assets/svgs/android.svg';
 import { ReactComponent as AngularSvg } from 'assets/svgs/angular.svg';
 import { ReactComponent as AnsibleSvg } from 'assets/svgs/ansible.svg';
+import { ReactComponent as ArduinoSvg } from 'assets/svgs/arduino.svg';
 import { ReactComponent as AwsCloudWatchSvg } from 'assets/svgs/aws-cloudwatch.svg';
 import { ReactComponent as AwsLambdaSvg } from 'assets/svgs/aws-lambda.svg';
 import { ReactComponent as AwsSvg } from 'assets/svgs/aws.svg';
@@ -18,6 +19,8 @@ import { ReactComponent as CSharpSvg } from 'assets/svgs/c#.svg';
 import { ReactComponent as DartSvg } from 'assets/svgs/dart.svg';
 import { ReactComponent as DockerSvg } from 'assets/svgs/docker.svg';
 import { ReactComponent as ElkSvg } from 'assets/svgs/elk.svg';
+import { ReactComponent as Esp32Svg } from 'assets/svgs/esp32.svg';
+import { ReactComponent as Esp8266Svg } from 'assets/svgs/esp8266.svg';
 import { ReactComponent as GitBookSvg } from 'assets/svgs/gitbook.svg';
 import { ReactComponent as GitLabSvg } from 'assets/svgs/gitlab.svg';
 import { ReactComponent as GoSvg } from 'assets/svgs/go.svg';
@@ -28,11 +31,13 @@ import { ReactComponent as JavaSvg } from 'assets/svgs/java.svg';
 import { ReactComponent as JuliaSvg } from 'assets/svgs/julia.svg';
 import { ReactComponent as KotlinSvg } from 'assets/svgs/kotlin.svg';
 import { ReactComponent as KubernetesSvg } from 'assets/svgs/kubernetes.svg';
+import { ReactComponent as LoRaSvg } from 'assets/svgs/LoRa.svg';
 import { ReactComponent as NginxSvg } from 'assets/svgs/nginx.svg';
 import { ReactComponent as PackerSvg } from 'assets/svgs/packer.svg';
 import { ReactComponent as PhpSvg } from 'assets/svgs/php.svg';
 import { ReactComponent as PrometheusSvg } from 'assets/svgs/prometheus.svg';
 import { ReactComponent as PythonSvg } from 'assets/svgs/python.svg';
+import { ReactComponent as RaspberryPiSvg } from 'assets/svgs/raspberry-pi.svg';
 import { ReactComponent as ReactSvg } from 'assets/svgs/react.svg';
 import { ReactComponent as RubySvg } from 'assets/svgs/ruby.svg';
 import { ReactComponent as RustSvg } from 'assets/svgs/rust.svg';
@@ -61,6 +66,8 @@ const toolUsed = (tool) => {
             return <AngularSvg className='platform-icon' />;
         case 'Ansible':
             return <AnsibleSvg className='platform-icon' />;
+        case 'Arduino':
+            return <ArduinoSvg className='platform-icon' />;
         case 'Aws':
             return <AwsSvg className='platform-icon' />;
         case 'Aws CloudWatch':
@@ -81,6 +88,10 @@ const toolUsed = (tool) => {
             return <DockerSvg className='platform-icon' />;
         case 'Elk':
             return <ElkSvg className='platform-icon' />;
+        case 'ESP32':
+            return <Esp32Svg className='platform-icon' />;
+        case 'ESP8266':
+            return <Esp8266Svg className='platform-icon' />;
         case 'GitBook':
             return <GitBookSvg className='platform-icon' />;
         case 'GitLab':
@@ -97,6 +108,8 @@ const toolUsed = (tool) => {
             return <JuliaSvg className='platform-icon' />;
         case 'Kubernetes':
             return <KubernetesSvg className='platform-icon' />;
+        case 'LoRa':
+            return <LoRaSvg className='platform-icon' />;
         case 'Nginx':
             return <NginxSvg className='platform-icon' />;
         case 'Packer':
@@ -105,6 +118,8 @@ const toolUsed = (tool) => {
             return <PrometheusSvg className='platform-icon' />;
         case 'Python':
             return <PythonSvg className='platform-icon' />;
+        case 'Raspberry Pi':
+            return <RaspberryPiSvg className='platform-icon' />;
         case 'React':
             return <ReactSvg className='platform-icon' />;
         case 'ThreeJs':

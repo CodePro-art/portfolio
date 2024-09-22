@@ -84,7 +84,7 @@
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -95,7 +95,7 @@
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         }
@@ -391,26 +391,213 @@
     
     "Hardware Dev": [
         {
-            "imgSrc": "hardware-project",
-            "title": "Hardware Project",
+            "imgSrc": "smart-home-controller",
+            "title": "Smart Home Controller",
             "id": "301",
-            "description": "A project simulating hardware interactions.",
-            "gitLink": "https://github.com/CodePro-art/hardware-project",
-            "siteLink": "https://hardware-project.netlify.app/",
-            "majorTool": "React",
+            "description": "A centralized system to control lights, thermostats, and appliances via a mobile app.",
+            "gitLink": "https://github.com/yourusername/smart-home-controller",
+            "siteLink": "https://smart-home-controller-demo.netlify.app/",
+            "majorTool": "Arduino",
             "sub-categories": ["Embedded Systems"],
-            "completion date": "2021-06-01"
+            "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "hardware-project",
-            "title": "Hardware Project",
+            "imgSrc": "weather-station",
+            "title": "Weather Station",
             "id": "302",
-            "description": "A project simulating hardware interactions.",
-            "gitLink": "https://github.com/CodePro-art/hardware-project",
-            "siteLink": "https://hardware-project.netlify.app/",
-            "majorTool": "React",
+            "description": "Collects temperature, humidity, and air pressure data using sensors and displays it on an LCD.",
+            "gitLink": "https://github.com/yourusername/weather-station",
+            "siteLink": "https://weather-station-demo.netlify.app/",
+            "majorTool": "Raspberry Pi",
+            "sub-categories": ["Embedded Systems"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "fitness-tracker",
+            "title": "Wearable Fitness Tracker",
+            "id": "303",
+            "description": "Monitors physical activity, heart rate, and sleep patterns using sensors.",
+            "gitLink": "https://github.com/yourusername/fitness-tracker",
+            "siteLink": "https://fitness-tracker-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Embedded Systems"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "automated-plant-watering",
+            "title": "Automated Plant Watering System",
+            "id": "304",
+            "description": "Uses soil moisture sensors to water plants automatically.",
+            "gitLink": "https://github.com/yourusername/automated-plant-watering",
+            "siteLink": "https://automated-plant-watering-demo.netlify.app/",
+            "majorTool": "ESP8266",
+            "sub-categories": ["Embedded Systems"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "digital-thermostat",
+            "title": "Digital Thermostat",
+            "id": "305",
+            "description": "A programmable thermostat that adjusts heating and cooling based on user preferences.",
+            "gitLink": "https://github.com/yourusername/digital-thermostat",
+            "siteLink": "https://digital-thermostat-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Embedded Systems"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "smart-waste-management",
+            "title": "Smart Waste Management",
+            "id": "306",
+            "description": "A system that monitors the fill level of waste bins and notifies collection services.",
+            "gitLink": "https://github.com/yourusername/smart-waste-management",
+            "siteLink": "https://smart-waste-management-demo.netlify.app/",
+            "majorTool": "LoRa",
+            "sub-categories": ["IoT Projects"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "health-monitoring",
+            "title": "Connected Health Monitoring",
+            "id": "307",
+            "description": "A wearable device that tracks health metrics and sends data to a cloud platform.",
+            "gitLink": "https://github.com/yourusername/health-monitoring",
+            "siteLink": "https://health-monitoring-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["IoT Projects"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "iot-pet-feeder",
+            "title": "IoT Pet Feeder",
+            "id": "308",
+            "description": "Automatically dispenses food for pets at scheduled times, controlled via a mobile app.",
+            "gitLink": "https://github.com/yourusername/iot-pet-feeder",
+            "siteLink": "https://iot-pet-feeder-demo.netlify.app/",
+            "majorTool": "Raspberry Pi",
+            "sub-categories": ["IoT Projects"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "smart-irrigation",
+            "title": "Smart Irrigation System",
+            "id": "309",
+            "description": "Uses weather data and soil moisture levels to optimize watering schedules for crops.",
+            "gitLink": "https://github.com/yourusername/smart-irrigation",
+            "siteLink": "https://smart-irrigation-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["IoT Projects"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "energy-monitor",
+            "title": "Energy Consumption Monitor",
+            "id": "310",
+            "description": "Tracks energy usage of home appliances and provides insights for reducing consumption.",
+            "gitLink": "https://github.com/yourusername/energy-monitor",
+            "siteLink": "https://energy-monitor-demo.netlify.app/",
+            "majorTool": "ESP32",
+            "sub-categories": ["IoT Projects"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "line-following-robot",
+            "title": "Line Following Robot",
+            "id": "311",
+            "description": "A robot that follows a predefined path using infrared sensors.",
+            "gitLink": "https://github.com/yourusername/line-following-robot",
+            "siteLink": "https://line-following-robot-demo.netlify.app/",
+            "majorTool": "Arduino",
             "sub-categories": ["Robotics"],
-            "completion date": "2021-06-01"
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "robotic-arm",
+            "title": "Robotic Arm",
+            "id": "312",
+            "description": "A programmable arm that can perform tasks like picking and placing objects.",
+            "gitLink": "https://github.com/yourusername/robotic-arm",
+            "siteLink": "https://robotic-arm-demo.netlify.app/",
+            "majorTool": "Raspberry Pi",
+            "sub-categories": ["Robotics"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "delivery-robot",
+            "title": "Autonomous Delivery Robot",
+            "id": "313",
+            "description": "A robot that can navigate and deliver items within a specific environment.",
+            "gitLink": "https://github.com/yourusername/delivery-robot",
+            "siteLink": "https://delivery-robot-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Robotics"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "gesture-controlled-robot",
+            "title": "Gesture-Controlled Robot",
+            "id": "314",
+            "description": "A robot that responds to hand gestures for control.",
+            "gitLink": "https://github.com/yourusername/gesture-controlled-robot",
+            "siteLink": "https://gesture-controlled-robot-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Robotics"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "self-balancing-robot",
+            "title": "Self-Balancing Robot",
+            "id": "315",
+            "description": "A robot that maintains its balance using gyroscopes and accelerometers.",
+            "gitLink": "https://github.com/yourusername/self-balancing-robot",
+            "siteLink": "https://self-balancing-robot-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Robotics"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "wearable-prototype",
+            "title": "Wearable Prototype",
+            "id": "316",
+            "description": "A prototype for a wearable device that tracks health metrics, built using Arduino or Raspberry Pi.",
+            "gitLink": "https://github.com/yourusername/wearable-prototype",
+            "siteLink": "https://wearable-prototype-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Prototyping"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "smart-device-dock",
+            "title": "Smart Device Dock",
+            "id": "317",
+            "description": "A prototype docking station that charges multiple devices and offers additional features.",
+            "gitLink": "https://github.com/yourusername/smart-device-dock",
+            "siteLink": "https://smart-device-dock-demo.netlify.app/",
+            "majorTool": "Raspberry Pi",
+            "sub-categories": ["Prototyping"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "interactive-kiosk",
+            "title": "Interactive Kiosk",
+            "id": "319",
+            "description": "A prototype for an information kiosk with touch screen functionality for user interaction.",
+            "gitLink": "https://github.com/yourusername/interactive-kiosk",
+            "siteLink": "https://interactive-kiosk-demo.netlify.app/",
+            "majorTool": "Raspberry Pi",
+            "sub-categories": ["Prototyping"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "iot-prototyping-platform",
+            "title": "Prototyping Platform for IoT Devices",
+            "id": "320",
+            "description": "A customizable platform for rapidly developing and testing IoT devices.",
+            "gitLink": "https://github.com/yourusername/iot-prototyping-platform",
+            "siteLink": "https://iot-prototyping-platform-demo.netlify.app/",
+            "majorTool": "Arduino",
+            "sub-categories": ["Prototyping"],
+            "completion date": "2024-09-21"
         }
     ],
     "AI & ML": [
@@ -421,7 +608,7 @@
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -432,7 +619,7 @@
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -443,7 +630,7 @@
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "NLP", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -454,7 +641,7 @@
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -465,7 +652,7 @@
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -476,7 +663,7 @@
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -487,7 +674,7 @@
             "description": " Machine learning algorithm to forecast stock prices based on historical data",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
@@ -498,7 +685,7 @@
             "description": "A machine learning model to detect heart diseases and cancer, providing patients with online medical advice and guidance.",
             "gitLink": "#",
             "siteLink": "#",
-            "majorTool": "React",
+            "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         }
