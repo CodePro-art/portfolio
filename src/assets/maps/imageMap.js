@@ -7,6 +7,7 @@ import toDoImage from 'assets/imgs/projects/frontend/todo.png';
 import waveImage from 'assets/imgs/projects/frontend/wave.png';
 import deepfakeImage from 'assets/imgs/projects/ai/deepfake.jpg';
 import serImage from 'assets/imgs/projects/ai/ser.jpg';
+
 import advancedPandasCertificate from 'assets/imgs/certificates/advanced-pandas.avif';
 import pandasCertificate from 'assets/imgs/certificates/pandas.avif';
 import awkCertificate from 'assets/imgs/certificates/awk.avif';

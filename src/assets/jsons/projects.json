@@ -3,91 +3,100 @@
         {
             "imgSrc": "minecraft",
             "title": "2D Minecraft",
-            "id": "1",
+            "id": "901",
             "description": "Mine, Craft, Build! Lets play a 2D version of Minecraft!",
             "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
             "siteLink": "https://nm-minecraft.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "chess",
             "title": "Chess Game",
-            "id": "2",
+            "id": "902",
             "description": "Play Chess against AI at various difficulty levels, or log in to challenge other players online.",
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "cube",
             "title": "Rubik's Cube",
-            "id": "3",
+            "id": "903",
             "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
             "gitLink": "https://github.com/CodePro-art/rubiks",
             "siteLink": "https://rubicks.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev" , "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "todo",
             "title": "To Do App",
-            "id": "4",
+            "id": "904",
             "description": "A simple, yet effective To-do App.",
             "gitLink": "#",
             "siteLink": "https://nm-todolist.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Software Dev"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "wave",
             "title": "Wave Packet",
-            "id": "5",
+            "id": "905",
             "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
             "gitLink": "https://github.com/CodePro-art/wave-visualization",
             "siteLink": "https://wave-packet.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Software Dev", "Education"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "interference",
             "title": "Wave Interference",
-            "id": "6",
+            "id": "906",
             "description": "A simulation of Physical experiment: Young's experiment on wave interference.",
             "gitLink": "https://github.com/CodePro-art/spherical-waves",
             "siteLink": "https://spherical-wave.netlify.app",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Software Dev", "Education"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "dice",
             "title": "Fateful Dice",
-            "id": "7",
+            "id": "907",
             "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
             "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined",
             "siteLink": "https://predefined-dice.netlify.app/",
             "majorTool": "ThreeJs",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
-            "id": "201",
+            "id": "908",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
             "imgSrc": "deepfake",
             "title": "Deep Fake Detection",
-            "id": "202",
+            "id": "909",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         }
     ],
@@ -100,6 +109,7 @@
             "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
             "siteLink": "https://nm-minecraft.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
@@ -110,6 +120,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
@@ -120,6 +131,7 @@
             "gitLink": "https://github.com/CodePro-art/rubiks",
             "siteLink": "https://rubicks.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
@@ -130,6 +142,7 @@
             "gitLink": "#",
             "siteLink": "https://nm-todolist.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Frontend"],
             "completion date": "2021-06-01"
         },
         {
@@ -140,6 +153,7 @@
             "gitLink": "https://github.com/CodePro-art/wave-visualization",
             "siteLink": "https://wave-packet.netlify.app/",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Education"],
             "completion date": "2021-06-01"
         },
         {
@@ -150,6 +164,7 @@
             "gitLink": "https://github.com/CodePro-art/spherical-waves",
             "siteLink": "https://spherical-wave.netlify.app",
             "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Education"],
             "completion date": "2021-06-01"
         },
         {
@@ -160,17 +175,217 @@
             "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined",
             "siteLink": "https://predefined-dice.netlify.app/",
             "majorTool": "ThreeJs",
+            "sub-categories": ["Web Dev", "Game Dev"],
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "hardware-project",
-            "title": "Hardware Project",
-            "id": "301",
-            "description": "A project simulating hardware interactions.",
-            "gitLink": "https://github.com/CodePro-art/hardware-project",
-            "siteLink": "https://hardware-project.netlify.app/",
-            "majorTool": "React",
+            "imgSrc": "resume-builder",
+            "title": "Interactive Resume Builder",
+            "id": "8",
+            "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Frontend"],
             "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "weather-app",
+            "title": "Weather Dashboard",
+            "id": "9",
+            "description": "An API to display real-time weather data for multiple cities.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "finance-app",
+            "title": "Personal Finance Tracker",
+            "id": "10",
+            "description": "A web-based expense tracker with charts and budget management.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "e-commerce",
+            "title": "E-commerce Storefront",
+            "id": "11",
+            "description": "A simple online store with products, cart, and checkout functionality.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "sleep-tracker",
+            "title": "Sleep Tracker",
+            "id": "12",
+            "description": "Record and analyze sleep patterns, offering insights on improving sleep quality.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "sleep-tracker",
+            "title": "Pomodoro Timer",
+            "id": "13",
+            "description": "A mobile version of the Pomodoro productivity timer with work/break intervals.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "qr-code-scanner",
+            "title": "QR Code Scanner",
+            "id": "14",
+            "description": "An app that scans QR codes and displays the information.",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "language-learning",
+            "title": "Language Learning Flashcards",
+            "id": "15",
+            "description": "An app that helps users learn new languages using spaced repetition",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "note-taking",
+            "title": "Note-taking App",
+            "id": "16",
+            "description": "A minimal note-taking app with search functionality",
+            "gitLink": "#",
+            "siteLink": "#",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "tetris",
+            "title": "Tetris Clone",
+            "id": "17",
+            "description": "A classic Tetris game built with modern web technologies.",
+            "gitLink": "https://github.com/yourusername/tetris-clone",
+            "siteLink": "https://tetris-clone.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "snake",
+            "title": "Snake Game",
+            "id": "18",
+            "description": "A simple Snake game that challenges your reflexes.",
+            "gitLink": "https://github.com/yourusername/snake-game",
+            "siteLink": "https://snake-game.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "pong",
+            "title": "Pong Game",
+            "id": "19",
+            "description": "An implementation of the classic Pong game for two players.",
+            "gitLink": "https://github.com/yourusername/pong-game",
+            "siteLink": "https://pong-game.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "memory-game",
+            "title": "Memory Game",
+            "id": "20",
+            "description": "A card matching game that tests your memory skills.",
+            "gitLink": "https://github.com/yourusername/memory-game",
+            "siteLink": "https://memory-game.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "platformer",
+            "title": "2D Platformer",
+            "id": "21",
+            "description": "A 2D platformer game featuring multiple levels and enemies.",
+            "gitLink": "https://github.com/yourusername/2d-platformer",
+            "siteLink": "https://2d-platformer.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "flappy-bird",
+            "title": "Flappy Bird Clone",
+            "id": "22",
+            "description": "A clone of the famous Flappy Bird game with simple controls.",
+            "gitLink": "https://github.com/yourusername/flappy-bird-clone",
+            "siteLink": "https://flappy-bird-clone.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "2048",
+            "title": "2048 Game",
+            "id": "23",
+            "description": "A sliding puzzle game where the goal is to combine tiles to reach 2048.",
+            "gitLink": "https://github.com/yourusername/2048",
+            "siteLink": "https://2048.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "puzzle",
+            "title": "Jigsaw Puzzle",
+            "id": "24",
+            "description": "A fun online jigsaw puzzle game with customizable difficulty.",
+            "gitLink": "https://github.com/yourusername/jigsaw-puzzle",
+            "siteLink": "https://jigsaw-puzzle.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "rock-paper-scissors",
+            "title": "Rock Paper Scissors",
+            "id": "25",
+            "description": "Play Rock, Paper, Scissors against the computer.",
+            "gitLink": "https://github.com/yourusername/rock-paper-scissors",
+            "siteLink": "https://rock-paper-scissors.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "space-invaders",
+            "title": "Space Invaders Clone",
+            "id": "26",
+            "description": "A clone of the classic Space Invaders game.",
+            "gitLink": "https://github.com/yourusername/space-invaders",
+            "siteLink": "https://space-invaders.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
         }
     ],
     
@@ -183,6 +398,18 @@
             "gitLink": "https://github.com/CodePro-art/hardware-project",
             "siteLink": "https://hardware-project.netlify.app/",
             "majorTool": "React",
+            "sub-categories": ["Embedded Systems"],
+            "completion date": "2021-06-01"
+        },
+        {
+            "imgSrc": "hardware-project",
+            "title": "Hardware Project",
+            "id": "302",
+            "description": "A project simulating hardware interactions.",
+            "gitLink": "https://github.com/CodePro-art/hardware-project",
+            "siteLink": "https://hardware-project.netlify.app/",
+            "majorTool": "React",
+            "sub-categories": ["Robotics"],
             "completion date": "2021-06-01"
         }
     ],
@@ -195,6 +422,7 @@
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
@@ -205,6 +433,7 @@
             "gitLink": "https://github.com/CodePro-art/ai-project",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
@@ -215,6 +444,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "NLP", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
@@ -225,50 +455,311 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "ser",
-            "title": "Speech Emotion Recognition",
+            "imgSrc": "face-detection",
+            "title": "Face Detection",
             "id": "205",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "deepfake",
-            "title": "Deep Fake Detection",
+            "imgSrc": "plagiarism-detection",
+            "title": "Plagiarism Analyzer",
             "id": "206",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "ser",
-            "title": "Speech Emotion Recognition",
+            "imgSrc": "stock-prediction",
+            "title": "Stock Prediction",
             "id": "207",
-            "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
+            "description": " Machine learning algorithm to forecast stock prices based on historical data",
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "deepfake",
-            "title": "Deep Fake Detection",
+            "imgSrc": "Medical-Diagnosis",
+            "title": "Medical Diagnosis",
             "id": "208",
-            "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
+            "description": "A machine learning model to detect heart diseases and cancer, providing patients with online medical advice and guidance.",
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
+            "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
             "completion date": "2021-06-01"
         }
     ],
-    "Open Source": [],
-    "DevOps": [],
+    "Open Source": [
+
+    ],
+    "DevOps": [
+        {
+            "imgSrc": "ci-cd",
+            "title": "CI/CD Pipeline",
+            "id": "401",
+            "description": "A simple CI/CD pipeline implementation using GitHub Actions.",
+            "gitLink": "https://github.com/yourusername/ci-cd-pipeline",
+            "siteLink": "https://ci-cd-pipeline-demo.netlify.app/",
+            "majorTool": "GitHub Actions",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "docker-app",
+            "title": "Docker & Kubernetes Deployment",
+            "id": "402",
+            "description": "A web application packaged with Docker for easy deployment.",
+            "gitLink": "https://github.com/yourusername/docker-web-app",
+            "siteLink": "https://docker-web-app-demo.netlify.app/",
+            "majorTool": "Docker",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "k8s-cluster",
+            "title": "Kubernetes Cluster Setup",
+            "id": "403",
+            "description": "A guide for setting up a Kubernetes cluster with multiple nodes.",
+            "gitLink": "https://github.com/yourusername/k8s-cluster",
+            "siteLink": "https://k8s-cluster-demo.netlify.app/",
+            "majorTool": "Kubernetes",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "terraform-setup",
+            "title": "Terraform Infrastructure",
+            "id": "404",
+            "description": "Infrastructure as Code using Terraform for AWS.",
+            "gitLink": "https://github.com/yourusername/terraform-setup",
+            "siteLink": "https://terraform-setup-demo.netlify.app/",
+            "majorTool": "Terraform",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "ansible-setup",
+            "title": "Ansible Configuration Management",
+            "id": "405",
+            "description": "Ansible playbooks for automating server setup.",
+            "gitLink": "https://github.com/yourusername/ansible-setup",
+            "siteLink": "https://ansible-setup-demo.netlify.app/",
+            "majorTool": "Ansible",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "monitoring",
+            "title": "Monitoring Dashboard",
+            "id": "406",
+            "description": "A monitoring dashboard using Grafana and Prometheus.",
+            "gitLink": "https://github.com/yourusername/monitoring-dashboard",
+            "siteLink": "https://monitoring-dashboard-demo.netlify.app/",
+            "majorTool": "Grafana",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "log-management",
+            "title": "Log Management System",
+            "id": "407",
+            "description": "A centralized log management system using ELK stack.",
+            "gitLink": "https://github.com/yourusername/log-management",
+            "siteLink": "https://log-management-demo.netlify.app/",
+            "majorTool": "ELK",
+            "sub-categories": ["DevOps"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "infrastructure-automation",
+            "title": "Infrastructure Automation with Terraform",
+            "id": "408",
+            "description": "Use Terraform to define and provision infrastructure as code.",
+            "gitLink": "https://github.com/yourusername/terraform-automation",
+            "siteLink": "#",
+            "majorTool": "Terraform",
+            "sub-categories": ["Automation", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "ansible-provisioning",
+            "title": "Ansible for Server Provisioning",
+            "id": "409",
+            "description": "Automate server configuration and provisioning with Ansible playbooks.",
+            "gitLink": "https://github.com/yourusername/ansible-provisioning",
+            "siteLink": "#",
+            "majorTool": "Ansible",
+            "sub-categories": ["Automation", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "nginx-load-balancer",
+            "title": "Load Balancing with NGINX",
+            "id": "410",
+            "description": "Set up an NGINX-based load balancer to distribute traffic across multiple servers.",
+            "gitLink": "https://github.com/yourusername/nginx-load-balancer",
+            "siteLink": "#",
+            "majorTool": "NGINX",
+            "sub-categories": ["Load Balancing", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "ci-cd-gitlab",
+            "title": "CI/CD Pipeline with GitLab",
+            "id": "411",
+            "description": "Implement a full CI/CD pipeline using GitLab CI for continuous integration and delivery.",
+            "gitLink": "https://github.com/yourusername/gitlab-ci-cd",
+            "siteLink": "#",
+            "majorTool": "GitLab CI",
+            "sub-categories": ["Automation", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "cloud-infrastructure",
+            "title": "AWS Cloud Infrastructure with Terraform",
+            "id": "412",
+            "description": "Set up and manage AWS cloud infrastructure using Terraform.",
+            "gitLink": "https://github.com/yourusername/aws-terraform",
+            "siteLink": "#",
+            "majorTool": "AWS, Terraform",
+            "sub-categories": ["Cloud", "Automation"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "serverless-functions",
+            "title": "Serverless Functions with AWS Lambda",
+            "id": "413",
+            "description": "Create serverless functions on AWS Lambda and trigger them with API Gateway.",
+            "gitLink": "https://github.com/yourusername/aws-lambda-functions",
+            "siteLink": "#",
+            "majorTool": "AWS Lambda, API Gateway",
+            "sub-categories": ["Serverless", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "scalable-microservices",
+            "title": "Scalable Microservices with Docker",
+            "id": "414",
+            "description": "Build and deploy scalable microservices using Docker containers.",
+            "gitLink": "https://github.com/yourusername/scalable-microservices",
+            "siteLink": "#",
+            "majorTool": "Docker, Kubernetes",
+            "sub-categories": ["Containerization", "Orchestration"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "jenkins-docker",
+            "title": "Jenkins CI/CD with Docker",
+            "id": "415",
+            "description": "Create a Jenkins pipeline that integrates Docker for building and deploying applications.",
+            "gitLink": "https://github.com/yourusername/jenkins-docker-pipeline",
+            "siteLink": "#",
+            "majorTool": "Jenkins, Docker",
+            "sub-categories": ["Automation", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "multi-cloud-terraform",
+            "title": "Multi-Cloud Deployment with Terraform",
+            "id": "416",
+            "description": "Deploy applications across multiple cloud platforms (AWS, GCP, Azure) using Terraform.",
+            "gitLink": "https://github.com/yourusername/multi-cloud-terraform",
+            "siteLink": "#",
+            "majorTool": "Terraform, AWS, GCP, Azure",
+            "sub-categories": ["Cloud", "Automation"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "cloudwatch-alerting",
+            "title": "AWS CloudWatch Alerting System",
+            "id": "417",
+            "description": "Set up CloudWatch monitoring and automated alert systems for cloud resources.",
+            "gitLink": "https://github.com/yourusername/aws-cloudwatch-alerts",
+            "siteLink": "#",
+            "majorTool": "AWS CloudWatch, SNS",
+            "sub-categories": ["Monitoring", "Cloud"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "distributed-tracing",
+            "title": "Distributed Tracing with Jaeger",
+            "id": "418",
+            "description": "Implement distributed tracing for microservices using Jaeger to monitor and debug transactions.",
+            "gitLink": "https://github.com/yourusername/jaeger-tracing",
+            "siteLink": "#",
+            "majorTool": "Jaeger, OpenTelemetry",
+            "sub-categories": ["Monitoring", "Microservices"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "gitops",
+            "title": "GitOps with ArgoCD",
+            "id": "419",
+            "description": "Manage Kubernetes deployments using GitOps principles with ArgoCD.",
+            "gitLink": "https://github.com/yourusername/gitops-argo",
+            "siteLink": "#",
+            "majorTool": "ArgoCD, Kubernetes",
+            "sub-categories": ["Orchestration", "Automation"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "azure-devops",
+            "title": "Azure DevOps Pipeline",
+            "id": "420",
+            "description": "Set up CI/CD pipelines with Azure DevOps for automated testing and deployment.",
+            "gitLink": "https://github.com/yourusername/azure-devops-pipeline",
+            "siteLink": "#",
+            "majorTool": "Azure DevOps",
+            "sub-categories": ["Automation", "Cloud"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "k8s-auto-scaling",
+            "title": "Kubernetes Auto-Scaling",
+            "id": "421",
+            "description": "Implement Kubernetes horizontal pod auto-scaling based on resource usage.",
+            "gitLink": "https://github.com/yourusername/k8s-auto-scaling",
+            "siteLink": "#",
+            "majorTool": "Kubernetes",
+            "sub-categories": ["Orchestration", "Backend"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "packer-automation",
+            "title": "Automated Image Building with Packer",
+            "id": "422",
+            "description": "Create automated workflows for building VM images using HashiCorp Packer.",
+            "gitLink": "https://github.com/yourusername/packer-automation",
+            "siteLink": "#",
+            "majorTool": "Packer, Terraform",
+            "sub-categories": ["Automation", "Cloud"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "sre-dashboard",
+            "title": "SRE Dashboard with Grafana",
+            "id": "4239",
+            "description": "Create an SRE (Site Reliability Engineering) dashboard using Grafana to visualize key metrics.",
+            "gitLink": "https://github.com/yourusername/sre-dashboard",
+            "siteLink": "#",
+            "majorTool": "Grafana, Prometheus",
+            "sub-categories": ["Monitoring", "Backend"],
+            "completion date": "2024-09-21"
+        }
+    ],
     "Personal": []
 }

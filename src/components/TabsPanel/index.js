@@ -21,6 +21,7 @@ const TabsMenu = () => {
 
     const startIndex = (currentPage - 1) * projectsPerPage;
     const displayedProjects = activeProjects.slice(startIndex, startIndex + projectsPerPage);
+    console.log(displayedProjects);
 
     useEffect(() => {
         setAnimationKey(prevKey => prevKey + 1);
