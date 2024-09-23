@@ -8,6 +8,7 @@ import { ReactComponent as AndroidSvg } from 'assets/svgs/android.svg';
 import { ReactComponent as AngularSvg } from 'assets/svgs/angular.svg';
 import { ReactComponent as AnsibleSvg } from 'assets/svgs/ansible.svg';
 import { ReactComponent as ArduinoSvg } from 'assets/svgs/arduino.svg';
+import { ReactComponent as ArgoCDSvg } from 'assets/svgs/argocd.svg';
 import { ReactComponent as AwsCloudWatchSvg } from 'assets/svgs/aws-cloudwatch.svg';
 import { ReactComponent as AwsLambdaSvg } from 'assets/svgs/aws-lambda.svg';
 import { ReactComponent as AwsSvg } from 'assets/svgs/aws.svg';
@@ -22,6 +23,7 @@ import { ReactComponent as ElkSvg } from 'assets/svgs/elk.svg';
 import { ReactComponent as Esp32Svg } from 'assets/svgs/esp32.svg';
 import { ReactComponent as Esp8266Svg } from 'assets/svgs/esp8266.svg';
 import { ReactComponent as GitBookSvg } from 'assets/svgs/gitbook.svg';
+import { ReactComponent as GitActionsSvg } from 'assets/svgs/github-actions.svg';
 import { ReactComponent as GitLabSvg } from 'assets/svgs/gitlab.svg';
 import { ReactComponent as GoSvg } from 'assets/svgs/go.svg';
 import { ReactComponent as GrafanaSvg } from 'assets/svgs/grafana.svg';
@@ -33,6 +35,7 @@ import { ReactComponent as KotlinSvg } from 'assets/svgs/kotlin.svg';
 import { ReactComponent as KubernetesSvg } from 'assets/svgs/kubernetes.svg';
 import { ReactComponent as LoRaSvg } from 'assets/svgs/LoRa.svg';
 import { ReactComponent as NginxSvg } from 'assets/svgs/nginx.svg';
+import { ReactComponent as OpenTelemetrySvg } from 'assets/svgs/OpenTelemetry.svg';
 import { ReactComponent as PackerSvg } from 'assets/svgs/packer.svg';
 import { ReactComponent as PhpSvg } from 'assets/svgs/php.svg';
 import { ReactComponent as PrometheusSvg } from 'assets/svgs/prometheus.svg';
@@ -55,6 +58,8 @@ import Link from 'components/Link';
 import './index.css';
 
 const toolUsed = (tool) => {
+
+    tool = tool.split(",")[0].trim();
     switch (tool) {
         case 'Akka':
             return <AkkaSvg className='platform-icon' />;
@@ -68,11 +73,13 @@ const toolUsed = (tool) => {
             return <AnsibleSvg className='platform-icon' />;
         case 'Arduino':
             return <ArduinoSvg className='platform-icon' />;
-        case 'Aws':
+        case 'ArgoCD':
+            return <ArgoCDSvg className='platform-icon' />;
+        case 'AWS':
             return <AwsSvg className='platform-icon' />;
-        case 'Aws CloudWatch':
+        case 'AWS CloudWatch':
             return <AwsCloudWatchSvg className='platform-icon' />;
-        case 'Aws Lambda':
+        case 'AWS Lambda':
             return <AwsLambdaSvg className='platform-icon' />;
         case 'Azure DevOps':
             return <AzureDevOpsSvg className='platform-icon' />;
@@ -86,7 +93,7 @@ const toolUsed = (tool) => {
             return <CppSvg className='platform-icon' />;
         case 'Docker':
             return <DockerSvg className='platform-icon' />;
-        case 'Elk':
+        case 'ELK':
             return <ElkSvg className='platform-icon' />;
         case 'ESP32':
             return <Esp32Svg className='platform-icon' />;
@@ -94,7 +101,9 @@ const toolUsed = (tool) => {
             return <Esp8266Svg className='platform-icon' />;
         case 'GitBook':
             return <GitBookSvg className='platform-icon' />;
-        case 'GitLab':
+        case 'GitHub Actions':
+            return <GitActionsSvg className='platform-icon' />;
+        case 'GitLab CI':
             return <GitLabSvg className='platform-icon' />;
         case 'Grafana':
             return <GrafanaSvg className='platform-icon' />;
@@ -110,8 +119,10 @@ const toolUsed = (tool) => {
             return <KubernetesSvg className='platform-icon' />;
         case 'LoRa':
             return <LoRaSvg className='platform-icon' />;
-        case 'Nginx':
+        case 'NGINX':
             return <NginxSvg className='platform-icon' />;
+        case 'OpenTelemetry':
+            return <OpenTelemetrySvg className='platform-icon' />;
         case 'Packer':
             return <PackerSvg className='platform-icon' />;
         case 'Prometheus':

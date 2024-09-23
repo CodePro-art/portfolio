@@ -190,7 +190,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "weather-app",
+            "imgSrc": "weather-dashboard",
             "title": "Weather Dashboard",
             "id": "9",
             "description": "An API to display real-time weather data for multiple cities.",
@@ -234,7 +234,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "sleep-tracker",
+            "imgSrc": "productivity timer",
             "title": "Pomodoro Timer",
             "id": "13",
             "description": "A mobile version of the Pomodoro productivity timer with work/break intervals.",
@@ -822,7 +822,7 @@
             "description": "Set up and manage AWS cloud infrastructure using Terraform.",
             "gitLink": "https://github.com/yourusername/aws-terraform",
             "siteLink": "#",
-            "majorTool": "AWS, Terraform",
+            "majorTool": "Terraform",
             "sub-categories": ["Cloud", "Automation"],
             "completion date": "2024-09-21"
         },
@@ -833,7 +833,7 @@
             "description": "Create serverless functions on AWS Lambda and trigger them with API Gateway.",
             "gitLink": "https://github.com/yourusername/aws-lambda-functions",
             "siteLink": "#",
-            "majorTool": "AWS Lambda, API Gateway",
+            "majorTool": "AWS Lambda",
             "sub-categories": ["Serverless", "Backend"],
             "completion date": "2024-09-21"
         },
@@ -888,7 +888,7 @@
             "description": "Implement distributed tracing for microservices using Jaeger to monitor and debug transactions.",
             "gitLink": "https://github.com/yourusername/jaeger-tracing",
             "siteLink": "#",
-            "majorTool": "Jaeger, OpenTelemetry",
+            "majorTool": "OpenTelemetry, Jaeger",
             "sub-categories": ["Monitoring", "Microservices"],
             "completion date": "2024-09-21"
         },
@@ -899,7 +899,7 @@
             "description": "Manage Kubernetes deployments using GitOps principles with ArgoCD.",
             "gitLink": "https://github.com/yourusername/gitops-argo",
             "siteLink": "#",
-            "majorTool": "ArgoCD, Kubernetes",
+            "majorTool": "Kubernetes, ArgoCD",
             "sub-categories": ["Orchestration", "Automation"],
             "completion date": "2024-09-21"
         },
