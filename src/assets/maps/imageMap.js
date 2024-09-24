@@ -68,9 +68,32 @@ import ansibleTowerImage from 'assets/imgs/projects/devops/ansible-tower.png';
 import ansibleImage from 'assets/imgs/projects/devops/ansible.png';
 import packerImage from 'assets/imgs/projects/devops/automated-image-building-packer.png';
 import awsCloudTerraformImage from 'assets/imgs/projects/devops/aws-cloud-infrastructure-terraform.jpg';
-
-
-
+import awsCloudInfraTerraformImage from 'assets/imgs/projects/devops/aws-cloud-infrastructure-terraform.png';
+import awsCloudWatchImage from 'assets/imgs/projects/devops/aws-cloudwatch.png';
+import azureDevOpsImage from 'assets/imgs/projects/devops/azure-devops-pipelines.jpg';
+import azurePipelinesImage from 'assets/imgs/projects/devops/azure-pipelines.png';
+import ciCdGitLabImage from 'assets/imgs/projects/devops/ci-cd-pipeline-gitlab.png';
+import ciCdPipelineImage from 'assets/imgs/projects/devops/ci-cd-pipeline.png';
+import ciCdImage from 'assets/imgs/projects/devops/ci-cd.svg';
+import ansible2Image from 'assets/imgs/projects/devops/define-ansible.png';
+import distributedTracingImage from 'assets/imgs/projects/devops/distributed-tracing-jaeger.png';
+import dockerKubernetesImage from 'assets/imgs/projects/devops/docker-kubernetes.jpg';
+import gitOpsImage from 'assets/imgs/projects/devops/gitops-argocd.png';
+import jenkinsDockerImage from 'assets/imgs/projects/devops/jenkins-ci-cd-docker.png';
+import kubernetesAutoScalingImage from 'assets/imgs/projects/devops/kubernetes-auto-scaling.png';
+import kubernetesMultiImage from 'assets/imgs/projects/devops/kubernetes-multi-cluster-architecture.png';
+import loadBalancingNGINXImage from 'assets/imgs/projects/devops/load-balancing-nginx.png';
+import logManagementImage from 'assets/imgs/projects/devops/log-management-system.jpeg';
+import logManagementSystem2Image from 'assets/imgs/projects/devops/log-management-system.jpg';
+import logManagementToolsImage from 'assets/imgs/projects/devops/log-management-tools.png';
+import eksClusterImage from 'assets/imgs/projects/devops/logical-representation-eks-clusters.png';
+import monitoringDashboardImage from 'assets/imgs/projects/devops/monitoring-dashboard.png';
+import multiCloudImage from 'assets/imgs/projects/devops/multi-cloud-dev-terraform.png';
+import scalableMicroservicesImage from 'assets/imgs/projects/devops/scalable-microservices-docker.jpg';
+import scalableMicroservices2Image from 'assets/imgs/projects/devops/scalable-microservices-docker.png';
+import awsLambdaImage from 'assets/imgs/projects/devops/serverless-functions-aws-lambda.png';
+import sreDashboardImage from 'assets/imgs/projects/devops/sre-dashboard-grafana.png';
+import automatedTerraformImage from 'assets/imgs/projects/devops/terraform-automation.png';
 
 // Certificates Previews
 import advancedPandasCertificate from 'assets/imgs/certificates/advanced-pandas.avif';
@@ -150,8 +173,38 @@ const imageMap = {
     'iot-platforms': iotPlatformsImage,
 
     // DevOps Projects Previews
+    'kubernetes-multi-cluster-architecture': kubernetesMultiImage,
+    'nginx-load-balancer': loadBalancingNGINXImage,
+    'log-management-system': logManagementImage,
+    'log-management': logManagementToolsImage,
+    'log-management-': logManagementSystem2Image,
+    'k8s-cluster': eksClusterImage,
+    'monitoring': monitoringDashboardImage,
+    'multi-cloud-terraform': multiCloudImage,
+    'scalable-microservices': scalableMicroservicesImage,
+    'scalable-microservices-2': scalableMicroservices2Image,
+    'serverless-functions': awsLambdaImage,
+    'sre-dashboard': sreDashboardImage,
+    'infrastructure-automation': automatedTerraformImage,
 
-
+    'ansible-setup': ansibleServerImage,
+    'ansible-tower': ansibleTowerImage,
+    'ansible': ansibleImage,
+    'packer-automation': packerImage,
+    'aws-cloud-terraform': awsCloudTerraformImage,
+    'terraform-setup': awsCloudInfraTerraformImage,
+    'cloudwatch-alerting': awsCloudWatchImage,
+    'azure-devops': azureDevOpsImage,
+    'azure-pipeline': azurePipelinesImage,
+    'ci-cd-gitlab': ciCdGitLabImage,
+    'ci-cd-pipeline': ciCdPipelineImage,
+    'ci-cd': ciCdImage,
+    'ansible_2': ansible2Image,
+    'distributed-tracing': distributedTracingImage,
+    'docker-kubernetes': dockerKubernetesImage,
+    'gitops': gitOpsImage,
+    'jenkins-docker': jenkinsDockerImage,
+    'k8s-auto-scaling': kubernetesAutoScalingImage,
     // Data Science Projects Previews
 
     // Certificates

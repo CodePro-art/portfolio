@@ -718,7 +718,7 @@
     ],
     "DevOps": [
         {
-            "imgSrc": "ci-cd",
+            "imgSrc": "ci-cd-pipeline",
             "title": "CI/CD Pipeline",
             "id": "401",
             "description": "A simple CI/CD pipeline implementation using GitHub Actions.",
@@ -729,7 +729,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "docker-app",
+            "imgSrc": "docker-kubernetes",
             "title": "Docker & Kubernetes Deployment",
             "id": "402",
             "description": "A web application packaged with Docker for easy deployment.",
@@ -806,7 +806,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "ansible-provisioning",
+            "imgSrc": "ansible-tower",
             "title": "Ansible for Server Provisioning",
             "id": "409",
             "description": "Automate server configuration and provisioning with Ansible playbooks.",
@@ -839,7 +839,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "cloud-infrastructure",
+            "imgSrc": "aws-cloud-terraform",
             "title": "AWS Cloud Infrastructure with Terraform",
             "id": "412",
             "description": "Set up and manage AWS cloud infrastructure using Terraform.",
