@@ -8,7 +8,7 @@ const TabsMenu = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [animationKey, setAnimationKey] = useState(0);
-    const projectsPerPage = 20;
+    const projectsPerPage = 100;
     const categories = Object.keys(projectsData);
 
     const projects = categories.reduce((acc, category) => {

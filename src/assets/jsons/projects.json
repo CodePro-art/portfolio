@@ -235,7 +235,7 @@
         },
         {
             "imgSrc": "productivity timer",
-            "title": "Pomodoro Timer",
+            "title": "Productivity Timer",
             "id": "13",
             "description": "A mobile version of the Pomodoro productivity timer with work/break intervals.",
             "gitLink": "#",
@@ -322,7 +322,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "platformer",
+            "imgSrc": "2D-platformer",
             "title": "2D Platformer",
             "id": "21",
             "description": "A 2D platformer game featuring multiple levels and enemies.",
@@ -344,7 +344,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "2048",
+            "imgSrc": "2048-game",
             "title": "2048 Game",
             "id": "23",
             "description": "A sliding puzzle game where the goal is to combine tiles to reach 2048.",
@@ -355,7 +355,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "puzzle",
+            "imgSrc": "jigsaw-puzzle",
             "title": "Jigsaw Puzzle",
             "id": "24",
             "description": "A fun online jigsaw puzzle game with customizable difficulty.",
@@ -386,7 +386,30 @@
             "majorTool": "Js HTML Css",
             "sub-categories": ["Frontend", "Game Dev"],
             "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "tic-tac-toe",
+            "title": "Tic Tac Toe Game",
+            "id": "27",
+            "description": "A simple tic tac toe game for one or two players.",
+            "gitLink": "https://github.com/yourusername/tic-tac-toe",
+            "siteLink": "https://tic-tac-toe.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "calculator",
+            "title": "Scientific Calculator",
+            "id": "28",
+            "description": "A graphical scientific calculator with advanced functions.",
+            "gitLink": "https://github.com/yourusername/calculator",
+            "siteLink": "https://calculator.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
         }
+
     ],
     
     "Hardware Dev": [
@@ -457,7 +480,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "health-monitoring",
+            "imgSrc": "smart-health-monitor",
             "title": "Connected Health Monitoring",
             "id": "307",
             "description": "A wearable device that tracks health metrics and sends data to a cloud platform.",
@@ -567,8 +590,8 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "smart-device-dock",
-            "title": "Smart Device Dock",
+            "imgSrc": "smart-docking-station",
+            "title": "Smart Docking Station",
             "id": "317",
             "description": "A prototype docking station that charges multiple devices and offers additional features.",
             "gitLink": "https://github.com/yourusername/smart-device-dock",
@@ -589,7 +612,7 @@
             "completion date": "2024-09-21"
         },
         {
-            "imgSrc": "iot-prototyping-platform",
+            "imgSrc": "iot-platforms",
             "title": "Prototyping Platform for IoT Devices",
             "id": "320",
             "description": "A customizable platform for rapidly developing and testing IoT devices.",
@@ -679,7 +702,7 @@
             "completion date": "2021-06-01"
         },
         {
-            "imgSrc": "Medical-Diagnosis",
+            "imgSrc": "medical-diagnosis",
             "title": "Medical Diagnosis",
             "id": "208",
             "description": "A machine learning model to detect heart diseases and cancer, providing patients with online medical advice and guidance.",
