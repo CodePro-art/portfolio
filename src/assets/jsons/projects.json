@@ -408,8 +408,29 @@
             "majorTool": "Js HTML Css",
             "sub-categories": ["Frontend", "Game Dev"],
             "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "checkers",
+            "title": "Checkers Game",
+            "id": "29",
+            "description": "A simple checkers game for two players and/or vs AI.",
+            "gitLink": "https://github.com/yourusername/checkers",
+            "siteLink": "https://checkers.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
+        },
+        {
+            "imgSrc": "abalone",
+            "title": "Abalone Game",
+            "id": "30",
+            "description": "An online strategic abalone game for two players and/or vs AI.",
+            "gitLink": "https://github.com/yourusername/checkers",
+            "siteLink": "https://checkers.netlify.app/",
+            "majorTool": "Js HTML Css",
+            "sub-categories": ["Frontend", "Game Dev"],
+            "completion date": "2024-09-21"
         }
-
     ],
     
     "Hardware Dev": [

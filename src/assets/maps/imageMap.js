@@ -25,6 +25,8 @@ import spaceInvadersImage from 'assets/imgs/projects/frontend/space-invaders.jpg
 import game2048Image from 'assets/imgs/projects/frontend/2048-game.jpg';
 import platformerGameImage from 'assets/imgs/projects/frontend/2D-platformer.jpg';
 import ticTacToeImage from 'assets/imgs/projects/frontend/tic-tac-toe.png';
+import checkersGameImage from 'assets/imgs/projects/frontend/checkers.jpeg';
+import abaloneGameImage from 'assets/imgs/projects/frontend/abalone.jpg';
 
 // Mobile Projects Previews
 import sleepTrackerImage from 'assets/imgs/projects/mobile/sleep-tracker.png';
@@ -132,6 +134,8 @@ const imageMap = {
     '2048-game': game2048Image,
     '2D-platformer': platformerGameImage,
     'tic-tac-toe': ticTacToeImage,
+    'checkers': checkersGameImage,
+    'abalone': abaloneGameImage,
 
     // Mobile Projects Previews
     'sleep-tracker': sleepTrackerImage,
