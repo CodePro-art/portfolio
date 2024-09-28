@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import imageMap from 'assets/maps/imageMap';
 
@@ -169,12 +169,35 @@ const toolUsed = (tool) => {
 const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay , majorTool }) => {
     const image = imageMap[imgSrc] || '';
     const animationDelay = `${delay}s`;
+    const titleRef = useRef(null);
+
+    
+
+    useEffect(() => {
+        const adjustFontSize = () => {
+            const titleElement = titleRef.current;
+            if (!titleElement) return;
+    
+            const containerWidth = titleElement.scrollWidth;
+            let fontSize = 20;
+            titleElement.style.fontSize = `${fontSize}px`;
+    
+            while (fontSize * title.length - 150 > containerWidth && fontSize > 12) {
+                fontSize = fontSize - 0.1;
+                titleElement.style.fontSize = `${fontSize}px`;
+            }
+        };
+        adjustFontSize();
+        window.addEventListener('resize', adjustFontSize);
+        return () => window.removeEventListener('resize', adjustFontSize);
+    }, [title]);
+
     return (
         <div className={classNames('tile', `project-${id}`, 'animate-fade-in')} style={{ animationDelay }}>
             <div className="text">
                 <div className={classNames('animate-text', "project-links")}>
                     <div className="major-framework">
-                        <h3 className="project-title">{title}</h3>
+                        <h3 ref={titleRef} className="project-title">{title}</h3>
                         <p className="project-tool">{majorTool}</p>
                         {toolUsed(majorTool)}
                     </div>

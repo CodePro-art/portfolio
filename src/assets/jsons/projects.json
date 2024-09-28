@@ -1,105 +1,4 @@
 {
-    "All": [
-        {
-            "imgSrc": "minecraft",
-            "title": "2D Minecraft",
-            "id": "901",
-            "description": "Mine, Craft, Build! Lets play a 2D version of Minecraft!",
-            "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
-            "siteLink": "https://nm-minecraft.netlify.app/",
-            "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Game Dev"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "chess",
-            "title": "Chess Game",
-            "id": "902",
-            "description": "Play Chess against AI at various difficulty levels, or log in to challenge other players online.",
-            "gitLink": "#",
-            "siteLink": "#",
-            "majorTool": "React",
-            "sub-categories": ["Web Dev", "Game Dev"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "cube",
-            "title": "Rubik's Cube",
-            "id": "903",
-            "description": "Are you familiar with the famous Rubik's Cube? Challenge yourself with an online version with custom settings.",
-            "gitLink": "https://github.com/CodePro-art/rubiks",
-            "siteLink": "https://rubicks.netlify.app/",
-            "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev" , "Game Dev"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "todo",
-            "title": "To Do App",
-            "id": "904",
-            "description": "A simple, yet effective To-do App.",
-            "gitLink": "#",
-            "siteLink": "https://nm-todolist.netlify.app/",
-            "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Software Dev"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "wave",
-            "title": "Wave Packet",
-            "id": "905",
-            "description": "A simulation of Physical concepts in Physics - wave: phase, velocity, wavelength, and pulse width.",
-            "gitLink": "https://github.com/CodePro-art/wave-visualization",
-            "siteLink": "https://wave-packet.netlify.app/",
-            "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Software Dev", "Education"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "interference",
-            "title": "Wave Interference",
-            "id": "906",
-            "description": "A simulation of Physical experiment: Young's experiment on wave interference.",
-            "gitLink": "https://github.com/CodePro-art/spherical-waves",
-            "siteLink": "https://spherical-wave.netlify.app",
-            "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Software Dev", "Education"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "dice",
-            "title": "Fateful Dice",
-            "id": "907",
-            "description": "Choose the number of dice total result and you are guaranteed to get the same result every time you roll the dice.",
-            "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined",
-            "siteLink": "https://predefined-dice.netlify.app/",
-            "majorTool": "ThreeJs",
-            "sub-categories": ["Web Dev", "Game Dev"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "ser",
-            "title": "Speech Emotion Recognition",
-            "id": "908",
-            "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "Python",
-            "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
-            "completion date": "2021-06-01"
-        },
-        {
-            "imgSrc": "deepfake",
-            "title": "Deep Fake Detection",
-            "id": "909",
-            "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
-            "siteLink": "https://ai-project.netlify.app/",
-            "majorTool": "Python",
-            "sub-categories": ["Data Science", "Signal Processing", "Education", "AI", "Machine Learning", "Deep Learning"],
-            "completion date": "2021-06-01"
-        }
-    ],
     "Software Dev": [
         {
             "imgSrc": "minecraft",
@@ -644,13 +543,14 @@
             "completion date": "2024-09-21"
         }
     ],
+
     "AI & ML": [
         {
             "imgSrc": "ser",
             "title": "Speech Emotion Recognition",
             "id": "201",
             "description": "A machine learning speech emotion recognition project that classifies the emotion of a person from a speech audio.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
+            "gitLink": "https://github.com/netazuz/Emotion-Classification/tree/main",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
@@ -734,9 +634,11 @@
             "completion date": "2021-06-01"
         }
     ],
+
     "Open Source": [
 
     ],
+
     "DevOps": [
         {
             "imgSrc": "ci-cd-pipeline",
@@ -992,5 +894,6 @@
             "completion date": "2024-09-21"
         }
     ],
+    
     "Personal": []
 }

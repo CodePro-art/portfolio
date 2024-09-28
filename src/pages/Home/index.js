@@ -7,10 +7,12 @@ import Profile from './Profile';
 import Footer from 'components/Footer';
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
 import deviceModelsTexture from 'assets/imgs/device-models-phone.jpg';
-import deviceModelsTextureLarge from 'assets/imgs/device-models-phone-large.jpg';
+import serAudioSignalTextureLarge from 'assets/imgs/ser-audio-signal.png';
+import serAnalyzeTextureLarge from 'assets/imgs/ser-analyze.png';
 import deviceModelsTexturePlaceholder from 'assets/imgs/device-models-phone-placeholder.jpg';
 import dttTexture from 'assets/imgs/dtt.jpg';
-import dttTextureLarge from 'assets/imgs/dtt-large.jpg';
+// import dttTextureLarge from 'assets/imgs/dtt-large.jpg';
+import dttTextureLarge from 'assets/imgs/dfdt-large.png';
 import dttTexturePlaceholder from 'assets/imgs/dtt-placeholder.jpg';
 import iphone11 from 'assets/glbs/iphone-11.glb';
 import macbookPro from 'assets/glbs/macbook-pro.glb';
@@ -147,7 +149,35 @@ const Home = () => {
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
 
-      <ProjectSummary
+<ProjectSummary
+        id="project-1"
+        alternate
+        sectionRef={projectOne}
+        visible={visibleSections.includes(projectOne.current)}
+        index={1}
+        title="Speech Emotion Recognition"
+        description="Development of an AI-driven Speech Emotion Recognition (SER) system that analyzes audio signals to identify emotional state."
+        buttonText="View Project"
+        buttonLink="/projects/device-models"
+        model={{
+          type: 'phone',
+          alt: "Device Model's default image",
+          textures: [
+            {
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${serAudioSignalTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
+            },
+            {
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${serAnalyzeTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+      {/* <ProjectSummary
         id="project-1"
         alternate
         sectionRef={projectOne}
@@ -173,9 +203,31 @@ const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       
       <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="A Tool for Deepfake Detection"
+        description="Creating a powerful framework for detecting deepfakes and fight against disinformation."
+        buttonText="View Project"
+        buttonLink="/projects/devtech-tools"
+        model={{
+          type: 'laptop',
+          alt: 'DevTech Tools Landing Page',
+          textures: [
+            {
+              src: dttTexture,
+              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
+              placeholder: dttTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+      {/* <ProjectSummary
         id="project-2"
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
@@ -195,7 +247,7 @@ const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       
       <Profile
         sectionRef={about}

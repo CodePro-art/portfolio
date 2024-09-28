@@ -28,8 +28,8 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      I'm Netanel, an electrical and computer engineer | full-stack developer | Chip Designer. My projects include UI/UX design, animation, automation, verification, logic design, and
-      development. If you are interested in the tools and software I use, check out my{' '}
+      I'm an electrical engineer, chip designer, AI developer, and a teacher. <Link href="/my_work">My projects</Link> include UI/UX design, animation, automation, verification, logic design, and
+      game development. If you are interested in the tools and software I use, check out my{' '}
       <Link href="/uses">uses page</Link>.
     </Text>
     <Text
@@ -37,8 +37,8 @@ const ProfileText = ({ status, titleId }) => (
       size="l"
     >
       In my spare time, I like to <Link href="https://www.youtube.com/@netanelmazuz">draw</Link>,{' '}
-      <Link href="https://www.youtube.com/@netanelmazuz">cook</Link> and{' '}
-      <Link href="/articles">teach and share my knowledge</Link>. I am always interested in new
+      <Link href="https://www.youtube.com/@netanelmazuz">cook, </Link> and{' '}
+      <Link href="/articles">teach & share my knowledge</Link>. I am always interested in new
       projects, so feel free to drop me a line.
     </Text>
   </Fragment>

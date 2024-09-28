@@ -175,8 +175,63 @@
   &:hover,
   &:focus,
   &:active {
-    transform: scale(1.05);
     color: rgb(var(--rgbAccent));
+  }
+}
+
+.navbar__nav-icon-link {
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgb(var(--rgbAccent));
+  }
+}
+
+.navbar__nav-icon-link--facebook:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #4267B2; /* Facebook blue */
+  }
+}
+
+.navbar__nav-icon-link--twitter:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #1DA1F2; /* Twitter blue */
+  }
+}
+
+.navbar__nav-icon-link--linkedin:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #2867B2; /* LinkedIn blue */
+  }
+}
+
+.navbar__nav-icon-link--instagram:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #E1306C; /* Instagram pinkish */
+  }
+}
+
+.navbar__nav-icon-link--dribbble:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ea4c89; /* Dribbble pink */
+  }
+}
+
+.navbar__nav-icon-link--youtube:hover {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ff0000; /* YouTube red */
   }
 }
 

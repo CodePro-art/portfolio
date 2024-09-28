@@ -18,7 +18,7 @@ const NavbarIcons = () => (
     {socialLinks.map(({ label, url, icon }) => (
       <a
         key={label}
-        className="navbar__nav-icon-link"
+        className={`navbar__nav-icon-link navbar__nav-icon-link--${label.toLowerCase()}`}
         aria-label={label}
         href={url}
         onMouseUp={blurOnMouseUp}

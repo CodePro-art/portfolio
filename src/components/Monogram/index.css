@@ -13,11 +13,12 @@
     -webkit-text-stroke: 0.1px black;
   }
 
-  & .monogram__text {
-    animation: stroke 2s;
-    stroke-width: .01;
+  & .monogram--animate {
+    animation: stroke 2.5s;
+    stroke-width: .1;
   }
 }
+
 
 @keyframes stroke {
   0%, 12% {
