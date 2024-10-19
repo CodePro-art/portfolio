@@ -156,9 +156,9 @@ const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Speech Emotion Recognition"
-        description="Development of an AI-driven Speech Emotion Recognition (SER) system that analyzes audio signals to identify emotional state."
+        description="Developed an AI-driven Speech Emotion Recognition (SER) system that analyzes audio signals to identify emotional state."
         buttonText="View Project"
-        buttonLink="/projects/device-models"
+        buttonLink="/projects/speech-emotion-recognition"
         model={{
           type: 'phone',
           alt: "Device Model's default image",

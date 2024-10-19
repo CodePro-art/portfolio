@@ -20,6 +20,7 @@ const Home = lazy(() => import('pages/Home'));
 const Contact = lazy(() => import('pages/Contact'));
 const Journey = lazy(() => import('pages/Journey'));
 const Projects = lazy(() => import('pages/Projects'));
+const ProjectSER = lazy(() => import('pages/SER'));
 const ProjectDM = lazy(() => import('pages/DeviceModels'));
 const ProjectDTT = lazy(() => import('pages/DevTechTools'));
 const Articles = lazy(() => import('pages/Articles'));
@@ -87,6 +88,7 @@ const AppRoutes = () => {
                     <Route path="/my_work" component={Projects} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/journey" component={Journey} />
+                    <Route path="/projects/speech-emotion-recognition" component={ProjectSER} />
                     <Route path="/projects/device-models" component={ProjectDM} />
                     <Route path="/projects/devtech-tools" component={ProjectDTT} />
                     <Route path="/uses" component={Uses} />
