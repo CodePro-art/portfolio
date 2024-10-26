@@ -4,6 +4,7 @@ import Image from 'components/Image';
 import Link from 'components/Link';
 import { Button } from 'components/Button';
 import Footer from 'components/Footer';
+import './index.css';
 import {
   ProjectContainer,
   ProjectBackground,
@@ -57,6 +58,26 @@ import audioFeaturesPlaceholder from 'assets/imgs/speech-emotion-recognition/aud
 import FeaturesTable from 'assets/imgs/speech-emotion-recognition/features.png';
 import FeaturesTableLarge from 'assets/imgs/speech-emotion-recognition/features.png';
 import FeaturesTablePlaceholder from 'assets/imgs/speech-emotion-recognition/features.png';
+
+import RandomForests from 'assets/imgs/speech-emotion-recognition/random-forest.png';
+import RandomForestsLarge from 'assets/imgs/speech-emotion-recognition/random-forest.png';
+import RandomForestsPlaceholder from 'assets/imgs/speech-emotion-recognition/random-forest.png';
+
+import SVM from 'assets/imgs/speech-emotion-recognition/svm.png';
+import SVMLarge from 'assets/imgs/speech-emotion-recognition/svm.png';
+import SVMPlaceholder from 'assets/imgs/speech-emotion-recognition/svm.png';
+
+import FeatureImportanceRF from 'assets/imgs/speech-emotion-recognition/feature-importance-random-forest.png';
+import FeatureImportanceRFLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-random-forest.png';
+import FeatureImportanceRFPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-random-forest.png';
+
+import FeatureImportanceSVM from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+import FeatureImportanceSVMLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+import FeatureImportanceSVMPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+
+import FeatureImportanceGB from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
+import FeatureImportanceGBLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
+import FeatureImportanceGBPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
 
 import deviceModelsBanner from 'assets/imgs/device-models-banner.jpg';
 import deviceModelsBannerLarge from 'assets/imgs/device-models-banner-large.jpg';
@@ -172,12 +193,12 @@ const ProjectDM = () => {
               <ProjectSectionHeading>The Datasets</ProjectSectionHeading>
               <ProjectSectionText>
                 With a clear mission and audience in mind, it was time to search for a suitable datasets 
-                for our project. We needed a dataset that was large enough to train our model, and diverse
+                for our project. I needed a dataset that was large enough to train our model, and diverse
                 enough to ensure that our model could generalize well to unseen data.
               </ProjectSectionText>
 
               <ProjectSectionText>
-                <b>We ended up using the following datasets:</b>
+                <b>I ended up using the following datasets:</b>
               </ProjectSectionText>
 
               <ProjectSectionText>
@@ -250,62 +271,71 @@ const ProjectDM = () => {
 
         <ProjectSection>
           <ProjectSectionContent>
-            
-            <ProjectTextRow>
-
-            </ProjectTextRow>
             <ProjectTextRow>
               <ProjectSectionHeading>Data Pre-processing</ProjectSectionHeading>
 
-              <ProjectSectionText>
-                We worked with four different datasets, which required us to organize and merge them into a single dataset, ensuring the data was correctly formatted and that the data distribution was balanced. Once the data was combined, several steps and considerations were taken into account for preprocessing the data before training our Speech Emotion Recognition (SER) model:
+              <ProjectSectionText style={{marginBottom: '40px'}}>
+              I merged four datasets into one balanced dataset, then applied key preprocessing steps to prepare it for training the Speech Emotion Recognition (SER) model.
               </ProjectSectionText>
 
-              <ProjectSectionText>
+              <ProjectSectionColumns style={{marginBottom: '40px', padding: '0px', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignContent: 'stretch', alignItems: 'stretch'}}>  
+                <ProjectSectionText style={{padding: '0px'}}>
 
-              <ProjectSectionText>
-                1. <b>Audio Loading:</b> We ensured that all audio files from the different datasets had a consistent sample rate, normalizing them to a standard (e.g., 16 kHz). Silent sections at the beginning and end of the clips were trimmed to focus on the relevant speech.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>1. <b>Audio Loading</b></p>
+                    <p>I standardized audio to a consistent sample rate and trimmed the silence to focus on relevant speech.</p>
+                  </ProjectSectionText>
 
-              <ProjectSectionText>
-                2. <b>Feature Extraction:</b> Key features like MFCC (Mel-Frequency Cepstral Coefficients), spectrograms, chroma features, and pitch were extracted. These features capture essential elements such as power spectrum, frequency, and emotional intonation of the speech, providing the model with a robust representation of the data.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>2. <b>Feature Extraction</b></p>
+                    <p>Extracted key features like mfcc, spectrograms, and more, to ease the classification for the model.</p> 
+                  </ProjectSectionText>
 
-              <ProjectSectionText>
-                3. <b>Data Augmentation:</b> To enhance the model’s generalization and avoid overfitting, we applied data augmentation techniques like time-stretching, pitch shifting, and adding background noise. These methods helped simulate real-world variations and diversify the training data.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>3. <b>Data Augmentation</b></p> 
+                    <p>Applied data augmentation techniques like time-stretching, pitch shifting, and noise addition to prevent overfitting and simulate real-world variations.</p>
+                  </ProjectSectionText>
 
-              <ProjectSectionText>
-                4. <b>Normalization:</b> The extracted features were normalized using techniques like Z-score normalization to ensure that all data points had comparable scales, helping the model converge more efficiently during training.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>4. <b>Normalization</b></p> 
+                    <p>I used Z-score normalization to standardize the extracted features, ensuring comparable scales and more efficient model convergence during training.</p>
+                  </ProjectSectionText>
+                </ProjectSectionText>
 
-              <ProjectSectionText>
-                5. <b>Label Encoding:</b> Emotion labels were transformed into numeric values using one-hot encoding, making the labels machine-readable for model training.
-              </ProjectSectionText>
+                <ProjectSectionText style={{padding: '0px', margin: '0px'}}>
 
-              <ProjectSectionText>
-                6. <b>Padding and Windowing:</b> Audio clips were padded to a uniform length, and in cases where audio files were too long, windowing techniques were used to split them into smaller chunks, allowing the model to process temporal variations more effectively.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>5. <b>Label Encoding</b></p> 
+                    <p>Applied one-hot encoding on emotion labels, making them machine-readable for model training.</p>
+                  </ProjectSectionText>
 
-              <ProjectSectionText>
-                7. <b>Noise Reduction:</b> For datasets with noisy recordings, we applied noise reduction methods to clean up the audio, improving the quality of the features used for training.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>6. <b>Padding and Windowing</b></p> 
+                    <p>I padded audio clips and used windowing to split longer ones for better temporal processing.</p> 
+                  </ProjectSectionText>
 
-              <ProjectSectionText>
-                8. <b>Shuffling and Splitting:</b> Finally, the preprocessed data was shuffled to ensure a good mix of samples and then split into training, validation, and test sets, ensuring balanced data distribution across different emotions.
-              </ProjectSectionText>
+                  <ProjectSectionText>
+                    <p>7. <b>Noise Reduction</b> </p>
+                    <p>For datasets with noisy recordings, I applied noise reduction methods to clean up the audio, improving the quality of the features used for training.</p> 
+                  </ProjectSectionText>
+
+                  <ProjectSectionText>
+                    <p>8. <b>Shuffling and Splitting</b></p> 
+                    <p>The preprocessed data was shuffled and split into training, validation, and test sets to ensure balanced emotion distribution.</p> 
+                  </ProjectSectionText>
+                </ProjectSectionText>
                 
-              </ProjectSectionText>
+              </ProjectSectionColumns>
 
               <ProjectSectionText>
-              To preprocess the data, we utilized the {' '}
+              To preprocess the data, I utilized the {' '}
                 <Link href="https://librosa.org/doc/latest/index.html">
                   librosa 
                 </Link> library. For those unfamiliar, librosa is a powerful Python library specifically designed for analyzing and processing audio signals. It’s commonly used for extracting features such as Mel-frequency cepstral coefficients (MFCCs), spectrograms, and more.
               </ProjectSectionText>
 
               <ProjectSectionText>
-              In order to store and display, and analyze the data we used {' '}
+              In order to store and display, and analyze the data I used {' '}
                 <Link href="https://seaborn.pydata.org/">
                   Seaborn 
                 </Link>, {' '}
@@ -345,14 +375,15 @@ const ProjectDM = () => {
         </ProjectSection>
 
         <ProjectSection light>
-          <ProjectSectionContent>
+          <ProjectSectionHeading>Feature Engineering and Extraction</ProjectSectionHeading>
+          <ProjectSectionColumns>
+            
             <ProjectTextRow>
-              <ProjectSectionHeading>Feature Engineering and Extraction</ProjectSectionHeading>
               <ProjectSectionText>
-                The audio data provided cannot be understood by the models directly, at least not in classic machine learning, so we need to convert it into
+                The audio data provided cannot be understood by the models directly, at least not in classic machine learning, so I need to convert it into
                 an understandable format for which feature extraction is used. Audio signals can broadly be categorized as <b>stationary</b> or <b>non-stationary</b>.
               </ProjectSectionText>
-                
+
               <ProjectSectionText>
                 Stationary signals have spectrums that do not change over time, like pure tones. Non-stationary signals have spectrums that change
                 over time, like speech signals. To make machine learning-based tasks tractable, non-stationary signals can be approximated as 
@@ -376,22 +407,23 @@ const ProjectDM = () => {
               <ProjectSectionText>
                 <b>Sample Rate</b>: According to the <Link href="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem">Nyquist theorem</Link>, the sample rate should be at least twice the highest frequency component in the signal to avoid aliasing. For audio signals, the highest frequency of interest is typically around 20 kHz, so a sample rate of 44.1 kHz or higher (such as 48 kHz, 96 kHz) is commonly used for audio processing.
               </ProjectSectionText>
+              
+              <ProjectSectionText>
+                The audio signal is a three-dimensional signal in which three axes represent <b>time</b>, <b>amplitude</b> and <b>frequency</b>.
+              </ProjectSectionText>
 
-              <ProjectTextRow>
+              <Image
+                style={{ marginTop: '40px', marginBottom: '60px' }}
+                srcSet={`${timeFrequencyDomain} 1280w, ${timeFrequencyDomainLarge} 2560w`}
+                placeholder={timeFrequencyDomainPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+              />
+            </ProjectTextRow>
+
+            <ProjectTextRow>
                 <ProjectSectionText>
-                  The audio signal is a three-dimensional signal in which three axes represent <b>time</b>, <b>amplitude</b> and <b>frequency</b>.
-                </ProjectSectionText>
-
-                <Image
-                  style={{ marginTop: '40px', marginBottom: '60px' }}
-                  srcSet={`${timeFrequencyDomain} 1280w, ${timeFrequencyDomainLarge} 2560w`}
-                  placeholder={timeFrequencyDomainPlaceholder}
-                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
-                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
-                />
-
-                <ProjectSectionText>
-                  I found an optimal <b>sample rate</b> for our needs and used it on the audio files to create the <b>sampled data</b>, and by using librosa, perform several transformations to extract valuable features:
+                  I used the default (22,050 Hz) <b>sample rate</b> on the audio files to create the <b>sampled data</b>, and by using librosa, perform several transformations to extract valuable <b>features</b>:
 
                   <ul style={{ listStyleType: 'square' , marginTop: '20px' }}>
                     <li style={{marginBottom: '10px'}}><b>Zero Crossing Rate:</b> The rate of sign-changes of the signal during the duration of a particular frame.</li>
@@ -416,7 +448,7 @@ const ProjectDM = () => {
                 />
 
                 <ProjectSectionText>
-                  All the features extracted are then stored in a <b>pandas dataframe</b> and saved in a <b>csv</b> file for future (reusability) use.
+                  I stored the extracted features in a <b>pandas dataframe</b> and saved it as a <b>CSV</b> for future use. It may seem redundant, but after training multiple models, you'll see how much time this step saves.
                 </ProjectSectionText>
 
                 <Image
@@ -427,15 +459,159 @@ const ProjectDM = () => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
                 />
 
-                
-              </ProjectTextRow>
-
+            
             </ProjectTextRow>
-          </ProjectSectionContent>
+          </ProjectSectionColumns>
         </ProjectSection>
 
         <ProjectSection>
           <ProjectSectionContent>
+            <ProjectTextRow>
+              <ProjectSectionHeading>Training Model</ProjectSectionHeading>
+
+              <ProjectSectionText>
+                Selecting the right model for my project was a critical decision. I evaluated various factors, including dataset size, 
+                problem complexity, computational resources, and the strengths and limitations of each model. The models I considered 
+                included 
+
+                <div class="classifier-container">
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A statistical method for predicting binary classes. It estimates the probability that a given input belongs to a particular category."><b>Logistic Regression,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A model that splits the data into branches to make decisions based on feature values. It is easy to interpret but can overfit on complex datasets."><b>Decision Trees,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="An ensemble learning method that combines multiple decision trees to improve accuracy. It reduces the risk of overfitting while handling large datasets effectively."><b>Random Forests,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A supervised learning model that finds the hyperplane that best separates data into classes. It is effective in high-dimensional spaces."><b>Support Vector Machines (SVM),</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A simple algorithm that classifies data based on the closest training examples in the feature space. It’s effective for smaller datasets but can be slow for larger ones."><b>K-Nearest Neighbors (KNN),</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A probabilistic classifier based on applying Bayes' theorem with strong independence assumptions. It is particularly useful for text classification."><b>Naive Bayes,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="An ensemble technique that builds models sequentially, with each new model correcting errors made by previous ones. It often achieves high accuracy but can be sensitive to overfitting."><b>Gradient Boosting Machines (GBM),</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A boosting algorithm that combines multiple weak classifiers to create a strong classifier. It adjusts weights based on the performance of individual classifiers."><b>AdaBoost,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A technique that creates multiple subsets of the training data and trains a model on each subset. It helps reduce variance and improves accuracy."><b>Bagging,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="An optimized gradient boosting library designed for speed and performance. It includes regularization to reduce overfitting."><b>XGBoost,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A variant of Naive Bayes that assumes features follow a Gaussian distribution. It is particularly effective for continuous data."><b>Gaussian Naive Bayes,</b></div>
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A class of neural networks designed for sequential data. They maintain a memory of previous inputs, making them suitable for tasks like language modeling."><b>Recurrent Neural Networks (RNNs),</b></div> and
+                  <div class="classifier" data-tooltip-anchor="top" data-tooltip="A classification technique that assumes a quadratic decision boundary. It is effective when classes have different covariance structures."><b>Quadratic Discriminant Analysis (QDA)</b></div>
+                </div>
+
+
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                <b><u>My top 3 performing models were:</u></b>
+
+                <ul style={{ listStyleType: 'square' , marginTop: '20px' }}>
+                    <li style={{marginBottom: '10px'}}>
+                      <b>
+                        <Link href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">
+                          Random Forests: 
+                        </Link>, {' '}
+                      </b> is considered one of the top choices for multiclass classification tasks: highly versatile, perform well on a wide range of datasets, and are less prone to overfitting compared to individual decision trees.Capable of handling numerical and categorical features and can capture complex relationships in the data. 
+                    </li>
+                    <li style={{marginBottom: '10px'}}>
+                      <b>
+                        <Link href="https://scikit-learn.org/stable/modules/svm.html#kernel-functions">
+                          Support Vector Machines (SVM): 
+                        </Link>, {' '}
+                      </b> SVMs are powerful classifiers that work well for multiclass classification tasks. They find the hyperplane that best separates the classes in the feature space, making them effective for high-dimensional data with complex decision boundaries. 
+                    </li>
+                    <li style={{marginBottom: '10px'}}>
+                      <b>
+                        <Link href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html">
+                          Gradient Boosting Machines (GBM): 
+                        </Link>, {' '}
+                      </b> Gradient Boosting Machines, such as XGBoost, LightGBM, and CatBoost, are widely used for multiclass classification tasks due to their high predictive accuracy and robustness. GBMs build a sequence of weak learners (typically decision trees) and combine their predictions to improve accuracy. They often outperform other classifiers on structured/tabular data and are highly customizable with various hyperparameters to tune. 
+                    </li>
+                  </ul>
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                <b><u>Model Evaluation:</u></b>
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                I trained the models on the training data and evaluated them on the test set, using accuracy as the primary metric. Precision, recall, and F1 score were also considered for a more complete performance analysis.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                According to the following confusion matrices, you can probably already tell which model performed the best. I only include the top two models for the sake of brevity.
+              </ProjectSectionText>
+
+              <Image 
+                  style={{ marginTop: '40px', marginBottom: '60px' }}
+                  srcSet={`${RandomForests} 1280w, ${RandomForestsLarge} 2560w`}
+                  placeholder={RandomForestsPlaceholder}
+                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 2300px`}
+                />
+
+                <Image 
+                  style={{ marginTop: '40px', marginBottom: '60px' }}
+                  srcSet={`${SVM} 1280w, ${SVMLarge} 2560w`}
+                  placeholder={SVMPlaceholder}
+                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 2300px`}
+                />
+              
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+
+        <ProjectSection light>
+          <ProjectSectionHeading>Feature Importance</ProjectSectionHeading>
+            <ProjectTextRow>
+              <ProjectSectionText>
+                Feature importance refers to the quantification of how much each input feature contributes to a model's predictive performance. In this project, where complex vocal signals are processed to detect emotions, thus understanding feature importance is critical to identifying which aspects of speech (such as pitch, tone, intensity, or temporal dynamics) have the most impact on the model's accuracy.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                Each machine learning model has its own way of determining feature importance, but in general, it involves assessing the model's performance when a feature is either included or excluded from the model. By comparing the model's performance with and without a specific feature, we can gauge its importance.
+              </ProjectSectionText>
+
+
+              <Image
+                style={{ marginTop: '40px', marginBottom: '60px' }}
+                srcSet={`${FeatureImportanceRF} 1280w, ${FeatureImportanceRFLarge} 2560w`}
+                placeholder={FeatureImportanceRFPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+                />
+
+              <ProjectSectionText>
+                I have colored and named each group of features for the sake of clarity. The most important features are the ones that are the most used by the model to make predictions. In this case, the most important features are the <b>power spectral density</b>, which was a bit odd at first, because according to the literature <b>MFCCs</b> coefficients are usually the most used features in speech recognition tasks.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                After exploring some more, I found out that the reason behind this phenomenon is that the <b>PSD</b> is a more general feature that captures the overall energy distribution of the signal and has some of the same properties as the <b>MFCCs</b> coefficients, removing PSD from the model not only shortened the training time but also improved the model's overall performance.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+              For more details and full documentation, visit my <Link href="https://storybook.devicemodels.com">Jupyter Notebook.</Link>
+              </ProjectSectionText>
+
+            </ProjectTextRow>
+    
+
+        </ProjectSection>
+
+        <ProjectSection>
+
+          <ProjectSectionContent>
+
+            
+
+            <ProjectSectionText>
+              <ProjectSectionHeading>Principal Component Analysis</ProjectSectionHeading>
+              <b>P</b>rincipal <b>C</b>omponent <b>A</b>nalysis (PCA) optimizes high-dimensional data by reducing its dimensionality. It identifies the most significant features, transforming them into a new set of uncorrelated variables, or principal components, that capture the main data variations for easier interpretation and analysis. Applied to speech data for improved emotion recognition accuracy, PCA reduced dimensionality by isolating key features while minimizing noise and redundancy. This approach streamlined the dataset, enhancing model efficiency, interpretability, and training speed while reducing overfitting risks. As a result, the model focused on core features essential to accurate emotion detection, delivering improved performance with lower computational demands.
+            </ProjectSectionText>
+
+            <ProjectSectionColumns>
+              <ProjectSectionText>
+                right
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                Here
+              </ProjectSectionText>
+
+            </ProjectSectionColumns>
+
             <Image
               key={themeId}
               srcSet={`${
@@ -533,6 +709,7 @@ const ProjectDM = () => {
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+
       </ProjectContainer>
       <Footer />
     </Fragment>
