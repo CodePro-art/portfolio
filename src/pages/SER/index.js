@@ -742,14 +742,14 @@ const ProjectDM = () => {
               />
               <ProjectSectionHeading>The Result</ProjectSectionHeading>
               <ProjectSectionText>
-                Using <b>classic machine learning</b> techniques and domain knowledge, I reached 70% accuracy on my first project. After hitting a performance ceiling, I introduced a <b>deep learning</b> model, which boosted accuracy to 98%. This highlighted the importance of evolving techniques to overcome limitations.
+                Using <b>classic machine learning</b> techniques and domain knowledge, I reached <b>70%</b> accuracy on my first project. After hitting a performance ceiling, I introduced a <b>deep learning</b> model, which boosted accuracy to <b>98%</b>. This highlighted the importance of evolving techniques to overcome limitations.
               </ProjectSectionText>
 
               <Button
                 secondary
                 iconHoverShift
                 icon="chevronRight"
-                href="https://devicemodels.com"
+                href="pages/404"
               >
                 Try Online Demo
               </Button>
