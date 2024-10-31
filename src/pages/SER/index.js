@@ -17,9 +17,8 @@ import {
   ProjectTextRow,
   ProjectSectionText,
 } from 'components/ProjectLayout';
-import SegmentedControl, { SegmentedControlOption } from 'components/SegmentedControl';
-import { useTheme } from 'components/ThemeProvider';
-import { useAppContext, useScrollRestore } from 'hooks';
+
+import { useScrollRestore } from 'hooks';
 import { media } from 'utils/style';
 import prerender from 'utils/prerender';
 
@@ -71,29 +70,45 @@ import FeatureImportanceRF from 'assets/imgs/speech-emotion-recognition/feature-
 import FeatureImportanceRFLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-random-forest.png';
 import FeatureImportanceRFPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-random-forest.png';
 
-import FeatureImportanceSVM from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
-import FeatureImportanceSVMLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
-import FeatureImportanceSVMPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+import Pca from 'assets/imgs/speech-emotion-recognition/pca.png';
+import PcaLarge from 'assets/imgs/speech-emotion-recognition/pca.png';
+import PcaPlaceholder from 'assets/imgs/speech-emotion-recognition/pca.png';
 
-import FeatureImportanceGB from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
-import FeatureImportanceGBLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
-import FeatureImportanceGBPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
+import HeatmapBeforePca from 'assets/imgs/speech-emotion-recognition/heatmap-before-pca.png';
+import HeatmapBeforePcaLarge from 'assets/imgs/speech-emotion-recognition/heatmap-before-pca.png';
+import HeatmapBeforePcaPlaceholder from 'assets/imgs/speech-emotion-recognition/heatmap-before-pca.png';
 
-import deviceModelsBanner from 'assets/imgs/device-models-banner.jpg';
-import deviceModelsBannerLarge from 'assets/imgs/device-models-banner-large.jpg';
-import deviceModelsBannerPlaceholder from 'assets/imgs/device-models-banner-placeholder.jpg';
+import HeatmapAfterPca from 'assets/imgs/speech-emotion-recognition/heatmap-after-pca.png';
+import HeatmapAfterPcaLarge from 'assets/imgs/speech-emotion-recognition/heatmap-after-pca.png';
+import HeatmapAfterPcaPlaceholder from 'assets/imgs/speech-emotion-recognition/heatmap-after-pca.png';
 
-import deviceModelsComponentsDark from 'assets/imgs/device-models-components-dark.jpg';
-import deviceModelsComponentsDarkLarge from 'assets/imgs/device-models-components-dark-large.jpg';
-import deviceModelsComponentsDarkPlaceholder from 'assets/imgs/device-models-components-dark-placeholder.jpg';
+// import FeatureImportanceSVM from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+// import FeatureImportanceSVMLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
+// import FeatureImportanceSVMPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-svm.png';
 
-import deviceModelsComponentsLight from 'assets/imgs/device-models-components-light.jpg';
-import deviceModelsComponentsLightLarge from 'assets/imgs/device-models-components-light-large.jpg';
-import deviceModelsComponentsLightPlaceholder from 'assets/imgs/device-models-components-light-placeholder.jpg';
+// import FeatureImportanceGB from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
+// import FeatureImportanceGBLarge from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
+// import FeatureImportanceGBPlaceholder from 'assets/imgs/speech-emotion-recognition/feature-importance-gradient-boosting.png';
 
-import deviceModelsLogo from 'assets/imgs/device-models-logo.png';
-import deviceModelsLogoLarge from 'assets/imgs/device-models-logo-large.png';
-import deviceModelsLogoPlaceholder from 'assets/imgs/device-models-logo-placeholder.png';
+import MlVsDl from 'assets/imgs/speech-emotion-recognition/ml-vs-dl.png';
+import MlVsDlLarge from 'assets/imgs/speech-emotion-recognition/ml-vs-dl.png';
+import MlVsDlPlaceholder from 'assets/imgs/speech-emotion-recognition/ml-vs-dl.png';
+
+import DynamicTimeWrapping from 'assets/imgs/speech-emotion-recognition/dynamic-time-wrapping.gif';
+import DynamicTimeWrappingLarge from 'assets/imgs/speech-emotion-recognition/dynamic-time-wrapping.gif';
+import DynamicTimeWrappingPlaceholder from 'assets/imgs/speech-emotion-recognition/dynamic-time-wrapping.gif';
+
+import T_sne from 'assets/imgs/speech-emotion-recognition/t-sne.png';
+import T_sneLarge from 'assets/imgs/speech-emotion-recognition/t-sne.png';
+import T_snePlaceholder from 'assets/imgs/speech-emotion-recognition/t-sne.png';
+
+import ArousalVsValence from 'assets/imgs/speech-emotion-recognition/two-dimensional-valence-arousal-space.png';
+import ArousalVsValenceLarge from 'assets/imgs/speech-emotion-recognition/two-dimensional-valence-arousal-space.png';
+import ArousalVsValencePlaceholder from 'assets/imgs/speech-emotion-recognition/two-dimensional-valence-arousal-space.png';
+
+import EmotionWheel from 'assets/imgs/speech-emotion-recognition/emotion-wheel.png';
+import EmotionWheelLarge from 'assets/imgs/speech-emotion-recognition/emotion-wheel.png';
+import EmotionWheelPlaceholder from 'assets/imgs/speech-emotion-recognition/emotion-wheel.png';
 
 const title = 'Speech Emotion Recognition';
 const description =
@@ -106,16 +121,7 @@ const roles = [
 ];
 
 const ProjectDM = () => {
-  const { themeId } = useTheme();
-  const { dispatch } = useAppContext();
   useScrollRestore();
-
-  const isDark = themeId === 'dark';
-  const themes = ['dark', 'light'];
-
-  const handleThemeChange = index => {
-    dispatch({ type: 'setTheme', value: themes[index] });
-  };
 
   return (
     <Fragment>
@@ -193,8 +199,8 @@ const ProjectDM = () => {
               <ProjectSectionHeading>The Datasets</ProjectSectionHeading>
               <ProjectSectionText>
                 With a clear mission and audience in mind, it was time to search for a suitable datasets 
-                for our project. I needed a dataset that was large enough to train our model, and diverse
-                enough to ensure that our model could generalize well to unseen data.
+                for my project. I needed a dataset that was large enough to train the model, and diverse
+                enough to ensure that the model could generalize well to unseen data.
               </ProjectSectionText>
 
               <ProjectSectionText>
@@ -206,26 +212,22 @@ const ProjectDM = () => {
                   <li>
                     <Link href="https://www.kaggle.com/datasets/ejlok1/cremad">
                       Crema-D:
-                    </Link>
-                    Crowd-sourced Emotional Multimodal Actors Dataset
+                    </Link> Crowd-sourced Emotional Multimodal Actors Dataset
                   </li>
                   
                   <li>
                     <Link href="https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio">
                       Ravdess:
-                    </Link>
-                    Ryerson Audio-Visual Database of Emotional Speech and Song</li>
+                    </Link> Ryerson Audio-Visual Database of Emotional Speech and Song</li>
                   <li>
                     <Link href="https://www.kaggle.com/datasets/ejlok1/surrey-audiovisual-expressed-emotion-savee">
                       Savee:
-                    </Link>
-                    Surrey Audio-Visual Expressed Emotion
+                    </Link> Surrey Audio-Visual Expressed Emotion
                   </li>
                   <li>
                     <Link href="https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess">
                       Tess:
-                    </Link>
-                    Toronto emotional speech set
+                    </Link> Toronto emotional speech set
                   </li>
                 </ul>
                 
@@ -367,7 +369,7 @@ const ProjectDM = () => {
 
               <ProjectSectionText>
                 I had to deal with an unbalanced data, so I decided to merge 'calm' with 'natural' audios due to their similarity in sound.
-                I also discarded 'surprise' at some point because it was too rare to be useful for the training of the model and not as important for our 'use-case'.
+                I also discarded 'surprise' at some point because it was too rare to be useful for the training of the model and not as important for my 'use-case'.
               </ProjectSectionText>
               
             </ProjectTextRow>
@@ -467,7 +469,7 @@ const ProjectDM = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Training Model</ProjectSectionHeading>
+              <ProjectSectionHeading>Training the Model</ProjectSectionHeading>
 
               <ProjectSectionText>
                 Selecting the right model for my project was a critical decision. I evaluated various factors, including dataset size, 
@@ -564,7 +566,6 @@ const ProjectDM = () => {
                 Each machine learning model has its own way of determining feature importance, but in general, it involves assessing the model's performance when a feature is either included or excluded from the model. By comparing the model's performance with and without a specific feature, we can gauge its importance.
               </ProjectSectionText>
 
-
               <Image
                 style={{ marginTop: '40px', marginBottom: '60px' }}
                 srcSet={`${FeatureImportanceRF} 1280w, ${FeatureImportanceRFLarge} 2560w`}
@@ -586,116 +587,162 @@ const ProjectDM = () => {
               </ProjectSectionText>
 
             </ProjectTextRow>
-    
 
         </ProjectSection>
 
         <ProjectSection>
+          <ProjectSectionHeading>Principal Component Analysis</ProjectSectionHeading>
 
-          <ProjectSectionContent>
-
-            
+          <ProjectSectionColumns>
 
             <ProjectSectionText>
-              <ProjectSectionHeading>Principal Component Analysis</ProjectSectionHeading>
-              <b>P</b>rincipal <b>C</b>omponent <b>A</b>nalysis (PCA) optimizes high-dimensional data by reducing its dimensionality. It identifies the most significant features, transforming them into a new set of uncorrelated variables, or principal components, that capture the main data variations for easier interpretation and analysis. Applied to speech data for improved emotion recognition accuracy, PCA reduced dimensionality by isolating key features while minimizing noise and redundancy. This approach streamlined the dataset, enhancing model efficiency, interpretability, and training speed while reducing overfitting risks. As a result, the model focused on core features essential to accurate emotion detection, delivering improved performance with lower computational demands.
+              <p><b>P</b>rincipal <b>C</b>omponent <b>A</b>nalysis (PCA) optimizes high-dimensional data by reducing its dimensionality. It identifies key features and transforms them into uncorrelated variables, or principal components, that capture the primary data variations for easier interpretation and analysis. When applied to speech data for emotion recognition, PCA isolated essential features, minimized noise and redundancy, and streamlined the dataset. This improved model efficiency, interpretability, and training speed, reducing overfitting risks. As a result, the model focused on core features critical for accurate emotion detection, achieving improved performance with lower computational demands.</p>
+              <Image
+                style={{ marginTop: '-20px', marginBottom: '120px', paddingTop: '0px' }}
+                srcSet={`${Pca} 1280w, ${PcaLarge} 2560w`}
+                placeholder={PcaPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+              />
+
+              <p>Overall, I had 172 features and 9,729 signals (3,243 original files and 6,486 augmented files). Analyzing such a large number of features with a correlation heatmap is challenging but feasible. By applying PCA, I reduced the features to 50—a significant reduction that decreased training time and improved model performance.</p>
+              <p style={{marginTop: '15px'}}><b><u>This process is based on a few key principles:</u></b></p>
+              <ul style={{ listStyleType: 'square', marginTop: '30px'}}>
+                <li><b>Centering the data</b> by subtracting the mean.</li>
+                <li>Use <b>covariance matrix</b> to calculate the correlation.</li>
+                <li>Extract <b>eigenvalues</b> and <b>eigenvectors</b>.</li>
+                <li><b>Dimensionality reduction</b> by choosing the top k eigenvectors.</li>
+              </ul>
+              <p style={{marginTop: '35px'}}>click <Link href="#">here</Link> to learn more about PCA.</p>
             </ProjectSectionText>
 
-            <ProjectSectionColumns>
+            <ProjectSectionText style={{ margin: '0px', padding: '0px' }}>
+              
+              <p>The heatmap is dense, yet the red zones clearly highlight features with high correlation. These highly correlated features are crucial, as they are the most utilized by the model in making predictions.</p>
+
+              <Image
+                style={{ marginTop: '-40px', marginBottom: '110px' }}
+                srcSet={`${HeatmapBeforePca} 1280w, ${HeatmapBeforePcaLarge} 2560w`}
+                placeholder={HeatmapBeforePcaPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+              />
+              
+              <p>Here, you can see that after applying PCA, the number of features was reduced from 172 to 50, all of which are completely uncorrelated according to the correlation heatmap. PCA allows the programmer to select the desired number of features in the final dataset.</p>
+
+              <Image
+                style={{ marginTop: '-30px', padding: '0px' }}
+                srcSet={`${HeatmapAfterPca} 1280w, ${HeatmapAfterPcaLarge} 2560w`}
+                placeholder={HeatmapAfterPcaPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+              />
+            </ProjectSectionText>
+
+          </ProjectSectionColumns>
+          
+        </ProjectSection>
+
+        <ProjectSection light>
+          <ProjectSectionHeading>Machine Learning bottlenecks</ProjectSectionHeading>
+            <ProjectTextRow>
               <ProjectSectionText>
-                right
+                Several bottlenecks can hinder the performance and accuracy of a machine learning model.
               </ProjectSectionText>
 
               <ProjectSectionText>
-                Here
+                <ul style={{ listStyleType: 'square' }}>
+                  <li style={{ marginBottom: '10px' }}><Link href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">Curse of Dimensionality:</Link> Speech data typically has many features, leading to high computational costs and potential overfitting.</li>
+                  <li style={{ marginBottom: '10px' }}><b>Feature Extraction Limitations:</b> Traditional machine learning models rely heavily on manually engineered features, which may not fully capture the complexities of emotional expression in speech.</li>
+                  <li style={{ marginBottom: '10px' }}><b>Scalability:</b> As the dataset grows, resource requirements & training time can increase significantly, slowing down experimentation and model iteration.</li>
+                </ul>
+                
+              </ProjectSectionText>
+
+              <Image
+                style={{ marginBottom: '20px', marginTop: '20px' }}
+                srcSet={`${MlVsDl} 1280w, ${MlVsDlLarge} 2560w`}
+                placeholder={MlVsDlPlaceholder}
+                alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              />
+
+              <ProjectSectionText>
+                After extensive experimentations — training and testing iterations, modifying sampling rates, applying various windowing functions, engineering new features, implementing augmentations, retraining on curated feature subsets, and even bending traditional coding rules — my model consistently <b> plateaued at a 61% </b> accuracy threshold.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                This outcome is common in classic machine learning, especially with high-dimensional <Link href="https://en.wikipedia.org/wiki/Feature_(machine_learning)#Feature_vectors"></Link>feature space, complex data like audio signals. Traditional models often fail to capture intricate patterns, resulting in poor pattern recognition and limited generalization on unseen data. These models lack the architectural depth to learn complex relationships, underscoring the need for advanced deep learning techniques to identify nuanced, high-order features essential in Speech Emotion Recognition (SER).
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                Thus, I turned to deep learning. Using Keras, I built and trained a deep neural network that achieved a remarkable <b>98% accuracy</b>, far surpassing prior results. Even though deep learning is absolutely amazing, this project was first and foremost a machine learning project, and I learned a lot about the limitations and strengths of machine learning.
+              </ProjectSectionText>
+            </ProjectTextRow>
+        </ProjectSection>
+
+        <ProjectSection>
+                     
+
+            
+            <ProjectSectionHeading>Other Considerations</ProjectSectionHeading>
+            <ProjectSectionColumns>
+
+              <ProjectSectionText>
+                During the course of my project, I encountered <Link href="https://en.wikipedia.org/wiki/Dynamic_time_warping">Dynamic Time Warping (DTW)</Link>, a highly effective method for measuring similarity between two time series, even when they differ in length, speed, or duration. DTW is a foundational technique in time-series analysis, particularly valuable in speech processing tasks. It aligns sequences by accounting for variations in speed and timing, making it ideal for analyzing speech patterns where the same emotional cues or phrases can be expressed at varying rates or with unique inflections. This capability is instrumental in applications like Speech Emotion Recognition, as it enables the model to capture and compare nuanced temporal patterns, enhancing both pattern recognition and the robustness of feature extraction.
+                <Image
+                  style={{ marginTop: '-20px', marginBottom: '120px', paddingTop: '0px' }}
+                  srcSet={`${DynamicTimeWrapping} 1280w, ${DynamicTimeWrappingLarge} 2560w`}
+                  placeholder={DynamicTimeWrappingPlaceholder}
+                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+                />
+                Another advanced dimensionality reduction technique I've explored was <Link herf="https://medium.com/@sachinsoni600517/mastering-t-sne-t-distributed-stochastic-neighbor-embedding-0e365ee898ea">t-SNE (t-distributed Stochastic Neighbor Embedding)</Link>, a powerful tool for visualizing and interpreting high-dimensional datasets, especially feature vectors generated by models. t-SNE excels in revealing intricate patterns, clusters, and outliers within complex data, which provides significant insights into data structure and feature relationships. In the context of Speech Emotion Recognition (SER), t-SNE is invaluable for uncovering underlying emotional patterns and clusters that might otherwise remain hidden. 
+              </ProjectSectionText>
+
+              <ProjectSectionText style={{ margin: '0px', padding: '0px' }}>
+                
+              While it doesn’t directly boost model performance, t-SNE’s visualization capabilities enhance our understanding of the dataset’s structure, enabling more informed model adjustments and feature engineering.
+
+                <Image
+                  style={{ marginTop: '-40px', marginBottom: '110px' }}
+                  srcSet={`${T_sne} 1280w, ${T_sneLarge} 2560w`}
+                  placeholder={T_snePlaceholder}
+                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+                />
+                
+                <p>An alternative approach to interpreting t-SNE involves distributing the data points across a two-dimensional space, where the x-axis represents <i><b>Valence</b></i> and the y-axis represents <i><b>Arousal</b></i>. This method provides a promising strategy for differentiating between various signals through effective feature engineering.</p>
+
+                <Image
+                  style={{ marginTop: '-30px', padding: '0px', marginBottom: '100px' }}
+                  srcSet={`${ArousalVsValence} 1280w, ${ArousalVsValenceLarge} 2560w`}
+                  placeholder={ArousalVsValencePlaceholder}
+                  alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 2000px, 4000px`}
+                />
+                <p>I discovered that this innovative approach was extensively explored in the study <Link href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.iajit.org/PDF/July%202018,%20No.%204/11287.pdf">Evaluation of Influence of Arousal-Valence Primitives on Speech Emotion Recognition</Link>, by Imen Trabelsi, Dorra Ben Ayed, and Noureddine Ellouze. </p>
+                <p style={{ marginTop: '10px'}}>The primary challenge in this approach lies in selecting optimal features that effectively and correctly distribute the signals along these two axes.</p>
               </ProjectSectionText>
 
             </ProjectSectionColumns>
-
-            <Image
-              key={themeId}
-              srcSet={`${
-                isDark ? deviceModelsComponentsDark : deviceModelsComponentsLight
-              } 800w, ${
-                isDark
-                  ? deviceModelsComponentsDarkLarge
-                  : deviceModelsComponentsLightLarge
-              } 1000w`}
-              placeholder={
-                isDark
-                  ? deviceModelsComponentsDarkPlaceholder
-                  : deviceModelsComponentsLightPlaceholder
-              }
-              alt={`A set of ${themeId} themed components for the Device Models design system`}
-              sizes="100vw"
-            />
-            <ProjectTextRow>
-              <SegmentedControl
-                currentIndex={themes.indexOf(themeId)}
-                onChange={handleThemeChange}
-              >
-                <SegmentedControlOption>Dark theme</SegmentedControlOption>
-                <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
-            </ProjectTextRow>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Design and Development</ProjectSectionHeading>
-              <ProjectSectionText>
-                Keeping the look and feel of Device Models consistent across its online
-                presence was a difficult challenge. It was critical to remain consistent
-                in both messaging and appearance while curating to different platforms.
-              </ProjectSectionText>
-              <ProjectSectionText>
-                Keeping to a universal,{' '}
-                <Link href="https://storybook.devicemodels.com">
-                  component-based design
-                </Link>
-                , the "look and feel" remained nice and tidy, and both the aesthetics and
-                user experience were well-informed across the board.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
+        
         </ProjectSection>
 
         <ProjectSection light>
           <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Show, not Tell</ProjectSectionHeading>
-              <ProjectSectionText>
-                I embrace the idea of "show, not tell" when marketing innovative products.
-                Wide-spread adoption is momentum-based, and you have to give users a
-                reason to jump onboard, hype or not. I like putting the product in front
-                of them and letting its productivity powers speak for itself.
-              </ProjectSectionText>
-              <ProjectSectionText>
-                With a bold show of identity, I included the very 3D components used on
-                the plugin both within marketing material and online, featuring its
-                variations to communicate its flexibility (using Device Models, of
-                course).
-              </ProjectSectionText>
-            </ProjectTextRow>
-            <Image
-              srcSet={`${deviceModelsBanner} 1280w, ${deviceModelsBannerLarge} 2560w`}
-              placeholder={deviceModelsBannerPlaceholder}
-              alt="A promotional banner for Device Models, displaying a variety of devices and bright colors."
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ProjectSection>
-          <ProjectSectionContent>
             <ProjectTextRow center centerMobile noMargin>
               <Image
-                srcSet={`${deviceModelsLogo} 180w, ${deviceModelsLogoLarge} 320w`}
-                placeholder={deviceModelsLogoPlaceholder}
+                className={'rotate'}
+                srcSet={`${EmotionWheel} 180w, ${EmotionWheelLarge} 320w`}
+                placeholder={EmotionWheelPlaceholder}
                 alt="The Device Models logo."
                 sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 220px`}
                 style={{ maxWidth: 220, width: '100%', marginBottom: 30 }}
               />
               <ProjectSectionHeading>The Result</ProjectSectionHeading>
               <ProjectSectionText>
-                Using classic machine learning techniques and domain knowledge, I reached 70% accuracy on my first project. After hitting a performance ceiling, I introduced a deep learning model, which boosted accuracy to 98%. This highlighted the importance of evolving techniques to overcome limitations.
+                Using <b>classic machine learning</b> techniques and domain knowledge, I reached 70% accuracy on my first project. After hitting a performance ceiling, I introduced a <b>deep learning</b> model, which boosted accuracy to 98%. This highlighted the importance of evolving techniques to overcome limitations.
               </ProjectSectionText>
 
               <Button
@@ -704,7 +751,7 @@ const ProjectDM = () => {
                 icon="chevronRight"
                 href="https://devicemodels.com"
               >
-                View on Figma
+                Try Online Demo
               </Button>
             </ProjectTextRow>
           </ProjectSectionContent>

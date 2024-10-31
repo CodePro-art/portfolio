@@ -120,9 +120,22 @@
 }
 
 .classifier-container:hover .classifier {
-    opacity: 0.2; /* Makes other divs less visible */
+    opacity: 0.2; 
 }
 
 .classifier-container:hover .classifier:hover {
-    opacity: 1; /* Keep the hovered one fully visible */
+    opacity: 1; 
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
