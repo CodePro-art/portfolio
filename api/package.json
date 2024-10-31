@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "description": "Serverless functions for codyb.co",
+  "description": "Serverless functions for netanelm.co",
   "private": true,
   "devDependencies": {
     "eslint": "^7.28.0",
