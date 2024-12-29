@@ -106,6 +106,58 @@ import sedCertificate from 'assets/imgs/certificates/sed.avif';
 import svcCertificate from 'assets/imgs/certificates/svc.avif';
 import unixCertificate from 'assets/imgs/certificates/unix.avif';
 
+// Major Tools 
+import AkkaSvg from 'assets/svgs/akka.svg';
+import AlfrescoSvg from 'assets/svgs/alfresco.svg';
+import AndroidSvg from 'assets/svgs/android.svg';
+import AngularSvg from 'assets/svgs/angular.svg';
+import AnsibleSvg from 'assets/svgs/ansible.svg';
+import ArduinoSvg from 'assets/svgs/arduino.svg';
+import ArgoCDSvg from 'assets/svgs/argocd.svg';
+import AwsCloudWatchSvg from 'assets/svgs/aws-cloudwatch.svg';
+import AwsLambdaSvg from 'assets/svgs/aws-lambda.svg';
+import AwsSvg from 'assets/svgs/aws.svg';
+import AzureDevOpsSvg from 'assets/svgs/azure-devops.svg';
+import BlenderSvg from 'assets/svgs/blender.svg';
+import CppSvg from 'assets/svgs/cpp.svg';
+import CSvg from 'assets/svgs/c.svg';
+import CSharpSvg from 'assets/svgs/c#.svg';
+import DartSvg from 'assets/svgs/dart.svg';
+import DockerSvg from 'assets/svgs/docker.svg';
+import ElkSvg from 'assets/svgs/elk.svg';
+import Esp32Svg from 'assets/svgs/esp32.svg';
+import Esp8266Svg from 'assets/svgs/esp8266.svg';
+import GitBookSvg from 'assets/svgs/gitbook.svg';
+import GitActionsSvg from 'assets/svgs/github-actions.svg';
+import GitLabSvg from 'assets/svgs/gitlab.svg';
+import GoSvg from 'assets/svgs/go.svg';
+import GrafanaSvg from 'assets/svgs/grafana.svg';
+import HtmlJsCssSvg from 'assets/svgs/js-html-css.svg';
+import JenkinsSvg from 'assets/svgs/jenkins.svg';
+import JavaSvg from 'assets/svgs/java.svg';
+import JuliaSvg from 'assets/svgs/julia.svg';
+import KotlinSvg from 'assets/svgs/kotlin.svg';
+import KubernetesSvg from 'assets/svgs/kubernetes.svg';
+import LoRaSvg from 'assets/svgs/LoRa.svg';
+import NginxSvg from 'assets/svgs/nginx.svg';
+import OpenTelemetrySvg from 'assets/svgs/OpenTelemetry.svg';
+import PackerSvg from 'assets/svgs/packer.svg';
+import PhpSvg from 'assets/svgs/php.svg';
+import PrometheusSvg from 'assets/svgs/prometheus.svg';
+import PythonSvg from 'assets/svgs/python.svg';
+import RaspberryPiSvg from 'assets/svgs/raspberry-pi.svg';
+import ReactSvg from 'assets/svgs/react.svg';
+import RubySvg from 'assets/svgs/ruby.svg';
+import RustSvg from 'assets/svgs/rust.svg';
+import ScalaSvg from 'assets/svgs/scala.svg';
+import SoloLearnSvg from 'assets/svgs/sololearn-2.svg';
+import SwiftSvg from 'assets/svgs/swift.svg';
+import TerraformSvg from 'assets/svgs/terraform.svg';
+import ThreeJsSvg from 'assets/svgs/three-js.svg';
+import TypeScriptSvg from 'assets/svgs/typescript.svg';
+import VisualBasicSvg from 'assets/svgs/visual-basic.svg';
+import VisualStudioCodeSvg from 'assets/svgs/visual-studio-code.svg';
+
 const imageMap = {
     // Frontend Projects Previews
     'chess': chessImage,
@@ -219,6 +271,60 @@ const imageMap = {
     'sed': sedCertificate,
     'svc': svcCertificate,
     'unix': unixCertificate,
+
+    // Major Tools
+    'React': ReactSvg,
+    'Js HTML Css': HtmlJsCssSvg,
+    'Python': PythonSvg,
+    'Java': JavaSvg,
+    'C++': CppSvg,
+    'C#': CSharpSvg,
+    'C': CSvg,
+    'TypeScript': TypeScriptSvg,
+    'Dart': DartSvg,
+    'Kotlin': KotlinSvg,
+    'Swift': SwiftSvg,
+    'Ruby': RubySvg,
+    'Go': GoSvg,
+    'Rust': RustSvg,
+    'Scala': ScalaSvg,
+    'Julia': JuliaSvg,
+    'PHP': PhpSvg,
+    'Visual Basic': VisualBasicSvg,
+    'Android': AndroidSvg,
+    'Arduino': ArduinoSvg,
+    'Raspberry Pi': RaspberryPiSvg,
+    'ESP32': Esp32Svg,
+    'ESP8266': Esp8266Svg,
+    'LoRa': LoRaSvg,
+    'Blender': BlenderSvg,
+    // 'Unity': UnitySvg,
+    'ThreeJs': ThreeJsSvg,
+    'Akka': AkkaSvg,
+    'Alfresco': AlfrescoSvg,
+    'Ansible': AnsibleSvg,
+    'ArgoCD': ArgoCDSvg,
+    'AWS': AwsSvg,
+    'AWS CloudWatch': AwsCloudWatchSvg,
+    'AWS Lambda': AwsLambdaSvg,
+    'Azure DevOps': AzureDevOpsSvg,
+    'Docker': DockerSvg,
+    'ELK': ElkSvg,
+    'GitLab CI': GitLabSvg,
+    'GitBook': GitBookSvg,
+    'GitHub Actions': GitActionsSvg,
+    'Grafana': GrafanaSvg,
+    'Jenkins': JenkinsSvg,
+    'Kubernetes': KubernetesSvg,
+    'NGINX': NginxSvg,
+    'OpenTelemetry': OpenTelemetrySvg,
+    'Packer': PackerSvg,
+    'Prometheus': PrometheusSvg,
+    'Terraform': TerraformSvg,
+    'Visual Studio Code': VisualStudioCodeSvg,
+    'SoloLearn': SoloLearnSvg,
+    'Angular': AngularSvg,
+
 };
 
 export default imageMap;

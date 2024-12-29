@@ -8,6 +8,7 @@ const CursorCanvas = () => {
     document.addEventListener('DOMContentLoaded', () => {
     
     });
+
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
@@ -24,7 +25,7 @@ const CursorCanvas = () => {
             document.body.appendChild(span);
     
             setTimeout(() => {
-            span.remove();
+                span.remove();
             }, 600);
         };
         document.addEventListener('click', handleClick);
@@ -61,6 +62,7 @@ const CursorCanvas = () => {
         };
 
         const update = (t) => {
+            // Demo effect
             if (!mouseMoved) {
                 pointer.x = (.5 + .3 * Math.cos(.002 * t) * (Math.sin(.005 * t))) * window.innerWidth;
                 pointer.y = (.5 + .2 * (Math.cos(.005 * t)) + .1 * Math.cos(.01 * t)) * window.innerHeight;
