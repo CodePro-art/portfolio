@@ -25,6 +25,12 @@ body, button, a, input, label, .button {
     left: 0;
     z-index: 99999;
 }
+/* Hide the cursor on mobile devices */
+@media (pointer: coarse) {
+    body {
+        cursor: none;
+    }
+}
 
 .clickEffect {
     position: absolute;
