@@ -106,7 +106,7 @@ const Uses = () => {
                   learning curve, but you can do some really powerful stuff with it. I
                   am an active contributor in the WebGL and WebXR space, where I have
                   made and collaborated on{' '}
-                  <Link href="https://github.com/CodyJasonBennett">
+                  <Link href="https://github.com/CodePro-art">
                     some abstractions
                   </Link>
                   . You can check out some of my{' '}
