@@ -8,8 +8,7 @@
   "github": {
     "silent": true
   },
-  "rewrites": [
-    { "source": "/index.html", "destination": "/" },
-    { "source": "/functions/:endpoint", "destination": "/api/message" }
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
