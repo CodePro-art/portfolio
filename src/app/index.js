@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, createContext, useReducer, Fragment } from 'react';
+import { lazy, Suspense, useState, useEffect, createContext, useReducer, Fragment } from 'react';
 import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
@@ -35,12 +35,13 @@ const repoPrompt = `\u00A9 2021-${new Date().getFullYear()} Netanel Mazuz\n\nChe
 const App = () => {
   const [storedTheme] = useLocalStorage('theme', 'dark');
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
 
   useEffect(() => {
     if (!prerender) {
       console.info(`${repoPrompt}\n\n`);
     }
-
+    
     window.history.scrollRestoration = 'manual';
   }, []);
 
@@ -48,10 +49,17 @@ const App = () => {
     dispatch({ type: 'setTheme', value: storedTheme });
   }, [storedTheme]);
 
+  useEffect(() => {
+    const checkIfMobileOrTablet = () => {
+      return /Mobi|Tablet|iPad|iPhone/i.test(navigator.userAgent);
+    };
+    setIsMobileOrTablet(checkIfMobileOrTablet());
+  }, []);
+
   return (
     <AppContext.Provider value={{ ...state, dispatch }}>
       <ThemeProvider themeId={state.theme}>
-        <CursorCanvas />
+        {!isMobileOrTablet && <CursorCanvas />}
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
