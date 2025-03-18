@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://codyb.co",
+  "homepage": "https://netanel-mazuz.dev",
   "description": "Portfolio site for Netanel Mazuz",
-  "repository": "https://github.com/CodyJasonBennett/portfolio.git",
-  "author": "Netanel Mazuz <hi@codyb.co>",
+  "repository": "https://github.com/CodePro-art/portfolio",
+  "author": "Netanel Mazuz <hi@netanel-mazuz.dev>",
   "license": "MIT",
   "private": true,
   "devDependencies": {
@@ -88,5 +88,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://codyb.co"
+  "proxy": "https://netanel-mazuz.dev/"
 }

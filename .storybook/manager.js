@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://codyb.co/icon.svg',
+    brandImage: 'https://netanel-mazuz.dev/icon.svg',
     brandTitle: 'Netanel Mazuz Components',
-    brandUrl: 'https://codyb.co',
+    brandUrl: 'https://netanel-mazuz.dev',
   },
 });
