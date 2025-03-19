@@ -9,9 +9,6 @@
     "silent": true
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    { "source": "/(.*)", "destination": "/", "statusCode": 200 }
   ]
 }
