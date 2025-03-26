@@ -16,16 +16,33 @@
     animation: popIn 0.3s ease;
 }
 
+.modal-certificate__container {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-certificate__container.open {
+    animation: popIn 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-certificate__container.close {
+    animation: popOut 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
 .modal-certificate.visible {
     opacity: 1;
     visibility: visible;
 }
 
 .modal-certificate img {
-    max-width: 100%;
+    max-width: 150%;
     max-height: 100%;
     border: 2px solid #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: translate(-25%, 0);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -34,7 +51,7 @@
     color: #4f4f4f;
     font: 42px/100% arial, sans-serif;
     position: relative;
-    left: 97%;
+    left: 108%;
     top: 33px;
     text-decoration: none;
     z-index: 1024;
@@ -48,8 +65,21 @@
 @keyframes popIn {
     0% {
         transform: scale(0.5);
+        opacity: 0;
     }
     100% {
         transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
     }
 }

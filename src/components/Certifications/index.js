@@ -69,7 +69,6 @@ const Certificate = ({ cert, index }) => {
 
 const Certificates = () => {
     const scrollContainerRef = useRef(null);
-    // certificates.push(...certificates);
 
     useEffect(() => {
         const scrollContainer = scrollContainerRef.current;

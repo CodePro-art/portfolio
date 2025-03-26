@@ -1,37 +1,44 @@
-import React from 'react';
-import { useEffect, useRef } from "react";
-// import CrumpleEffect from 'components/CrumpleEffect';
+import React, { useEffect, useRef, useState } from "react";
 import './index.css';
 
 function ModalCertificate({ showModal, setShowModal, alt, imgSrc }) {
+    const [isClosing, setIsClosing] = useState(false);
     const modalRef = useRef(null);
 
     useEffect(() => {
-        // Close modal when pressing the 'Escape' key
         const handleKeyDown = (e) => {
-            if (e.key === "Escape") {
-                setShowModal(false);
-            }
+            if (e.key === "Escape") closeModal();
         };
 
-        // Add event listeners when modal is open
-        if (showModal) document.addEventListener("keydown", handleKeyDown);
+        if (showModal) 
+            document.addEventListener("keydown", handleKeyDown);
+        else 
+            document.removeEventListener("keydown", handleKeyDown);
         
-        // Cleanup function to remove event listeners
-        return () => document.removeEventListener("keydown", handleKeyDown);
 
-    }, [showModal, setShowModal]);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, [showModal]);
+
+    const closeModal = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            setIsClosing(false);
+            setShowModal(false);
+        }, 300); // Match animation duration
+    };
 
     return (
-        <div className={`modal-certificate ${showModal ? 'visible' : ''}`}>
-            {/* <CrumpleEffect /> */}
+        <div className={`modal-certificate ${isClosing ? "closing" : "visible"}`}>
             {showModal ? (
-                <div className="modal-certificate__container">
-                    {/* Close button that triggers the modal to close */}
-                    <a href="https://www.youtube.com/" className="close-thick" onClick={(e) => {
-                        e.preventDefault();
-                        setShowModal(false);}
-                        }>
+                <div className={`modal-certificate__container ${isClosing ? "close" : "open"}`}>
+                    <a 
+                        href="https://www.youtube.com/" 
+                        className="close-thick" 
+                        onClick={(e) => {
+                            e.preventDefault();
+                            closeModal();
+                        }}
+                    >
                         &times; {/* You can use '&times;' for a close 'X' symbol */}
                     </a>
                     <img src={imgSrc} alt={alt} />
