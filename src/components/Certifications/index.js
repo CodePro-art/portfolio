@@ -69,7 +69,7 @@ const Certificate = ({ cert, index }) => {
 
 const Certificates = () => {
     const scrollContainerRef = useRef(null);
-    certificates.push(...certificates);
+    // certificates.push(...certificates);
 
     useEffect(() => {
         const scrollContainer = scrollContainerRef.current;
@@ -105,7 +105,7 @@ const Certificates = () => {
 
         const handleWheel = (e) => {
             e.preventDefault();
-            scrollContainer.scrollLeft += e.deltaY;
+            scrollContainer.scrollLeft += 5*e.deltaY;
         };
 
         scrollContainer.addEventListener('mousedown', handleMouseDown);

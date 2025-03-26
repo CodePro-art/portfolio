@@ -10,11 +10,6 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay, maj
     const mt = imageMap[tool] || null;
     const animationDelay = `${delay}s`;
     const titleRef = useRef(null);
-    // const [isSvgLoaded, setIsSvgLoaded] = useState(false);
-    
-    // useEffect(() => {
-    //     if (mt) setIsSvgLoaded(true);
-    // }, [mt]); 
 
     useEffect(() => {
         const adjustFontSize = () => {
@@ -44,7 +39,6 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay, maj
                         <h3 ref={titleRef} className="project-title">{title}</h3>
                         <p className="project-tool">{majorTool}</p>
                         <img className="platform-icon" src={mt} />
-                        {/* {isSvgLoaded && SvgComponent && <SvgComponent className="platform-icon" />} */}
                     </div>
                     <Link secondary href={gitLink} className="project-link git"> to Git </Link>
                 </div>

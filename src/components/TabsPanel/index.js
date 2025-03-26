@@ -2,7 +2,6 @@ import React, { useState, useEffect, Fragment } from 'react';
 import Tab from 'components/Tab';
 import projectsData from 'assets/jsons/projects.json';
 import Project from 'components/Project';
-import imageMap from "assets/maps/imageMap";
 import './index.css';
 
 const subcategories = {
