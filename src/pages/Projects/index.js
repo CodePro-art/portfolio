@@ -59,9 +59,9 @@ const Projects = () => {
             <TabsPanel />  
           </div>
 
-          {/* <ModalCertificate />
+          <ModalCertificate />
           <Certificates />          
-           */}
+          
       </div>
       <Footer />
     </div>

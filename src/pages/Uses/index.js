@@ -52,7 +52,7 @@ const Uses = () => {
                     <Link href="https://figma.com">Figma</Link> is my primary tool for UI
                     design these days. Made the switch from InVision in 2019 and haven't
                     looked back. I've also created{' '}
-                    <Link href="https://figma.com/@codyb">a few plugins</Link> that you
+                    <Link href="https://figma.com/@netanelmazuz">a few plugins</Link> that you
                     can install.
                   </li>
                   <li>
@@ -110,7 +110,7 @@ const Uses = () => {
                     some abstractions
                   </Link>
                   . You can check out some of my{' '}
-                  <Link href="https://dribbble.codyb.co">experiments</Link> and{' '}
+                  <Link href="https://dribbble.com/netazuz/about">experiments</Link> and{' '}
                   <Link href="/articles">articles</Link> about it.
                 </li>
                 <li>

@@ -55,6 +55,9 @@ const CursorCanvas = () => {
         }
 
         let mouseMoved = false;
+        if (mouseMoved) {
+            console.log('');
+        }
 
         const updateMousePosition = (eX, eY) => {
             pointer.x = eX - window.scrollX;
