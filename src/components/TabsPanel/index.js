@@ -5,7 +5,7 @@ import Project from 'components/Project';
 import './index.css';
 
 const subcategories = {
-    'Software Dev': [
+    'Software': [
         'Frontend',
         'Backend',
         'Mobile',
@@ -17,7 +17,7 @@ const subcategories = {
         'API & Integration',
         'Full-Stack',
     ],
-    'Hardware Dev': [
+    'Hardware': [
         'Embedded',
         'IoT',
         'Circuit',
@@ -40,16 +40,6 @@ const subcategories = {
         'Data Science & Analytics',
         'Predictive Modeling',
         'AI Ethics & Bias',
-    ],
-    'Open Source': [
-        'Contributions',
-        'Frameworks',
-        'Libraries',
-        'Documentation & Tutorials',
-        'Bug Fixes',
-        'Community Engagement',
-        'Forking & Pull Requests',
-        'License Management',
     ],
     'DevOps': [
         'CI/CD Pipelines',

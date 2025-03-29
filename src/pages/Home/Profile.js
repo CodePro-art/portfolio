@@ -28,18 +28,22 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      I'm an electrical engineer, chip designer, AI developer, and a teacher. <Link href="/my_work">My projects</Link> include UI/UX design, animation, automation, verification, logic design, and
-      game development. If you are interested in the tools and software I use, check out my{' '}
-      <Link href="/uses">uses page</Link>.
+      I am an electrical engineer and AI developer specializing in automation, robotics, deep learning, and digital signal processing. 
+      With expertise in chip design, CAD, and machine learning, I develop high-performance systems that seamlessly integrate software 
+      and hardware, driving innovation and efficiency.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      In my spare time, I like to <Link href="https://www.youtube.com/@netanelmazuz">draw</Link>,{' '}
-      <Link href="https://www.youtube.com/@netanelmazuz">cook, </Link> and{' '}
-      <Link href="/articles">teach & share my knowledge</Link>. I am always interested in new
-      projects, so feel free to drop me a line.
+      My <Link href="/my_work">projects</Link> showcase work in AI development, automation, logic design, and game development. If you're interested in the tools and technologies I use, you can 
+      find more details on my If you are interested in the tools and software I use, check out my{' '} <Link href="/uses">uses page</Link>.
+    </Text>
+    <Text
+      className={classNames('profile__description', `profile__description--${status}`)}
+      size="l"
+    >
+      Beyond my technical work, I am passionate about <Link href="https://www.youtube.com/@netanelmazuz">drawing</Link>, <Link href="https://www.youtube.com/@netanelmazuz">cooking</Link>, and sharing knowledge through articles, tutorials, and teaching. I am always open to new opportunities and collaborations—feel free to get in touch.
     </Text>
   </Fragment>
 );

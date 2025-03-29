@@ -139,7 +139,7 @@ const ProjectDM = () => {
           title={title}
           description={description}
           linkLabel = 'Visit Jupyter Notebook'
-          url="https://devicemodels.com"
+          url="https://github.com/netazuz/Emotion-Classification/blob/main/project.ipynb"
           roles={roles}
         />
         
