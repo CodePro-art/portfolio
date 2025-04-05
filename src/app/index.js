@@ -21,6 +21,7 @@ const Contact = lazy(() => import('pages/Contact'));
 const Journey = lazy(() => import('pages/Journey'));
 const Projects = lazy(() => import('pages/Projects'));
 const ProjectSER = lazy(() => import('pages/SER'));
+const ProjectDFD = lazy(() => import('pages/DeepFakeDetection'));
 const ProjectDM = lazy(() => import('pages/DeviceModels'));
 const ProjectDTT = lazy(() => import('pages/DevTechTools'));
 const Articles = lazy(() => import('pages/Articles'));
@@ -97,6 +98,7 @@ const AppRoutes = () => {
                     <Route path="/contact" component={Contact} />
                     <Route path="/journey" component={Journey} />
                     <Route path="/projects/speech-emotion-recognition" component={ProjectSER} />
+                    <Route path="/projects/deep-fake-detection" component={ProjectDFD} />
                     <Route path="/projects/device-models" component={ProjectDM} />
                     <Route path="/projects/devtech-tools" component={ProjectDTT} />
                     <Route path="/uses" component={Uses} />

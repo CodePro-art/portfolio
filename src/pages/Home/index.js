@@ -213,7 +213,7 @@ const Home = () => {
         title="A Tool for Deepfake Detection"
         description="Creating a powerful framework for detecting deepfakes and fight against disinformation."
         buttonText="View Project"
-        buttonLink="/projects/devtech-tools"
+        buttonLink="/projects/deep-fake-detection"
         model={{
           type: 'laptop',
           alt: 'DevTech Tools Landing Page',

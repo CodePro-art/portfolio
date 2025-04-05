@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://netanel-mazuz.dev/projects/deep-fake-detection</loc>
+    <lastmod>2023-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://netanel-mazuz.dev/projects/devtech-tools</loc>
     <lastmod>2021-04-22</lastmod>
     <changefreq>monthly</changefreq>
