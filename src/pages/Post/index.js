@@ -13,6 +13,7 @@ import Code from 'components/Code';
 import Section from 'components/Section';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
+import Table from 'components/Table';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import { media } from 'utils/style';
@@ -128,6 +129,12 @@ const PostHeadingTwo = ({ children, ...rest }) => (
   </Heading>
 );
 
+const PostHeadingThree = ({ children, ...rest }) => (
+  <Heading className="post__heading-three" level={4} {...rest}>
+    {children}
+  </Heading>
+);
+
 const PostParagraph = ({ children, ...rest }) => (
   <Text className="post__paragraph" size="l" {...rest}>
     {children}
@@ -151,6 +158,14 @@ const PostCode = ({ children, ...rest }) => (
   </code>
 );
 
+const PostTable = ({ children, ...rest }) => (
+  <div className="post__table-wrapper">
+    <Table className="post__table" {...rest}>
+      {children}
+    </Table>
+  </div>
+);
+
 const PostLink = ({ ...props }) => <Link {...props} />;
 
 const Post = ({ slug, content: PostContent, ...rest }) => {
@@ -159,12 +174,14 @@ const Post = ({ slug, content: PostContent, ...rest }) => {
       components={{
         wrapper: PostWrapper,
         h2: PostHeadingTwo,
+        h3: PostHeadingThree,
         p: PostParagraph,
         ul: PostList,
         img: PostImage,
         a: PostLink,
         pre: Code,
         inlineCode: PostCode,
+        table: PostTable,
       }}
     >
       <PostContent slug={slug} {...rest} />

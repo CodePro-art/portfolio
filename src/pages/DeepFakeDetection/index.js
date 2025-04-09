@@ -22,14 +22,16 @@ import { useScrollRestore } from 'hooks';
 import { media } from 'utils/style';
 import prerender from 'utils/prerender';
 import { useTheme } from 'components/ThemeProvider';
+import 'katex/dist/katex.min.css';
+import { BlockMath, InlineMath } from 'react-katex';
 
 import deviceModelsBackground from 'assets/imgs/speech-emotion-recognition/background.png';
 import deviceModelsBackgroundLarge from 'assets/imgs/speech-emotion-recognition/background.png';
 import deviceModelsBackgroundPlaceholder from 'assets/imgs/speech-emotion-recognition/background.png';
 
-import deviceModels from 'assets/imgs/speech-emotion-recognition/mockup.png';
-import deviceModelsLarge from 'assets/imgs/speech-emotion-recognition/mockup.png';
-import deviceModelsPlaceholder from 'assets/imgs/speech-emotion-recognition/mockup.png';
+import deviceModels from 'assets/imgs/deepfake-detection/mockup.png';
+import deviceModelsLarge from 'assets/imgs/deepfake-detection/mockup.png';
+import deviceModelsPlaceholder from 'assets/imgs/deepfake-detection/mockup.png';
 
 import deviceModelsBranding from 'assets/imgs/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/imgs/deepfake-detection/kaggle-datasets.png';
@@ -187,7 +189,7 @@ const ProjectDM = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>The Datasets</ProjectSectionHeading>
               <ProjectSectionText>
-              The Deepfake Detection Challenge (DFDC) dataset, hosted on <Link href="https://www.kaggle.com/competitions/deepfake-detection-challenge/data">Kaggle</Link>, comprises over 100,000 video clips featuring 3,426 paid actors. 
+              The Deepfake Detection Challenge dataset, hosted on <Link href="https://www.kaggle.com/competitions/deepfake-detection-challenge/data">Kaggle</Link>, comprises over 100,000 video clips featuring 3,426 paid actors. 
               These videos include both authentic footage and manipulated content created using various deepfake and <b>generative adversarial network (GAN)</b> - based face-swapping techniques. 
               The dataset is structured to support the development of models capable of distinguishing between real and altered videos. 
               The full training set is just over 470 GB, comprised of .mp4 files, split into 50 compressed sets of ~10GB apiece.
@@ -226,7 +228,7 @@ const ProjectDM = () => {
               </ProjectSectionText>
 
               <ProjectSectionText>
-                In this project, I predict the likelihood that a given video is a deepfake, involving face swaps, voice swaps, or both. The training data is labeled as "REAL" or "FAKE", and my model outputs the probability of a video being fake.
+              This project predicts the likelihood of a video being a deepfake, using real/fake labeled data to output the probability of fakery.
               </ProjectSectionText>
               <ProjectSectionText>
                 <b>Files</b>
@@ -235,7 +237,7 @@ const ProjectDM = () => {
               <ProjectSectionText>
                 <ul style={{ listStyleType: 'square' }}>
                   <li><b>dfdc_train.zip</b> - A set of 50 folder of training videos and a metadata with labels.</li>
-                  <li><b>sample_submission.csv</b> - a sample submission file in the correct format.</li>
+                  <li><b>sample_submission.csv</b> - only for format.</li>
                   <li><b>test_videos.zip</b> - a zip file containing videos to be used as a public validation set.</li>
                 </ul>
               </ProjectSectionText>
@@ -246,10 +248,10 @@ const ProjectDM = () => {
 
               <ProjectSectionText>
                 <ul style={{ listStyleType: 'square' }}>
-                  <li><span className={`json-label--${theme.themeId}`}><b>filename</b></span> - the filename of the video.</li>
-                  <li><span className={`json-label--${theme.themeId}`}><b>label</b></span> - whether the video is REAL/FAKE.</li>
-                  <li><span className={`json-label--${theme.themeId}`}><b>original</b></span> - the original video of a FAKE.</li>
-                  <li><span className={`json-label--${theme.themeId}`}><b>split</b></span> - this is always equal to "train".</li>
+                  <li><span className={`json-label--${theme.themeId}`}>filename</span> - the filename of the video.</li>
+                  <li><span className={`json-label--${theme.themeId}`}>label</span> - whether the video is REAL/FAKE.</li>
+                  <li><span className={`json-label--${theme.themeId}`}>original</span> - the original video of a FAKE.</li>
+                  <li><span className={`json-label--${theme.themeId}`}>split</span> - this is always equal to "train".</li>
                 </ul>
 
                 <pre className='code code--json'>
@@ -275,70 +277,32 @@ const ProjectDM = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Data Pre-processing</ProjectSectionHeading>
+              <ProjectSectionHeading>Evaluation</ProjectSectionHeading>
 
               <ProjectSectionText style={{marginBottom: '40px'}}>
-              I merged four datasets into one balanced dataset, then applied key preprocessing steps to prepare it for training the Speech Emotion Recognition (SER) model.
+                Submissions are scored on log loss:
+                <BlockMath math={'\\text{LogLoss} = -\\frac{1}{N} \\sum_{i=1}^{N} \\left[ y_i \\log(p_i) + (1 - y_i) \\log(1 - p_i) \\right]'} />
+                <ul style={{ listStyleType: 'square' }}>
+                  <li><InlineMath  math={'\\text{N}'} /> - is the number of videos being predicted.</li>
+                  <li><InlineMath  math={'\\ p{}_i'} /> -  is the predicted probability of the video being FAKE.</li>
+                  <li><InlineMath  math={'\\ y_i'} /> -  is 1 if the video is FAKE, 0 if REAL.</li>
+                  <li><InlineMath  math={'\\text{Log()}'} /> - is the natural (base e) logarithm.</li>
+                </ul>
               </ProjectSectionText>
 
-              <ProjectSectionColumns style={{marginBottom: '40px', padding: '0px', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignContent: 'stretch', alignItems: 'stretch'}}>  
-                <ProjectSectionText style={{padding: '0px'}}>
-
-                  <ProjectSectionText>
-                    <p>1. <b>Audio Loading</b></p>
-                    <p>I standardized audio to a consistent sample rate and trimmed the silence to focus on relevant speech.</p>
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>2. <b>Feature Extraction</b></p>
-                    <p>Extracted key features like mfcc, spectrograms, and more, to ease the classification for the model.</p> 
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>3. <b>Data Augmentation</b></p> 
-                    <p>Applied data augmentation techniques like time-stretching, pitch shifting, and noise addition to prevent overfitting and simulate real-world variations.</p>
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>4. <b>Normalization</b></p> 
-                    <p>I used Z-score normalization to standardize the extracted features, ensuring comparable scales and more efficient model convergence during training.</p>
-                  </ProjectSectionText>
-                </ProjectSectionText>
-
-                <ProjectSectionText style={{padding: '0px', margin: '0px'}}>
-
-                  <ProjectSectionText>
-                    <p>5. <b>Label Encoding</b></p> 
-                    <p>Applied one-hot encoding on emotion labels, making them machine-readable for model training.</p>
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>6. <b>Padding and Windowing</b></p> 
-                    <p>I padded audio clips and used windowing to split longer ones for better temporal processing.</p> 
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>7. <b>Noise Reduction</b> </p>
-                    <p>For datasets with noisy recordings, I applied noise reduction methods to clean up the audio, improving the quality of the features used for training.</p> 
-                  </ProjectSectionText>
-
-                  <ProjectSectionText>
-                    <p>8. <b>Shuffling and Splitting</b></p> 
-                    <p>The preprocessed data was shuffled and split into training, validation, and test sets to ensure balanced emotion distribution.</p> 
-                  </ProjectSectionText>
-                </ProjectSectionText>
-                
-              </ProjectSectionColumns>
-
-              <ProjectSectionText>
-              To preprocess the data, I utilized the {' '}
-                <Link href="https://librosa.org/doc/latest/index.html">
-                  librosa 
-                </Link> library. For those unfamiliar, librosa is a powerful Python library specifically designed for analyzing and processing audio signals. It’s commonly used for extracting features such as Mel-frequency cepstral coefficients (MFCCs), spectrograms, and more.
+              <ProjectSectionText style={{marginBottom: '40px'}}>
+                A smaller log loss is better. The use of the logarithm provides extreme punishments for being both confident and wrong. In the worst possible case, a prediction that something is true when it is actually false will add infinite to your error score. In order to prevent this, predictions are bounded away from the extremes by a small value.
               </ProjectSectionText>
 
               <ProjectSectionText>
-              In order to store and display, and analyze the data I used {' '}
+                To preprocess the data, I utilized the {' '}
+                  <Link href="https://librosa.org/doc/latest/index.html">
+                    librosa 
+                  </Link> library, a powerful Python library specifically designed for analyzing and processing audio signals.
+              </ProjectSectionText>
+
+              <ProjectSectionText>
+                In order to store and display, and analyze the data I used {' '}
                 <Link href="https://seaborn.pydata.org/">
                   Seaborn 
                 </Link>, {' '}
