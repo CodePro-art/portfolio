@@ -387,6 +387,7 @@
 }
 
 .post__table-wrapper {
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -480,7 +481,7 @@
 
 .post__image {
   display: block;
-  margin: 50px 0;
+  margin-top: 40px;
   max-width: 100%;
   width: 100%;
   height: auto;
