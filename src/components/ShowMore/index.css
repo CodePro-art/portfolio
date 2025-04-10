@@ -1,0 +1,40 @@
+.show-more {
+    margin-top: 20px;
+}
+
+/* ShowMore animation styles */
+.show-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.show-more-content.show {
+    max-height: 1000px; 
+}
+
+.show-more__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.show-more-button {
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #007BFF;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+}
+
+.show-more-button:hover {
+    color: #0056b3;
+}
+
+.artice-sources {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

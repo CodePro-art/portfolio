@@ -269,6 +269,7 @@
   --para-space: 26px;
   --heading-space: 34px;
   --fun-fact-space: 40px;
+  --sources-space: 50px;
 
   width: 50vw;
   align-self: center;
@@ -512,4 +513,9 @@
 .fun-fact .dark {
   /* padding: 20px 100px 0px 300px; */
   background: #000000da;
+}
+
+.sources-section {
+  margin-top: var(--sources-space);
+
 }

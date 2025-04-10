@@ -19,6 +19,7 @@ import prerender from 'utils/prerender';
 import { media } from 'utils/style';
 import { ReactComponent as ArrowDown } from 'assets/icons/arrow-down.svg';
 import { tokens } from 'components/ThemeProvider/theme';
+import ShowMore from 'components/ShowMore';
 import './index.css';
 
 const PostWrapper = ({
@@ -182,6 +183,7 @@ const Post = ({ slug, content: PostContent, ...rest }) => {
         pre: Code,
         inlineCode: PostCode,
         table: PostTable,
+        ShowMore,
       }}
     >
       <PostContent slug={slug} {...rest} />
