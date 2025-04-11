@@ -1,9 +1,11 @@
 import './index.css';
 import React, { useState, useRef, useEffect } from 'react';
+import { useTheme } from 'components/ThemeProvider';
 
 const ShowMore = ({ children, maxHeight = 100 }) => {
   const [expanded, setExpanded] = useState(false);
   const contentRef = useRef(null); 
+  const theme = useTheme();
 
   const toggle = () => setExpanded(!expanded);
   const contentHeight = contentRef.current ? contentRef.current.scrollHeight : 0;
@@ -21,7 +23,7 @@ const ShowMore = ({ children, maxHeight = 100 }) => {
         {children}
       </div>
       <button 
-        className="show-more-button text"
+        className={`show-more-button show-more-button--${theme.themeId} text`}
         onClick={toggle}
       >
         {expanded ? '▲   Hide sources' : '▼   View all sources'}
