@@ -23,7 +23,7 @@ const ShowMore = ({ children, maxHeight = 100 }) => {
         {children}
       </div>
       <button 
-        className={`show-more-button show-more-button--${theme.themeId} text`}
+        className={`show-more-button show-more-button--${theme.themeId} text ${expanded ? 'expanded' : ''}`}
         onClick={toggle}
       >
         {expanded ? '▲   Hide sources' : '▼   View all sources'}

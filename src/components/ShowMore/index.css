@@ -5,7 +5,7 @@
 /* ShowMore animation styles */
 .show-more-content {
     max-height: 0;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.8s ease-out;
 }
 
 .show-more-content.show {
@@ -26,6 +26,7 @@
     color: #007BFF;
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
 }
 .show-more-button::after {
     content: '';
@@ -35,8 +36,13 @@
     width: 100%;
     height: 100px;
     /* border: 1px solid #007BFF; */
-    /* background: transparent; */
     background: linear-gradient(to top, rgb(var(--rgbBackground)) 0%, transparent);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.show-more-button.expanded::after {
+    opacity: 0;
 }
 
 .show-more-button:hover {
