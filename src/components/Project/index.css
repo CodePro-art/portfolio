@@ -684,7 +684,7 @@
     .projects-container .projects {
         align-items: center;
         justify-content: center;
-        row-gap: 10px;
+        row-gap: 0px;
         max-width: 63vw;
     }
 
