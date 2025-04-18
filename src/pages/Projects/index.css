@@ -23,3 +23,15 @@
 	min-height: 120vh;
 	z-index: 128;
 }
+
+@media (max-width: 704px) {
+    .projects__title-text {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 500px) {
+    .projects__title-text {
+		font-size: 1.2em;
+	}
+}

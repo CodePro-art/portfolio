@@ -17,6 +17,8 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay, maj
             if (!titleElement) return;
 
             const containerWidth = titleElement.scrollWidth;
+            const windowWidth = window.innerWidth;
+            const scaleFactor = (windowWidth < 550) ? Math.min(1, windowWidth / 600) : 1;
             let fontSize = 20;
             titleElement.style.fontSize = `${fontSize}px`;
 
@@ -24,6 +26,15 @@ const Project = ({ imgSrc, title, id, description, gitLink, siteLink, delay, maj
                 fontSize -= 0.1;
                 titleElement.style.fontSize = `${fontSize}px`;
             }
+
+            if (windowWidth < 550) {
+                let newFontSize = fontSize * scaleFactor;
+                console.log(newFontSize);
+                titleElement.style.fontSize = `${newFontSize}px`;
+                titleElement.style.padding = "5px 10px";
+            }
+
+
         };
 
         adjustFontSize();

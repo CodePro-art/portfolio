@@ -105,7 +105,7 @@ const TabsMenu = () => {
 
             <div className="tab-content">
                 <div className="projects-container">
-                    <div className="projects-header">
+                    {/* <div className="projects-header">
                         {activeSubcategories.map((subcategory, index) => (
                             <button
                                 key={index}
@@ -115,7 +115,7 @@ const TabsMenu = () => {
                                 {subcategory}
                             </button>
                         ))}
-                    </div>
+                    </div> */}
 
                     <div className="projects">
                         {displayedProjects.map((project, index) => (

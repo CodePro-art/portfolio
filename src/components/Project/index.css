@@ -40,9 +40,10 @@
 .project-title {
     padding-left: 10px;
     position: absolute;
-    top: 5px;
+    top: 0px;
+    left: -10px;
     width: 260px;
-    font-size: 18px;
+    font-size: small;
     color: inherit;
     font-family: var(--fontStack);
 }
@@ -50,10 +51,10 @@
 .project-tool {
     width: max-content;
     color: rgb(137, 137, 137);
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     top: 10px;
-    left: 210px;
+    left: 12.5rem;
     font-family: var(--fontStack);
 }
 
@@ -67,8 +68,8 @@
 
 .tile {
     border-radius: 10px;
-    height: 260px;
-    width: 370px;
+    height: 200px;
+    width: 280px;
     margin: 0px 50px 120px 35px;
     background-color: #ffffff;
     display: inline-block;
@@ -90,8 +91,8 @@
     position: absolute;
     top: -15px;
     left: -15px;
-    height: 200px;
-    width: 354px;
+    height: 141px;
+    width: 250px;
     border-radius: 10px;
     transition: all .3s ease-out;
     z-index: 256;
@@ -117,10 +118,10 @@
     border-radius: 5px;
     background: linear-gradient(145deg, #000000, #7b7b7b);
     position: absolute;
-    top: 0;
-    left: -45px;
-    width: 50px;
-    height: 50px;
+    top: .5rem;
+    left: -2.9rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .dark .platform-icon {
@@ -139,7 +140,7 @@
 
 .tile h1 {
     font-weight: 300;
-    margin: 0;
+
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -178,13 +179,13 @@
 .tile .project-links .git {
     position: absolute;
     font-size: small;
-    top: 40px;
-    left: 17rem;
+    top: 3rem;
+    left: 12rem;
 }
 
 .tile .project-description {
     position: absolute;
-    font-size: 1.1rem;
+    font-size: .9rem;
     top: -30px;
     left: -30px;
     width: 100%;
@@ -308,3 +309,388 @@
             background-position: top right;
     }
 }
+
+
+@media (max-width: 1900px) {
+    .tabs-container {
+        max-width: 100vw;
+    }
+}
+@media (max-width: 1838px) {
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+@media (max-width: 1700px) {
+    .tabs-container {
+        max-width: 70vw;
+    }
+}
+@media (max-width: 1576px) {
+    .tabs-container {
+        max-width: 75vw;
+    }
+}
+@media (max-width: 1500px) {
+    .tabs-container {
+        max-width: 100vw;
+    }
+}
+@media (max-width: 1400px) {
+    .tabs-container {
+        max-width: 60vw;
+    }
+}
+@media (max-width: 1300px) {
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+@media (max-width: 1200px) {
+    .tabs-container {
+        max-width: 70vw;
+    }
+}
+@media (max-width: 1100px) {
+    .tabs-container {
+        max-width: 75vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tabs-container {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 924px) {
+    .tabs-container {
+        max-width: 55vw;
+    }
+}
+
+@media (max-width: 872px) {
+    .tabs-container {
+        max-width: 60vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+
+@media (max-width: 738px) {
+    .tabs-container {
+        max-width: 68vw;
+    }
+}
+
+@media (max-width: 704px) {
+    .tabs-container {
+        max-width: 70vw;
+    }
+}
+
+@media (max-width: 689px) {
+    .tabs-container {
+        max-width: 58vw;
+    }
+}
+
+@media (max-width: 660px) {
+    .tabs-container {
+        max-width: 60vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .tabs-container {
+        max-width: 62vw;
+    }
+}
+
+@media (max-width: 620px) {
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .tabs-container {
+        max-width: 68vw;
+    }
+}
+
+@media (max-width: 580px) {
+    .tabs-container {
+        max-width: 70vw;
+    }
+}
+
+@media (max-width: 560px) {
+    .tabs-container {
+        max-width: 75vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .tabs-container {
+        max-width: 78vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .tabs-container {
+        max-width: 81vw;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .tile .project-preview {
+        height: 127px;
+        width: 223px;
+    }
+    
+    .major-framework {
+        top: .9rem;
+    }
+    
+    .platform-icon {
+        top: .9rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    .tile {
+        height: 180px;
+        width: 240px;
+    }
+
+    .tile .text {
+        height: 100%;
+    }
+    
+    .tile h1 {
+        font-weight: 200;
+        margin: 0;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tile h2 {
+        font-weight: 100;
+        transform: translateX(200px);
+    }
+    
+    .tile p {
+        font-weight: 300;
+        margin: 20px 0 0 0;
+        line-height: 25px;
+        transform: translateX(-200px);
+        transition-delay: 0.2s;
+    }
+    
+    .tile .project-links .git {
+        top: 3rem;
+        left: 10rem;
+    }
+    
+    .tile .project-description {
+        font-size: .9rem;
+        top: -30px;
+        left: -30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .project-title {
+        top: 10px;
+        font-size: small;
+    }
+
+    .project-tool {
+        font-size: 11px;
+        top: 13px;
+        left: 12.5rem;
+    }
+
+    .projects-container .projects {
+        row-gap: 10px;
+    }
+
+    .tabs-container {
+        max-width: 71vw;
+    }
+}
+
+
+@media (max-width: 476px) {
+
+    .tile .project-preview {
+        height: 127px;
+        width: 223px;
+    }
+    
+    .major-framework {
+        top: .9rem;
+    }
+    
+    .platform-icon {
+        top: .9rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    .tile {
+        height: 180px;
+        width: 240px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .tile .text {
+        height: 100%;
+    }
+    
+    .tile h1 {
+        font-weight: 200;
+        margin: 0;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tile h2 {
+        font-weight: 100;
+    }
+    
+    .tile p {
+        font-weight: 300;
+        margin: 20px 0 0 0;
+        line-height: 25px;
+        transform: translateX(-200px);
+        transition-delay: 0.2s;
+    }
+    
+    .tile .project-links .git {
+        top: 3rem;
+        left: 10rem;
+    }
+    
+    .tile .project-description {
+        font-size: .9rem;
+        top: -30px;
+        left: -30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .project-title {
+        top: 10px;
+        font-size: small;
+    }
+
+    .project-tool {
+        font-size: 11px;
+        top: 13px;
+        left: 12.5rem;
+    }
+
+    .projects-container .projects {
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        max-width: 63vw;
+    }
+
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+
+@media (max-width: 471px) {
+
+    .tile .project-preview {
+        height: 114px;
+        width: 200px;
+    }
+    
+    .major-framework {
+        top: 1.4rem;
+    }
+    
+    .platform-icon {
+        top: .9rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .tile {
+        height: 155px;
+        width: 216px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .tile .text {
+        height: 100%;
+    }
+    
+    .tile h1 {
+        font-weight: 200;
+        margin: 0;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tile h2 {
+        font-weight: 100;
+    }
+    
+    .tile p {
+        font-weight: 300;
+        margin: 20px 0 0 0;
+        line-height: 25px;
+        transform: translateX(-200px);
+        transition-delay: 0.2s;
+    }
+    
+    .tile .project-links .git {
+        top: 3rem;
+        left: 8.5rem;
+    }
+    
+    .tile .project-description {
+        font-size: .9rem;
+        top: -30px;
+        left: -30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .project-title {
+        top: 10px;
+        font-size: small;
+    }
+
+    .project-tool {
+        font-size: 11px;
+        top: 13px;
+        left: 12.5rem;
+    }
+
+    .projects-container .projects {
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        max-width: 63vw;
+    }
+
+    .tabs-container {
+        max-width: 65vw;
+    }
+}
+
+
