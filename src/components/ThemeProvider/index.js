@@ -111,16 +111,45 @@ function createThemeStyleObject(theme) {
  * Generate media queries for tokens
  */
 function createMediaTokenProperties() {
-  return Object.keys(media)
-    .map(key => {
-      return `
-        @media (max-width: ${media[key]}px) {
-          :root {
-            ${createThemeProperties(tokens[key])}
+  const mediaEntries = Object.entries(media);
+  
+  return mediaEntries
+    .map(([key, breakpoint]) => {
+      // Skip ultra-wide and wide as they use min-width
+      if (key === 'ultraWide') {
+        return `
+          @media (min-width: ${breakpoint}px) {
+            :root {
+              ${createThemeProperties(tokens[key])}
+            }
           }
-        }
-      `;
+        `;
+      }
+      
+      if (key === 'wide') {
+        return `
+          @media (min-width: 1921px) and (max-width: 2560px) {
+            :root {
+              ${createThemeProperties(tokens[key])}
+            }
+          }
+        `;
+      }
+      
+      // Standard max-width queries for other breakpoints
+      if (tokens[key]) {
+        return `
+          @media (max-width: ${breakpoint}px) {
+            :root {
+              ${createThemeProperties(tokens[key])}
+            }
+          }
+        `;
+      }
+      
+      return '';
     })
+    .filter(Boolean)
     .join('\n');
 }
 
