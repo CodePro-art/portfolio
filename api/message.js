@@ -18,12 +18,13 @@ const mailTransport = nodemailer.createTransport({
 
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
+const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
 
 module.exports = async (req, res) => {
   try {
     const email = sanitize(req.body.email);
     const message = sanitize(req.body.message);
-
+    
     // Reject unsupported origins
     if (req.headers.origin !== ORIGIN) {
       throw new Error(`Unsupported origin: ${req.headers.origin}`);
