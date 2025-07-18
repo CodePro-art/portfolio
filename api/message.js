@@ -21,13 +21,15 @@ const MAX_MESSAGE_LENGTH = 4096;
 const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
 
 module.exports = async (req, res) => {
+
+  console.log(`Unsupported origin: ${ORIGIN}`);
+  
   try {
     const email = sanitize(req.body.email);
     const message = sanitize(req.body.message);
     
     // Reject unsupported origins
     if (req.headers.origin !== ORIGIN) {
-      console.log(`Unsupported origin: ${ORIGIN}`);
       throw new Error(`Unsupported origin: ${req.headers.origin}`);
     }
 
