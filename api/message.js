@@ -27,6 +27,7 @@ module.exports = async (req, res) => {
     
     // Reject unsupported origins
     if (req.headers.origin !== ORIGIN) {
+      console.log(`Unsupported origin: ${ORIGIN}`);
       throw new Error(`Unsupported origin: ${req.headers.origin}`);
     }
 
