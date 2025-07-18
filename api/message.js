@@ -21,16 +21,42 @@ const MAX_MESSAGE_LENGTH = 4096;
 const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
 
 module.exports = async (req, res) => {
-
-  console.log(`Unsupported origin: ${ORIGIN}`);
+  // Add CORS headers
+  res.setHeader('Access-Control-Allow-Origin', ORIGIN);
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   
+  // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   try {
     const email = sanitize(req.body.email);
     const message = sanitize(req.body.message);
     
-    // Reject unsupported origins
-    if (req.headers.origin !== ORIGIN) {
-      throw new Error(`Unsupported origin: ${req.headers.origin}`);
+    // Debug logging
+    console.log('Request headers:', req.headers);
+    console.log('Origin header:', req.headers.origin);
+    console.log('Expected origin:', ORIGIN);
+    
+    // Check if SMTP configuration is available
+    if (!smtpHost || !smtpUser || !smtpPass) {
+      console.error('Missing SMTP configuration');
+      return res.status(500).json({ error: 'Email service not configured' });
+    }
+    
+    // Reject unsupported origins - make this more flexible
+    const requestOrigin = req.headers.origin;
+    if (requestOrigin && requestOrigin !== ORIGIN) {
+      console.log(`Origin mismatch: ${requestOrigin} !== ${ORIGIN}`);
+      // Allow requests from the same domain or no origin
+      if (requestOrigin.includes('netanel-mazuz.dev') || !requestOrigin) {
+        console.log('Allowing request from same domain or no origin');
+      } else {
+        console.log('Rejecting request from different origin');
+        return res.status(403).json({ error: 'Origin not allowed' });
+      }
     }
 
     // Validate email request
@@ -51,7 +77,7 @@ module.exports = async (req, res) => {
     // Send email
     const mailOptions = {
       from: 'Portfolio <mailbot@netanel-mazuz.dev>',
-      to: 'netanel.mazuz@outlook.com',
+      to: ['netazuz@gmail.com', 'netanel.mazuz@outlook.com'],
       subject: `New message from ${email}`,
       text: `From: ${email}\n\n${message}`,
     };
