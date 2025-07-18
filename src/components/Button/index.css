@@ -19,7 +19,23 @@
   position: relative;
   z-index: 1;
 
+  @media (--mediaMobile) {
+    & {
+      min-height: 48px;
+      --buttonSize: calc((48 / 16) * 1rem);
+      --buttonFontSize: calc((16 / 16) * 1rem);
+    }
+  }
+
   &:focus {
+    box-shadow: 0 0 0 4px rgb(var(--rgbBackground)), 0 0 0 8px rgb(var(--rgbText));
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+
+  &:focus-visible {
     box-shadow: 0 0 0 4px rgb(var(--rgbBackground)), 0 0 0 8px rgb(var(--rgbText));
   }
 

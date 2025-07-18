@@ -51,6 +51,26 @@ const baseTokens = {
 };
 
 // Tokens that change based on viewport size
+const tokensUltraWide = {
+  maxWidthS: '640px',
+  maxWidthM: '880px',
+  maxWidthL: '1200px',
+  maxWidthXL: '1800px',
+  spaceOuter: '96px',
+  fontSizeH0: pxToRem(160),
+  fontSizeH1: pxToRem(100),
+};
+
+const tokensWide = {
+  maxWidthS: '600px',
+  maxWidthM: '800px',
+  maxWidthL: '1150px',
+  maxWidthXL: '1720px',
+  spaceOuter: '80px',
+  fontSizeH0: pxToRem(140),
+  fontSizeH1: pxToRem(90),
+};
+
 const tokensDesktop = {
   fontSizeH0: pxToRem(120),
   fontSizeH1: pxToRem(80),
@@ -127,6 +147,8 @@ const light = {
 
 export const tokens = {
   base: baseTokens,
+  ultraWide: tokensUltraWide,
+  wide: tokensWide,
   desktop: tokensDesktop,
   laptop: tokensLaptop,
   tablet: tokensTablet,

@@ -36,8 +36,7 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      My <Link href="/my_work">projects</Link> showcase work in AI development, automation, logic design, and game development. If you're interested in the tools and technologies I use, you can 
-      find more details on my If you are interested in the tools and software I use, check out my{' '} <Link href="/uses">uses page</Link>.
+      My <Link href="/my_work">projects</Link> showcase work in AI development, automation, logic design, and game development. If you're interested in the tools and technologies I use, you can find more details on my{' '} <Link href="/uses">uses page</Link>.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
