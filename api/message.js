@@ -61,13 +61,12 @@ module.exports = async (req, res) => {
     console.log('- smtpPass:', smtpPass ? 'SET' : 'MISSING');
     
     if (!smtpHost || !smtpUser || !smtpPass) {
-      return res.status(500).json({
-        error: 'Missing SMTP configuration',
+      return res.status(500).json({ error: 'Missing SMTP configuration',
         details: {
           smtpHost: smtpHost || 'MISSING',
           smtpUser: smtpUser || 'MISSING',
-          smtpPass: smtpPass ? 'SET' : 'MISSING'
-        }
+          smtpPass: smtpPass ? 'SET' : 'MISSING',
+        }, 
       });
     }
     
