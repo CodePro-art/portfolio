@@ -5,10 +5,14 @@ const nodemailer = require('nodemailer');
 const { window } = new JSDOM('');
 const { sanitize } = DOMPurify(window);
 
-const { smtpHost, smtpUser, smtpPass } = process.env;
+const smtpHost = process.env.SMTP_HOST;
+const smtpUser = process.env.SMTP_USER;
+const smtpPass = process.env.SMTP_PASS;
+const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
+
 const mailTransport = nodemailer.createTransport({
   host: smtpHost,
-  port: 465,
+  port: parseInt(SMTP_PORT) || 465,
   secure: true,
   auth: {
     user: smtpUser,
@@ -18,7 +22,6 @@ const mailTransport = nodemailer.createTransport({
 
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
-const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
 
 module.exports = async (req, res) => {
   console.log('=== API CALL START ===');
