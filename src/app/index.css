@@ -1,3 +1,5 @@
+@custom-media --mediaUltraWide (min-width: 2561px);
+@custom-media --mediaWide (min-width: 1921px) and (max-width: 2560px);
 @custom-media --mediaDesktop (max-width: 2080px);
 @custom-media --mediaLaptop (max-width: 1680px);
 @custom-media --mediaTablet (max-width: 1024px);
@@ -44,6 +46,13 @@ body {
   /* grid-template: 100% / 100%; */
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+
+  @media (--mediaUltraWide) {
+    & {
+      max-width: 3200px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .app__page {
