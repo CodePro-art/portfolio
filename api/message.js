@@ -8,12 +8,14 @@ const { sanitize } = DOMPurify(window);
 const smtpHost = process.env.SMTP_HOST;
 const smtpUser = process.env.SMTP_USER;
 const smtpPass = process.env.SMTP_PASS;
+const smtpPort = parseInt(process.env.SMTP_PORT || "465");
 const ORIGIN = process.env.ORIGIN || "https://netanel-mazuz.dev";
+const secure = smtpPort === 465; 
 
 const mailTransport = nodemailer.createTransport({
   host: smtpHost,
-  port: parseInt(SMTP_PORT) || 465,
-  secure: true,
+  port: smtpPort,
+  secure: secure,
   auth: {
     user: smtpUser,
     pass: smtpPass,
