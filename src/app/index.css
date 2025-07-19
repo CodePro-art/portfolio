@@ -47,12 +47,6 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 
-  @media (--mediaUltraWide) {
-    & {
-      max-width: 3200px;
-      margin: 0 auto;
-    }
-  }
 }
 
 .app__page {

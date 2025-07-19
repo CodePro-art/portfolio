@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "description": "Serverless functions for netanelm.co",
+  "description": "Serverless functions for netanel-mazuz.dev",
   "private": true,
   "devDependencies": {
     "eslint": "^7.28.0",

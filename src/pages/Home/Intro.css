@@ -13,12 +13,6 @@
   position: relative;
   top: calc(var(--spaceL) * -1);
   user-select: none;
-  
-  @media (--mediaUltraWide) {
-    & {
-      max-width: 1200px;
-    }
-  }
 
   @media (--mediaWide) {
     & {
