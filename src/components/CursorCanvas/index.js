@@ -30,6 +30,10 @@ const CursorCanvas = () => {
         };
         document.addEventListener('click', handleClick);
 
+        // Scale controls the size of the trail (1 = full size, 0 = disappeared)
+        let scale = 1;
+        let idleTimeout; 
+
         const params = {
             pointsNumber: 40,
             widthFactor: .3,
@@ -62,6 +66,16 @@ const CursorCanvas = () => {
         const updateMousePosition = (eX, eY) => {
             pointer.x = eX - window.scrollX;
             pointer.y = eY - window.scrollY;
+
+            scale = 1; // grow back to full size
+
+            // Reset idle timer
+            if (idleTimeout) clearTimeout(idleTimeout);
+            idleTimeout = setTimeout(() => {
+            // Start shrinking after 1.5 seconds of no movement
+            idleTimeout = null;
+            }, 700);
+
         };
 
         const update = (t) => {
@@ -72,6 +86,13 @@ const CursorCanvas = () => {
             // }
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // If idle timer passed, shrink scale gradually
+            if (!idleTimeout && scale > 0) {
+                scale -= 0.02; // speed of shrinking
+                if (scale < 0) scale = 0;
+            }
+
             trail.forEach((p, pIdx) => {
                 const prev = pIdx === 0 ? pointer : trail[pIdx - 1];
                 const spring = pIdx === 0 ? .4 * params.spring : params.spring;
@@ -91,11 +112,12 @@ const CursorCanvas = () => {
                 const xc = .5 * (trail[i].x + trail[i + 1].x);
                 const yc = .5 * (trail[i].y + trail[i + 1].y);
                 ctx.quadraticCurveTo(trail[i].x, trail[i].y, xc, yc);
-                ctx.lineWidth = params.widthFactor * (params.pointsNumber - i);
+                ctx.lineWidth = params.widthFactor * (params.pointsNumber - i) * scale;;
                 ctx.strokeStyle = params.strokeColor;
                 ctx.stroke();
             }
             ctx.lineTo(trail[trail.length - 1].x, trail[trail.length - 1].y);
+            ctx.lineWidth = params.widthFactor * scale;
             ctx.strokeStyle = params.strokeColor;
             ctx.stroke();
 
