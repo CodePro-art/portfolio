@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState, useEffect, createContext, useReducer, Fragment } from 'react';
 import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
+import { Analytics } from "@vercel/analytics/react"
 import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import Navbar from 'components/Navbar';

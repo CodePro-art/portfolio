@@ -2,6 +2,8 @@
  * Media query breakpoints
  */
 export const media = {
+  ultraWide: 2561,
+  wide: 1921,
   desktop: 2080,
   laptop: 1680,
   tablet: 1024,

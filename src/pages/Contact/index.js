@@ -63,6 +63,9 @@ const Contact = () => {
       try {
         setSending(true);
 
+        console.log('Sending request to /api/message');
+        console.log('Request body:', { email: email.value, message: message.value });
+        
         const response = await fetch('/api/message', {
           method: 'POST',
           mode: 'cors',
@@ -74,6 +77,9 @@ const Contact = () => {
             message: message.value,
           }),
         });
+        
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers);
 
         const responseMessage = await response.json();
 

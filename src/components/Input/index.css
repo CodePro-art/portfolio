@@ -28,6 +28,13 @@
   padding: var(--spaceL) 0 var(--spaceM);
   overflow-x: hidden;
 
+  @media (--mediaMobile) {
+    & {
+      font-size: calc((16 / 16) * 1rem);
+      padding: var(--spaceXL) 0 var(--spaceL);
+    }
+  }
+
   &:-internal-autofill-selected {
     -webkit-text-fill-color: var(--colorTextBody);
     box-shadow: 0 0 0px 1000px rgb(var(--rgbText) / 0.1) inset;
