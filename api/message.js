@@ -61,8 +61,14 @@ module.exports = async (req, res) => {
     console.log('- smtpPass:', smtpPass ? 'SET' : 'MISSING');
     
     if (!smtpHost || !smtpUser || !smtpPass) {
-      console.error('Missing SMTP configuration');
-      return res.status(500).json({ error: 'Email service not configured' });
+      return res.status(500).json({
+        error: 'Missing SMTP configuration',
+        details: {
+          smtpHost: smtpHost || 'MISSING',
+          smtpUser: smtpUser || 'MISSING',
+          smtpPass: smtpPass ? 'SET' : 'MISSING'
+        }
+      });
     }
     
     // Reject unsupported origins - make this more flexible
