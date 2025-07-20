@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="765" viewBox="0 0 135 765">
+  <style>
+    @font-face {
+      font-family: 'Raleway';
+      font-weight: 900;
+      src: url('data:font/woff2;base64,d09GMgABAAAAAAnYABAAAAAA...') format('woff2');
+    }
+
+    text {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+    }
+  </style>
+
+  <g transform="matrix(0 0.13 -0.13 0 67.5 382.5)">
+    <text font-size="1000" fill="currentColor">
+      <tspan x="-2700" y="350">P</tspan>
+      <tspan x="-2000" y="350">r</tspan>
+      <tspan x="-1350" y="350">o</tspan>
+      <tspan x="-500" y="350">f</tspan>
+      <tspan x="200" y="350">i</tspan>
+      <tspan x="700" y="350">l</tspan>
+      <tspan x="1200" y="350">e</tspan>
+    </text>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ import Divider from 'components/Divider';
 import Section from 'components/Section';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import { ReactComponent as KatakanaProfile } from 'assets/svgs/katakana-profile.svg';
+import { ReactComponent as KatakanaProfile } from 'assets/svgs/title-profile.svg';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import './Profile.css';
