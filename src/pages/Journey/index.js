@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useScrollRestore, useRouteTransition } from 'hooks';
 import Heading from 'components/Heading';
@@ -44,6 +44,15 @@ const Journey = () => {
   const isTimelineVisible = useInViewport(timelineRef, false, { threshold: 0.1 });
   const isResumeVisible = useInViewport(resumeRef, false, { threshold: 0.1 });
 
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobileOrTablet = () => {
+      return /Mobi|Tablet|iPad|iPhone/i.test(navigator.userAgent);
+    };
+    setIsMobileOrTablet(checkIfMobileOrTablet());
+  }, []);
+
   return (
     <div className="journey">
 
@@ -51,8 +60,8 @@ const Journey = () => {
         <title>Journey | Netanel Mazuz</title>
         <meta name="description" content="Find out more about my personal professional journey and learn more about me." />
       </Helmet>
-
-      <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
+      {!isMobileOrTablet && <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />}
+      
 
       <div className="journey-wrapper">
         <Heading

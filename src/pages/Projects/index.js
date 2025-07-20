@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useScrollRestore, useRouteTransition } from 'hooks';
 import Heading from 'components/Heading';
@@ -30,6 +30,14 @@ const Projects = () => {
 
   const intro = useRef();
   const isMenuVisible = useInViewport(menuRef, false, { threshold: 0.1 });
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobileOrTablet = () => {
+      return /Mobi|Tablet|iPad|iPhone/i.test(navigator.userAgent);
+    };
+    setIsMobileOrTablet(checkIfMobileOrTablet());
+  }, []);
 
   return (
     <div className="projects-page">
@@ -38,8 +46,7 @@ const Projects = () => {
           <meta name="description" content="Explore my projects and learn more about my journey in the tech industry." />
       </Helmet>
 
-      <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />
-
+      {!isMobileOrTablet && <BackgroundSphere id="intro" sectionRef={intro} disciplines={null} scrollIndicatorHidden={null} />}
       <div className="projects-wrapper">
           <Heading
             className={classNames('projects__title', `projects__title--${status}`, {'projects__title--hidden': prerender, })}

@@ -561,7 +561,7 @@
             "title": "Deep Fake Detection",
             "id": "202",
             "description": "A deep learning project that classifies whether a video is a real or a deep fake.",
-            "gitLink": "https://github.com/CodePro-art/ai-project",
+            "gitLink": "https://github.com/CodePro-art/deepfake-detection",
             "siteLink": "https://ai-project.netlify.app/",
             "majorTool": "Python",
             "sub-categories": ["Data Science", "Signal Processing", "AI", "Machine Learning", "Deep Learning"],
