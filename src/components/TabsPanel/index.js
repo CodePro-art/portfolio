@@ -81,7 +81,7 @@ const TabsMenu = () => {
 
     const activeCategory = categories[activeTab];
     const activeProjects = projects[activeCategory] || [];
-    const activeSubcategories = subcategories[activeCategory] || [];
+    // const activeSubcategories = subcategories[activeCategory] || [];
 
     const startIndex = (currentPage - 1) * projectsPerPage;
     const displayedProjects = activeProjects.slice(startIndex, startIndex + projectsPerPage);
