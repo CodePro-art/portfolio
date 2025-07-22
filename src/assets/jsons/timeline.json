@@ -11,17 +11,7 @@
                 "Robotics": "https://www.robotics.org/what-is-robotics",
                 "Physics": "https://www.britannica.com/science/physics-science",
                 "Project Management": "https://www.pmi.org/about/learn-about-pmi/what-is-project-management",
-                "Academic Eligibility": "https://www.universitiesuk.ac.uk/what-we-do/policy-and-research/publications/academic-eligibility"
-            }
-        },
-        {
-            "id": "item2",
-            "date": "2022 - 2023",
-            "role": "CAD Engineer",
-            "company": "Nvidia",
-            "content": "I Coded CAD Python software for DFT teams, covering all stages of algorithm development from research and implementation to testing, debugging, and deployment, using CI/CD & Agile methodologies. Conducted design reviews, produced status reports & documentation, and provided technical support. Used Unix command-line tools such as RegEx, awk, SED, and SQL, coupled with Pandas library to process, manipulate, and analyze data.",
-            "soft_skills": ["Problem-Solving", "Organized", "Fast Learner"],
-            "hard_skills": {
+                "Academic Eligibility": "https://www.universitiesuk.ac.uk/what-we-do/policy-and-research/publications/academic-eligibility",
                 "CAD": "https://www.autodesk.com/solutions/cad-software",
                 "Python": "https://www.python.org/doc/essays/blurb/",
                 "DFT": "https://en.wikipedia.org/wiki/Design_for_testing",
@@ -33,8 +23,8 @@
             }
         },
         {
-            "id": "item3",
-            "date": "2020 - 2022",
+            "id": "item2",
+            "date": "2020 - 2023",
             "role": "Automation Engineer",
             "company": "Inuitive",
             "content": "I Programmed object-oriented C++ and Python automated tests for a computer vision chip. Integrated software for learning algorithms embedded in the chip, including CNN, SLAM, object detection, and face recognition. Employed diverse testing frameworks (unit, E2E, performance, and regression testing) with Visual Studio IDE. Managed projects using Jira, automated processes with Jenkins and Docker, and chip data retrieval via UART technology. Applied OOP, design patterns principles, and OpenCV library for image processing and testing.",
@@ -56,7 +46,7 @@
             }
         },
         {
-            "id": "item4",
+            "id": "item3",
             "date": "2017 - 2020",
             "role": "Academic Tutor",
             "company": "Ben-Gurion University",
@@ -70,7 +60,7 @@
             }
         },
         {
-            "id": "item5",
+            "id": "item4",
             "date": "2013 - 2017",
             "role": "Banquet Server",
             "company": "Ocean Banquet Hall - Tel Aviv",
@@ -84,7 +74,7 @@
             }
         },
         {
-            "id": "item6",
+            "id": "item5",
             "date": "2005 - 2010",
             "role": "Newspaper Delivery",
             "company": "Kol Ha'ir - Herzliya",

@@ -178,17 +178,12 @@ const Timeline = ({ theme }) => {
         <div className={classNames("time-container", `${theme}`)}>
             <div id="timeline" className="timeline" ref={timelineRef}>
                 <Heading
-                    className={classNames('timeline__title', `timeline__title--${status}`, { 'timeline__title--hidden': prerender, })}
+                    className={classNames(`timeline__title--${status}`, { 'timeline__title--hidden': prerender, })}
                     level={3}
                     as="h1"
                     style={getDelay(tokens.base.durationXS, initDelay, 0.7)}
                 >
-                    <DecoderText
-                        text={title}
-                        start={status !== 'exited' && !prerender}
-                        delay={1000}
-                        className="timeline__title-text"
-                    />
+                    {title}
                 </Heading>
                 <div className="button-group">
                     <Button onClick={() => ctlRef.current.expandAll()}>Expand All</Button>

@@ -47,7 +47,7 @@ a {
 
 .time-container {
 	padding-top: 3rem;
-	padding: 20px 50px;
+	padding: 0px;
     width: 40vw;
 }
 
@@ -61,7 +61,7 @@ a {
 
 .timeline {
 	margin: auto;
-	padding: 1.5em;
+	padding: 1em;
 	width: 100%;
 	max-width: 50em;
 }
@@ -117,6 +117,7 @@ a {
 .timeline__item {
 	position: relative;
 	padding-bottom: 2.25em;
+	overflow-wrap: break-word;
 }
 .timeline__item:not(:last-child):before {
 	background-color: currentColor;
@@ -139,6 +140,7 @@ a {
 }
 .timeline__item-header {
 	display: flex;
+	overflow-wrap: break-word;
 }
 .timeline__item-body {
 	border-radius: 0.375em;
@@ -146,6 +148,7 @@ a {
 	overflow: hidden;
 	margin-inline-start: 4em;
 	height: 0;
+	overflow-wrap: break-word;
 }
 .timeline__item-body-content {
 	background-color: hsl(var(--hue),10%,50%,0.2);
@@ -239,3 +242,9 @@ a {
     opacity: 0; 
     animation-fill-mode: forwards; 
 } */
+
+@media (--mediaLaptop) {
+    .timeline__item {
+		min-width: 500px;
+	}
+}

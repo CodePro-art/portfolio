@@ -82,8 +82,8 @@ const Journey = () => {
           className={classNames('timeline-container', { 'timeline-container--visible': isTimelineVisible })}
           ref={timelineRef}
         >
-          <Timeline theme={"education"}/>
           <Timeline theme={"work-experience"}/>
+          <Timeline theme={"education"}/>
         </div>
 
         <div
