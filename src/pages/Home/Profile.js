@@ -42,7 +42,7 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      Beyond my technical work, I am passionate about <Link href="https://www.youtube.com/@netanelmazuz">drawing</Link>, <Link href="https://www.youtube.com/@netanelmazuz">cooking</Link>, and sharing knowledge through articles, tutorials, and teaching. I am always open to new opportunities and collaborations—feel free to get in touch.
+      Beyond my technical work, I am passionate about <Link href="https://www.youtube.com/@netanelmazuz">drawing</Link>, <Link href="https://www.youtube.com/@netanelmazuz">cooking</Link>, and sharing knowledge through articles, tutorials, and teaching. I am always open to new opportunities and collaborations. Feel free to get in touch.
     </Text>
   </Fragment>
 );

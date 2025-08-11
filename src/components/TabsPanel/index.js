@@ -4,68 +4,72 @@ import projectsData from 'assets/jsons/projects.json';
 import Project from 'components/Project';
 import './index.css';
 
-// const subcategories = {
-//     'Software': [
-//         'Frontend',
-//         'Backend',
-//         'Mobile',
-//         'Web',
-//         'Desktop',
-//         'Games',
-//         'Databases',
-//         'Software Architecture',
-//         'API & Integration',
-//         'Full-Stack',
-//     ],
-//     'Hardware': [
-//         'Embedded',
-//         'IoT',
-//         'Circuit',
-//         'PCB',
-//         'Robotics',
-//         'Prototyping',
-//         'Firmware',
-//         'Sensors ',
-//         'Microcontrollers',
-//         'Hardware-Software Interface',
-//     ],
-//     'AI & ML': [
-//         'NLP',
-//         'Computer Vision',
-//         'Reinforcement Learning',
-//         'Deep Learning',
-//         'Neural Networks',
-//         'Supervised Learning',
-//         'Unsupervised Learning',
-//         'Data Science & Analytics',
-//         'Predictive Modeling',
-//         'AI Ethics & Bias',
-//     ],
-//     'DevOps': [
-//         'CI/CD Pipelines',
-//         'Containerization',
-//         'IaC',
-//         'Cloud Services',
-//         'Automation Scripting',
-//         'Monitoring & Logging',
-//         'Configuration Management',
-//         'Server Management',
-//         'Virtualization',
-//         'Security & Compliance',
-//     ],
-//     'Personal': [
-//         'Passion Projects',
-//         'Side Projects',
-//         'Hobby Coding',
-//         'Creative Coding',
-//         'Exploratory Research',
-//         'Learning Projects',
-//         'Portfolio Projects',
-//         'Freelance Work',
-//         'Experimentation',
-//         'Independent Study',
-//     ],
-// };
+const subcategories = {
+    'Software': [
+        'Frontend',
+        'Backend',
+        'Mobile',
+        'Web',
+        'Desktop',
+        'Games',
+        'Databases',
+        'Software Architecture',
+        'API & Integration',
+        'Full-Stack',
+        'Simulation',
+        'Animation',
+        'Education',
+        'Productivity',
+    ],
+    'Hardware': [
+        'Embedded',
+        'IoT',
+        'Circuit',
+        'PCB',
+        'Robotics',
+        'Prototyping',
+        'Firmware',
+        'Sensors ',
+        'Microcontrollers',
+        'Hardware-Software Interface',
+    ],
+    'AI & ML': [
+        'NLP',
+        'Computer Vision',
+        'Reinforcement Learning',
+        'Deep Learning',
+        'Neural Networks',
+        'Supervised Learning',
+        'Unsupervised Learning',
+        'Data Science & Analytics',
+        'Predictive Modeling',
+        'AI Ethics & Bias',
+    ],
+    'DevOps': [
+        'CI/CD Pipelines',
+        'Containerization',
+        'IaC',
+        'Cloud Services',
+        'Automation Scripting',
+        'Monitoring & Logging',
+        'Configuration Management',
+        'Server Management',
+        'Virtualization',
+        'Security & Compliance',
+    ],
+    'Personal': [
+        'Passion Projects',
+        'Side Projects',
+        'Hobby Coding',
+        'Creative Coding',
+        'Exploratory Research',
+        'Learning Projects',
+        'Portfolio Projects',
+        'Freelance Work',
+        'Experimentation',
+        'Independent Study',
+    ],
+};
 
 const TabsMenu = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -81,7 +85,7 @@ const TabsMenu = () => {
 
     const activeCategory = categories[activeTab];
     const activeProjects = projects[activeCategory] || [];
-    // const activeSubcategories = subcategories[activeCategory] || [];
+    const activeSubcategories = subcategories[activeCategory] || [];
 
     const startIndex = (currentPage - 1) * projectsPerPage;
     const displayedProjects = activeProjects.slice(startIndex, startIndex + projectsPerPage);
@@ -105,7 +109,7 @@ const TabsMenu = () => {
 
             <div className="tab-content">
                 <div className="projects-container">
-                    {/* <div className="projects-header">
+                    <div className="projects-header">
                         {activeSubcategories.map((subcategory, index) => (
                             <button
                                 key={index}
@@ -115,7 +119,7 @@ const TabsMenu = () => {
                                 {subcategory}
                             </button>
                         ))}
-                    </div> */}
+                    </div>
 
                     <div className="projects">
                         {displayedProjects.map((project, index) => (

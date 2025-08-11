@@ -8,7 +8,7 @@
             "gitLink": "https://github.com/CodePro-art/Minecraft-2D",
             "siteLink": "https://nm-minecraft.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Game Dev"],
+            "sub-categories": ["Web", "Games", "Frontend"],
             "completion date": "2021-06-01"
         },
         {
@@ -19,7 +19,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "React",
-            "sub-categories": ["Web Dev", "Game Dev"],
+            "sub-categories": ["Web", "Game", "Frontend", "Backend", "Full-Stack", "Software Architecture", "API & Integration"],
             "completion date": "2021-06-01"
         },
         {
@@ -30,7 +30,7 @@
             "gitLink": "https://github.com/CodePro-art/rubiks",
             "siteLink": "https://rubicks.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Game Dev"],
+            "sub-categories": ["Web", "Games", "Animation", "Frontend", "API & Integration", "Simulation"],
             "completion date": "2021-06-01"
         },
         {
@@ -41,7 +41,7 @@
             "gitLink": "#",
             "siteLink": "https://nm-todolist.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Frontend"],
+            "sub-categories": ["Web", "Frontend", "Productivity", "Backend", "Full-Stack"],
             "completion date": "2021-06-01"
         },
         {
@@ -52,7 +52,7 @@
             "gitLink": "https://github.com/CodePro-art/wave-visualization",
             "siteLink": "https://wave-packet.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Education"],
+            "sub-categories": ["Web", "Education", "Animation", "Simulation", "Frontend"],
             "completion date": "2021-06-01"
         },
         {
@@ -63,7 +63,7 @@
             "gitLink": "https://github.com/CodePro-art/spherical-waves",
             "siteLink": "https://spherical-wave.netlify.app",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Education"],
+            "sub-categories": ["Web", "Education", "Animation", "Simulation", "Frontend"],
             "completion date": "2021-06-01"
         },
         {
@@ -74,7 +74,7 @@
             "gitLink": "https://github.com/CodePro-art/dice-roll-predetermined",
             "siteLink": "https://predefined-dice.netlify.app/",
             "majorTool": "ThreeJs",
-            "sub-categories": ["Web Dev", "Game Dev"],
+            "sub-categories": ["Web", "Games", "Animation", "Simulation", "Frontend", "API & Integration"],
             "completion date": "2021-06-01"
         },
         {
@@ -85,7 +85,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Frontend"],
+            "sub-categories": ["Web", "Frontend", "Backend", "Full-Stack", "Software Architecture", "API & Integration", "AI"],
             "completion date": "2021-06-01"
         },
         {
@@ -96,7 +96,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "sub-categories": ["Web", "Frontend", "Backend", "Full-Stack", "API & Integration", "Mobile"],
             "completion date": "2021-06-01"
         },
         {
@@ -107,7 +107,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "sub-categories": ["Web", "Frontend", "Backend", "Full-Stack", "API & Integration", "Mobile"],
             "completion date": "2021-06-01"
         },
         {
@@ -118,7 +118,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Web Dev", "Frontend", "Backend"],
+            "sub-categories": ["Web", "Frontend", "Backend", "Full-Stack", "API & Integration", "Mobile"],
             "completion date": "2021-06-01"
         },
         {
@@ -129,7 +129,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "sub-categories": ["Mobile", "Frontend", "Backend", "Full-Stack", "API & Integration"],
             "completion date": "2021-06-01"
         },
         {
@@ -140,7 +140,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "sub-categories": ["Web", "Frontend", "Backend", "Full-Stack", "API & Integration", "Mobile"],
             "completion date": "2021-06-01"
         },
         {
@@ -151,7 +151,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "sub-categories": ["Mobile", "Frontend", "Backend", "API & Integration"],
             "completion date": "2021-06-01"
         },
         {
@@ -162,7 +162,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "sub-categories": ["Mobile", "Frontend", "Backend", "API & Integration", "Full-Stack"],
             "completion date": "2021-06-01"
         },
         {
@@ -173,7 +173,7 @@
             "gitLink": "#",
             "siteLink": "#",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Mobile Dev", "Frontend", "Backend"],
+            "sub-categories": ["Mobile", "Frontend", "Backend", "Desktop", "Productivity"],
             "completion date": "2021-06-01"
         },
         {
@@ -184,7 +184,7 @@
             "gitLink": "https://github.com/yourusername/tetris-clone",
             "siteLink": "https://tetris-clone.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -195,7 +195,7 @@
             "gitLink": "https://github.com/yourusername/snake-game",
             "siteLink": "https://snake-game.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -206,7 +206,7 @@
             "gitLink": "https://github.com/yourusername/pong-game",
             "siteLink": "https://pong-game.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -217,7 +217,7 @@
             "gitLink": "https://github.com/yourusername/memory-game",
             "siteLink": "https://memory-game.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -228,7 +228,7 @@
             "gitLink": "https://github.com/yourusername/2d-platformer",
             "siteLink": "https://2d-platformer.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -239,7 +239,7 @@
             "gitLink": "https://github.com/yourusername/flappy-bird-clone",
             "siteLink": "https://flappy-bird-clone.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -250,7 +250,7 @@
             "gitLink": "https://github.com/yourusername/2048",
             "siteLink": "https://2048.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -261,7 +261,7 @@
             "gitLink": "https://github.com/yourusername/jigsaw-puzzle",
             "siteLink": "https://jigsaw-puzzle.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -272,7 +272,7 @@
             "gitLink": "https://github.com/yourusername/rock-paper-scissors",
             "siteLink": "https://rock-paper-scissors.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -283,7 +283,7 @@
             "gitLink": "https://github.com/yourusername/space-invaders",
             "siteLink": "https://space-invaders.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop", "Backend", "Full-Stack"],
             "completion date": "2024-09-21"
         },
         {
@@ -294,7 +294,7 @@
             "gitLink": "https://github.com/yourusername/tic-tac-toe",
             "siteLink": "https://tic-tac-toe.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -305,7 +305,7 @@
             "gitLink": "https://github.com/yourusername/calculator",
             "siteLink": "https://calculator.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Education", "Productivity", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -316,7 +316,7 @@
             "gitLink": "https://github.com/yourusername/checkers",
             "siteLink": "https://checkers.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop"],
             "completion date": "2024-09-21"
         },
         {
@@ -327,7 +327,7 @@
             "gitLink": "https://github.com/yourusername/checkers",
             "siteLink": "https://checkers.netlify.app/",
             "majorTool": "Js HTML Css",
-            "sub-categories": ["Frontend", "Game Dev"],
+            "sub-categories": ["Frontend", "Games", "Mobile", "Desktop", "Education"],
             "completion date": "2024-09-21"
         }
     ],

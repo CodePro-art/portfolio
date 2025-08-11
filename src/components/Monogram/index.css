@@ -16,6 +16,7 @@
   & .monogram--animate {
     animation: stroke 2.5s ease;
     stroke-width: .1;
+    font-family: 'Sawarabi Mincho', serif;
   }
 }
 

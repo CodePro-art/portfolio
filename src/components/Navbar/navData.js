@@ -22,6 +22,24 @@ export const navLinks = [
   },
 ];
 
+export const mobileNavLinks = [
+  {
+    label: 'Projects',
+    pathname: '/',
+    hash: '#projects',
+  },
+  {
+    label: 'About',
+    pathname: '/',
+    hash: '#about',
+  },
+  {
+    label: 'Contact',
+    pathname: '/',
+    hash: '#contact',
+  },
+];
+
 export const socialLinks = [
   {
     label: 'Youtube',

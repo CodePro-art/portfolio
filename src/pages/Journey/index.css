@@ -88,12 +88,36 @@
 @media (--mediaLaptop) {
     .timeline-container {
 		padding: 0;
-		width: 70vw;
-		flex-direction: column;
+		/* width: 70vw; */
+		flex-direction: row;
+		/* align-items: center; */
 	}
 }
 
- @media (--mediaMobile) {
+@media (--mediaLaptopS) {
+    .timeline-container {
+		padding: 0;
+		width: 70vw;
+		flex-direction: column;
+		justify-content: left;
+	}
+	.timeline__item-body {
+		width: 60vw;
+	}
+}
+
+@media (--mediaTablet) {
+    .timeline-container {
+		/* width: 100vw; */
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	
+}
+
+
+@media (--mediaMobile) {
     .timeline__title {
 		padding-left: 0px;
 		background: blue;
